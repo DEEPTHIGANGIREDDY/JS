@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Primitive (this are unmutable)
+        
+        //number(0 to 9)
+        var x;   //declare varible to key word
+        x = 20;  //to assign the value to the variable
+        console.log(x+10);
+
+        //string (a to z)
+        var y = "20"; //Initialization
+        console.log(y[1]);
+
+        console.log(z=x+y);
+
+        //boolean (either true or false)
+        var x = 50; y = 40; z = 50;
+        console.log(x==y);
+        console.log(x==z);
+
+        //undefined (Any variable can be emptied, by setting the value to undefined)
+        var d;
+        console.log(d);
+
+        //null (a special value that represents an empty)
+        var t = null
+        console.log(t);
+
+        var u = ""
+        console.log(t);
+
+        //Bigint (it can not have decimals & we cannot perform math between a BigInt type and a Number type)
+        var l=BigInt("121234324234234")
+        // console.log(l+1); //(Cannot mix BigInt and other types)
+        console.log(l+"23");
+
+        //Non primitive (this are mutable)
+        
+        //array (collection of data or which can hold more than one value)
+        var a=[1,2,3,4,5,6]
+        console.log(a[4]);
+        
+        //object (an object is a standalone entity, with properties and type. )
+        var cls={
+            name:"deepthi",
+            cls:"b.tech",
+            place:"kadapa"
+        }
+        console.log(cls.name);
+
+        // let o = 10;
+        // console.log(o);
+        
+        var o=10;
+        
+        var o=15;
+        console.log(o);
+
+        const f =3;
+        console.log(f);
+        {
+            var a = 10;
+            console.log(a);
+            
+        }
+        var $=true;
+        console.log(typeof $); 
+       
+    
+    </script>
+</body>
+</html>
