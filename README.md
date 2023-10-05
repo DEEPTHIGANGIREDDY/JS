@@ -1,2 +1,2 @@
-# JS
+# Oparators & task
 JS topics
