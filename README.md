@@ -1,2 +1,2 @@
-# JS
+# variables & data types
 JS topics
