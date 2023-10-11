@@ -494,6 +494,21 @@
 //     }
 // }
 
+//-------------------------------------------(amstrong num)-----------------------------------
+var sum=0;
+var number=+prompt("enter a num");
+var temp=number;
+while (temp>0) {
+    lastdigit=temp%10;
+    sum+=lastdigit*lastdigit*lastdigit;
+    temp=parseInt(temp/10);
+}
+if (sum==number) {
+    console.log("it is amstrong num");
+}
+else{
+    console.log("faild");
+}
     </script>
 </body>
 </html>
