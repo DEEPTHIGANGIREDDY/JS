@@ -526,7 +526,7 @@
         //     }
         // }
         // console.log(palindrum(12321));
-//-----------------------------------------(factorial)-----------------------------------------
+// -----------------------------------------(factorial)-----------------------------------------
 // function fact(n) {
 //     var a=1;
 //     for (let i = 1; i <=n; i++) {
@@ -536,6 +536,30 @@
 
 // }
 // console.log(fact(3));
+
+//-----------------------------------------(prime num)---------------------------------------
+function prime(n) {
+    let isprime=true;
+    if(n<1){
+        console.log("give a positive prime num");
+    }
+    else if (n>1){
+        for (let i = 2; i < n; i++) {
+            if (n%i==0) {
+                isprime=false;
+                break;
+            }
+        }
+        if(isprime){
+            console.log("this is prime num");
+            
+        }
+        else{
+            console.log("this is not prime num");
+        }
+    }
+}
+console.log(prime(4));
 //------------------------------------------------------------------------------------------
 // var a="chaithanya"
 // for(i=0;i<a.length;i++){
