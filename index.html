@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String-methods</title>
+</head>
+<body>
+    <script>
+//--------------------------------------------(task-1)------------------------------------------------------
+//1. take one input "Chaithanya" &remove "a" without predefined output will "Chithny"
+
+// let a="chaithanya";
+// let aa="";
+// for (let i = 0; i < a.length; i++) {
+    
+//     if (a[i] !== "a") {
+//         aa+=a[i]
+//     } 
+// }
+// console.log(aa);
+
+//---------------------------------------------(task-2)----------------------------------------------------
+//2.take a prompt give one mail .if @gmail.com if it true print mail id other wise this in valid mail.
+
+// let a=prompt("enter mail id");
+// console.log(a.endsWith("@gmail.com"));
+
+//-----------------------------------------------
+// let a=prompt("enter mail id");
+// let b=["@gmail.com","@outlook.com"]
+// let c=false;
+// for (let i = 0; i < b.length; i++) {
+//     if (a.endsWith(b[i])) {
+//         c=true;
+//         break;
+//     }
+// }
+// console.log(c);
+
+//-----------------------------------------------(task-3)-------------------------------------------------
+//3. take one propt give mobile num .check whether it is indian num or not.
+// let num=prompt("enter a mobile number");
+// if (num.length!==10) {
+//     alert("it is not a 10 digit num")
+// }
+// else{
+//     if (num.startsWith("9" || "8" || "7" || "6")) {
+//     console.log("it is indian number");
+// }
+// else{
+//     console.log("it is not indian number");
+// }
+// }
+
+// let num=prompt("enter a mobile number");
+// let b=num.charAt(0);
+// if (num.length !== 10) {
+//     alert("it is not a 10 digit num")
+// }
+// else{
+//     if (["9","8","7","6"].includes(b)) {
+//     console.log("it is indian num");
+    
+// }
+// else{
+//     alert("it is not a indian num")
+// }
+// }
+
+
+
+//------------------------------------------(task-4)------------------------------------------------------
+//4. take one string "hello g uys" remove spaces o/p will be "helloguys"
+// let a="hello g guys";
+// console.log(a.split(" ").join(""));
+
+//--(loop)--
+// let b="";
+// for (let i = 0; i < a.length; i++) {
+//     if (a[i]!==" ") {
+//         b+=a[i]
+//     } 
+// }
+
+//------------------------------------------(task-5)------------------------------------------------------
+//5. take one string "hello g uys" remove the even numbers print odd numbers.
+// let a="hello g guys";
+// let b=""
+// for (let i = 0; i < a.length; i++) {
+//     if (i%2!==0 && a[i]!==" ") {
+//     b+=a[i]
+// }  
+// }
+// console.log(b);
+
+//--------------------------------------------(task-6)---------------------------------------------------
+//6.take one string "1@3456@7879@4673".remove "@" in string print "1345678794674"
+// let a="1@3456@7879@4673";
+// console.log(a.replaceAll("@",""));  //using replaceAll method
+// console.log(a.replace(/@/gi,""));    // using replace method
+// console.log(a.split("@").join(""));  //using split method
+
+//-------(loop)--------------
+// let b="";
+// for (let i = 0; i < a.length; i++) {
+//     if (a[i]!=="@") {
+//         b+=a[i]
+//     }
+    
+// }
+// console.log(b);
+
+    </script>
+</body>
+</html>
