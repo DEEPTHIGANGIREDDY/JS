@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//-----------------------------------(string methods)---------------------------------
+//------------(length)-------------
+       //the length property return the length of the string.
+       let a="deepthi"
+       console.log(a.length);   //o/p(7)
+
+//---------------(charAt)---------------
+       //the charAt method is return the specify index postion of the string
+       console.log(a.charAt(4));  //o/p("t")
+
+//----------------(charCodeAt)----------
+       //we can find the ancci values
+       //this method will return the unicode of the specified index in a string
+       console.log(a.charCodeAt(5)); //unicode will come
+
+//-----------------(trim)---------------
+       //trim method remove the whitespce from the both side of the string
+       let b=" dee pthi vcv  "
+       console.log(b.trim(b));  //spcaes removed
+       console.log(b);          //withspaces
+
+//------------------(trimStart())----------
+       //trimStart() this methos remove the space at the start of the string
+       console.log(b.trimStart(b));   //spaces removed from start of the string
+
+//------------------(trimEnd())----------
+       //trimend() this methos remove the space at the end of the string
+       console.log(b.trimEnd(b));
+
+//-------------------(concat())-----------
+       //concat method joins the two or more strings .
+       let c="DEEPTHI";
+       let d=" gangireddy"
+       console.log(c+d);    ///concated with + symbol
+
+//-------------------(toLowerCase)--------
+       //this method string  converted to the  lowercase
+        console.log(c.toLowerCase(c)+" lowercase");
+
+//-------------------(toUpperCase)--------
+       //this method string  converted to the  lowercase
+       console.log(d.toUpperCase(d)+" uppercase");
+
+//-------------------(replace)---------------------------------------------------------------------
+
+        //this method replace a specified value with another value in a string
+        //    By default, the replace() method replaces only the first match:
+       console.log(c.replace("EE","tt"));
+        //    Note
+        // The replace() method does not change the string it is called on.
+        // The replace() method returns a new string.
+        // The replace() method replaces only the first match
+        // If you want to replace all matches, use a regular expression with the /g flag set. See examples below.
+        
+        console.log(d.replace("GANGIREDDY","DEEPTHI"));
+        // By default, the replace() method is case sensitive. Writing MICROSOFT (with upper-case) will not work:
+        
+        // To replace case insensitive, use a regular expression with an /i flag (insensitive):
+
+        console.log(d.replace(/GANGIREDDY/i ,"DEEPTHI")); //(insensitive(/i))
+
+        // To replace all matches, use a regular expression with a /g flag (global match):
+        console.log(d.replace(/DD/gi,"pp")); //(globalwise changed using the /g )
+
+//-------------------(replaceAll)--------------------------------
+
+        //The replaceAll() method allows you to specify a regular expression instead of a string to be replaced.
+
+        // console.log(d.replaceAll(/dd/,"ii"));
+
+        // if dont set to the global below error will throw 
+        //     Uncaught TypeError: String.prototype.replaceAll called with a non-global RegExp argument
+        // at String.replaceAll (<anonymous>)
+
+        //so 
+        // If the parameter is a regular expression, the global flag (g) must be set, otherwise a TypeError is thrown.
+        console.log(d.replaceAll(/dd/gi,"ii"));
+
+//-------------------(padding)-------------------------------------
+        //two string methods added to js.
+        // 1 padStart 2. padEnd
+        //to support the padding the beginning  & ending of a string
+
+    //-----------------(padStart)-----------------]
+    //this methos pad with a string from the start
+    // It pads a string with another string (multiple times) until it reaches a given length.
+    let x="G";
+    console.log(x.padStart(5,"D")); //Pad a string with "0" until it reaches the length 5:
+    let y=5;
+    console.log(y.toString().padStart(2,0));
+
+    //-----------------(padEnd)------------------]
+    // The padEnd() method pads a string from the end.
+    // It pads a string with another string (multiple times) until it reaches a given length.
+    console.log(x.padEnd(5,"D"));
+    console.log(y.toString().padEnd(2,0));
+
+//----------------------(split)----------------------------------------------
+    // The split() method splits a string into an array of substrings. 
+    // The split() method returns the new array. The split() method does not change the original string.
+    //  If (" ") is used as separator, the string is split between words.
+    let u="deepthi";
+    console.log(u.split("e")); //hear it convert to array of substrings (like this ['d', '', 'pthi'])
+    console.log(u.split("e").join());//hear im used join method array substrings will join like this (d,,pthi)
+    console.log(u.split("e").join(""));//o/p will (dpthi)
+
+//---------------------(Extracting String Parts)--------------------------------
+    //There are 3 methods for extracting a part of a string:
+
+    // slice(start, end)
+    // substring(start, end)
+    // substr(start, length)
+
+    //-------------------(slice)----------------------------
+    //   slice() extracts a part of a string and returns the extracted part in a new string.
+
+    // The method takes 2 parameters: start position, and end position (end not included).
+    
+
+
+    </script>
+</body>
+</html>
