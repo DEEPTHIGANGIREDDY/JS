@@ -14,7 +14,12 @@
         // var a=+prompt("enter value a")
         // var b=+prompt("enter value b")
         // alert(a+b)
-        
+
+        //--(funtion)-----------------------
+        // function sum(a,b) {
+        //     return a+b;
+        // }
+        // alert(sum(3,4))
         //-----------------------------------(task-2)-----------------------------------------------------------------
 
 
@@ -28,14 +33,25 @@
         //     alert("in valid sec")
         // }
         
+        //---funtion----------------
+        // function min(m) {
+        //     return `${m*=60} sec`
+        // }
+        // alert(min(4))
+
         //-----------------------------------(task-3)-----------------------------------------------------------------
 
         //3. Create a function that takes a number as an argument, increments the number 
-
         // by +1 and returns the result.
+
         // var a=+prompt("enter value")
         // alert(a=++a)
 
+        //---(function)------------
+        // function increments(i) {
+        //     return `${i+=1}`
+        // }
+        // alert(increments(5))
         //-----------------------------------(task-4)-----------------------------------------------------------------
 
         //4. Create a function that takes the age in years and returns the age in days.
@@ -48,6 +64,11 @@
         //     alert("in valid")
         // }
         
+        //---(function)-------
+        // function age(y) {
+        //     return `${y*365.25}`
+        // }
+        // alert(age(2))
         //-------------------------------------(task-5)---------------------------------------------------------------
 
         //5. Create a function that takes voltage and current and returns the calculated power
@@ -56,6 +77,19 @@
         // var b=+prompt("enter b")
         // alert(a*b + "Volts")
 
+        //--------(funtion)----------
+        // function power(voltage,current) {
+        //     return power=voltage*current
+        // }
+        // console.log(power(10,10))
+        
+        //-----------------------------------(task-6)-----------------------------------------------------------------
+        // 6.Write a function that returns the string "something" joined with a space " " and the given argument a.
+
+        // function name(a) {
+        //     return `something ${a}`
+        // }
+        // console.log(name("hello"))
         //-----------------------------------(task-7)-----------------------------------------------------------------
 
         //7. Create a function that takes two arguments. Both arguments are integers, 
@@ -67,6 +101,11 @@
         // a==10 || b==10 ? alert("true"):
         // alert("false")
 
+        //------(function)--------
+        // function name(a,b) {
+        //     return ((a+b==10) ? console.log("true"):a==10 || b==10 ? console.log("true"):console.log(false))
+        // }
+        // name(5,5)
         //------------------------------------(task-8)----------------------------------------------------------------
 
         // 8. Create a function that takes two strings as arguments and returns either 
@@ -79,6 +118,12 @@
         // var lengtha = a.length;
         // var lengthb = b.length;
         // lengtha===lengthb ? alert("Number of characters in name a: " + lengtha):alert("flase");
+
+        //---(function)------
+        // function name(a,b) {
+        //     a.length==b.length ? console.log("true"):alert("false")
+        // }
+        // console.log(name(2,5))
 
         //------------------------------------(task-20)----------------------------------------------------------------
 
@@ -641,6 +686,41 @@
 //     }
 // }
 // console.log(deepthi(55000));
+
+// function name(a) {
+//     let b="";
+//     for (let i = 0; i < a.length; i++) {
+//         if (a[i].match(/[aeiou]/gi)) {
+//             b+=a[i]
+//         }
+        
+//     }
+//     return b;
+// }
+// console.log(name("deepthi"))
+
+// function name(a) {
+//     let b="a,e,i,o,u,A,E,I,O,U"
+//     let c=""
+//     let d=""
+//     for (let i = 0; i < a.length; i++) {
+//         if (b.includes(a[i])) {
+//             c+=a[i]
+//         }
+//         else{
+//             d+=a[i]
+//         }
+//     }
+//     return `${c} ${d}` 
+// }
+// console.log(name("Hello"));
+
+
+
+
+function name(a,b,c) {
+    
+}
 
     </script>
 </body>
