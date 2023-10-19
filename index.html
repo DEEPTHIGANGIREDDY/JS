@@ -171,17 +171,35 @@
         // Example:
         // findLargestNums([[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]]) ➞ [7, 90, 2]
 
-        let a=[[4, 2, 7, 1],[20, 70, 40, 90], [1, 2, 0]];
-        let c=[]
+        // let a=[[4, 2, 7, 1],[20, 70, 40, 90], [1, 2, 0]];
+        // let b=[];
+        // for(i in a){
+        //     let max=a[i][0]
+        //     for (let j = 0; j < a[i].length; j++) {
+        //         if (a[i][j]>max) {
+        //             max=a[i][j];
+        //         }
+        //     }b.push(max);
+        // }
+        // console.log(b);
+        
+        //--------------------------------------------(task-13)---------------------------
+        //         Create a function that takes an array of numbers and returns the second largest number.
+        // Example:
+        // secondLargest([10, 40, 30, 20, 50]) ➞ 40
+
+        function name(a) {
+            let max=a[0];
         for (i in a){
-            let b=0;
-            for (let j = 0; j < a[i].length; j++) {
-                if (a[i][j]>b) {
-                // c.push(a[i][j])
-            }
+            if(a[i]>max){
+                max=a[i]
             }
         }
-        console.log(c);
+        return max
+        }
+        
+        console.log(name([10, 40, 30, 20, 50]));
+
         //----------------------------------------(task-16)------------------------------------------------------
         // Create a function that takes two strings as arguments and returns the number of times the first string 
         // (the single character) is found in the second string.
@@ -338,7 +356,23 @@
             // c>a && c>b ? alert(c + " is gretest"):
             // alert("in valid");
 
-            //-----------------------------------(task-24)
+            //------------------------------------(task-22)-------------------------------
+            // Program to find factorial of number.
+			// Input: n=5
+			// Output: 120
+			// Explanation: 5 x 4 x 3 x 2 x 1 = 120
+
+            // function fact(n) {
+            //     var a=1;
+            //     for (let i = 1; i <= n; i++) {
+            //          a=a*i;
+                    
+            //     }
+            //     return a;
+            // }
+            // console.log(fact(5));
+
+            //-----------------------------------(task-24)----------------------
             // Print Patter using loop.
 
             // 1
@@ -355,6 +389,26 @@
             //     }
             //     console.log(a);
             // }
+
+            //------------------------------------(task-32)--------------------
+
+            // Reverse a number using while Loop
+
+			// Input: 123
+			// Output: 321
+
+            // let num=123;
+            // let temp=num;
+            // let rev="";
+            // while (temp>0) {
+            // var  lstdigit=temp%10;
+            //     rev+=lstdigit;
+            //     temp=parseInt(temp/10);
+            // }
+            // console.log(rev);
+
+            // let b=a.toString().split('').reverse().join('');
+            // console.log(b);
 
 
 //----------------------------------(For loop)---------------------------------------------------------------------
@@ -840,6 +894,16 @@
 // var a="deepthi";
 // console.log(a.indexOf("p"));
 // console.log(a.lastIndexOf("i"));
+
+// let a=["deepthi","santhu"]
+// for (let i = 0; i < a.length; i++) {
+//     console.log(a[i]);
+//     for (let j = 0; j < a[i].length; j++) {
+//         console.log(a[i][j]);
+        
+//     }
+    
+// }
 
 
 
