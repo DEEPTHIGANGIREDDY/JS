@@ -188,17 +188,18 @@
         // Example:
         // secondLargest([10, 40, 30, 20, 50]) ➞ 40
 
-        function name(a) {
-            let max=a[0];
-        for (i in a){
-            if(a[i]>max){
-                max=a[i]
-            }
-        }
-        return max
-        }
+        // function name(a) {
+        //     let max=a.sort();
+
+        // for (i in a){
+        //     if(a[i]>max.length-2){
+        //         max=a[i]
+        //     }
+        // }
+        // return max
+        // }
         
-        console.log(name([10, 40, 30, 20, 50]));
+        // console.log(name([10, 40, 30, 20, 50]));
 
         //----------------------------------------(task-16)------------------------------------------------------
         // Create a function that takes two strings as arguments and returns the number of times the first string 
@@ -234,16 +235,21 @@
         // }
         // console.log(name("deepthi"));
 
-        //------------------------------------------(task-18)---------------------------------------------
-        // function name(a) {
-        //     for (let i = 0; i < a.length; i++) {
-        //         if () {
-                    
-        //         }
+        //------------------------------------------(task-19)---------------------------------------------
+        // Take one integer n, loop till n and pass each value to a function, create a function that takes one 
+        // integer parameter, and multiply with 2 in every integer.
+		// 	Input:      n=5
+		// 	Output:   2 4 6 8 10
+
+        // let b=[]
+        // function name(n) {
+        //     for (let i = 1; i <=n; i++) {
+        //          b.push(i*2)
                 
         //     }
+        //     return b
         // }
-
+        // console.log(name(5));
         
 
         //------------------------------------(task-20)----------------------------------------------------------------
@@ -399,18 +405,19 @@
 
             // let num=123;
             // let temp=num;
-            // let rev="";
+            // let rev=0;
             // while (temp>0) {
             // var  lstdigit=temp%10;
-            //     rev+=lstdigit;
+            //     rev=rev*10+lstdigit;
             //     temp=parseInt(temp/10);
             // }
             // console.log(rev);
+            // console.log(typeof(rev));
 
             // let b=a.toString().split('').reverse().join('');
             // console.log(b);
 
-
+            
 //----------------------------------(For loop)---------------------------------------------------------------------
 // var a=+prompt("enter a num");
 // var b=+prompt("for loop start from")
@@ -904,6 +911,11 @@
 //     }
     
 // }
+
+let a="123"
+for (let i = a.length-1; i>=0; i--) {
+    console.log(a[i]);
+}
 
 
 
