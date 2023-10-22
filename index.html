@@ -166,6 +166,34 @@
         // console.log(d);
         // console.log((`(${b.join("")}) ${c.join("")}-${d.join("")}`));
 
+        //-----------------------------------------(task-11)------------------------------
+        //Create a function that returns an array of strings sorted by length in ascending order.
+        // Example:
+        // sortByLength(["a", "ccc", "dddd", "bb"]) ➞ ["a", "bb", "ccc", "dddd"]
+
+        // let a=["a", "ccc", "dddd", "bb"];
+        // let c=[];
+        //     let d=[]
+        // for (i in a){
+        //     let b=[];
+        //     for(j in a[i]){
+        //         b+=a[i][j]
+        //     }
+        //     c.push(b)
+            
+        // }
+        // console.log(c.sort());
+
+        // for (let i = 0; i < a.length; i++) {
+        //     for (let j = i+1; j < a.length; j++) {
+        //         if (a[i]>a[j]) {
+        //             [a[i],a[j]]=[a[j],a[i]]
+        //         }
+        //     }
+        // }
+        // console.log(a);
+
+        
         //-----------------------------------------(task-12)------------------------------
         //Create a function that takes an array of arrays with numbers. Return a new (single) array with the largest numbers of each.
         // Example:
@@ -185,21 +213,102 @@
         
         //--------------------------------------------(task-13)---------------------------
         //         Create a function that takes an array of numbers and returns the second largest number.
-        // Example:
+        // Example:]
         // secondLargest([10, 40, 30, 20, 50]) ➞ 40
 
         // function name(a) {
         //     let max=a.sort();
+        //     console.log(max);
+        //     let c=[]
+            
+        // for (let i = 0; i < max.length; i++) {
+        //     if (!c.includes(max[i])) {
+        //         c.push(max[i])
+        //     }
+            
+        // }
+        // console.log(c[c.length-2]);
+        // console.log(c);
+        // }
+        // console.log(name([10, 40, 30, 20,30, 50]));
 
-        // for (i in a){
-        //     if(a[i]>max.length-2){
-        //         max=a[i]
+        // 2nd example
+
+        // let a=[1,8,2,20,19,13]
+        // for (let i = 0; i < a.length; i++) {
+        //     if (a[i]>a[i+1]) {
+        //         [a[i],a[i+1]]=[a[i+1],a[i]]
+        //         i=0;
+        //     i=1;
+        //     }
+            
+        // }
+        // console.log(a[a.length-2]);
+
+        // let b=a.sort(name);
+        // console.log(b);
+        // function name(a,b) {
+        //     return a-b
+        // }
+        // console.log(b);
+        
+        //----------------------------------------(task-14)----------------------------------
+        // Create a function that takes an array of items, removes all duplicate items and returns a new array in the 
+        // same sequential order as the old array (minus duplicates).
+
+        // Example:
+
+        // removeDups([1, 0, 1, 0]) ➞ [1, 0]
+
+        // removeDups(["The", "big", "cat"]) ➞ ["The", "big", "cat"]
+
+        // let a=[1,0,1,0]
+        // let b=[]
+        // for(i in a){
+        //     if (!b.includes(a[i])) {
+        //         b.push(a[i])
         //     }
         // }
-        // return max
+        // console.log(b);
+
+        // function name(a){
+        // let b=[]
+        // for (let i = 0; i < a.length; i++) {
+        //     if (!b.includes(a[i])) {
+        //         b.push(a[i])
+        //     }
+            
         // }
+        // return b
+        // }
+        // console.log(name([1,2,1,5,6,2,1]));
+
+        //-----------------------------------------(task-15)----------------------------------------------------
+        // Create a function that takes an array of integers as an argument and returns a unique number from that array. 
+        // All numbers except unique ones have the same number of occurrences in the array.
+        // Example:
+        // findSingleNumber([2, 2, 2, 3, 4, 4, 4]) ➞ 3
+
+        // let a=[2, 2, 2, 3, 4, 4, 4];
         
-        // console.log(name([10, 40, 30, 20, 50]));
+        // let c=a
+        // function name(a) {
+        //     for (let i = 0; i < a.length; i++) {
+        //         let b=true
+        //             for (let j = 0; j < a.length; j++) {
+        //             if (i !==j && a[i]===a[j]) {
+        //                 b=false;
+        //                 break ;
+        //             }
+        //             }
+        //             if (b) {
+        //             return a[i]
+        //             }
+                    
+        //             }
+        //     }
+        // let c=name([2, 2, 2, 3, 4, 4, 4, 5, 6])
+        // console.log(c);
 
         //----------------------------------------(task-16)------------------------------------------------------
         // Create a function that takes two strings as arguments and returns the number of times the first string 
@@ -234,6 +343,24 @@
         //     return a;
         // }
         // console.log(name("deepthi"));
+
+        //------------------------------------------(task-18)--------------------------------------------
+        //Given a string, create a function to reverse the case. All lower-cased letters should be upper-cased, and vice versa.
+        // Example:
+        // reverseCase("Happy Birthday") ➞ "hAPPY bIRTHDAY"
+        
+        // let a="Haappy Birthday"
+        // let b=""
+        // for (let i = 0; i < a.length; i++) {
+        //     let c=a.charAt(i);
+        //     if (c===c.toUpperCase()) {
+        //         b+=c.toLowerCase()
+        //     }
+        //     else {
+        //         b+=c.toUpperCase()
+        //     }
+        // }
+        // console.log(b);
 
         //------------------------------------------(task-19)---------------------------------------------
         // Take one integer n, loop till n and pass each value to a function, create a function that takes one 
@@ -378,7 +505,33 @@
             // }
             // console.log(fact(5));
 
-            //-----------------------------------(task-24)----------------------
+            //----------------------------------(task-23)--------------------------------
+            // Program to arrange numbers in ascending order
+			// Input: [2,3,1,5,4]
+			// Output: [1,2,3,4,5]
+
+		    // Sort the Array using loop only(you can not use predefined function).
+
+            // let a=[2,3,1,5,4];
+            // for (let i = 0; i < a.length; i++) {
+            //     for (let j = i+1; j < a.length; j++) {
+            //         if (a[i]>a[j]) {
+            //         [a[i],a[j]]=[a[j],a[i]];
+            //     }  
+            //     }
+            // }
+            // console.log(a);
+
+            //2nd example
+            // for (let i = 0; i < a.length; i++) {
+            //     if (a[i]>a[i+1]) {
+            //         [a[i],a[i+1]]=[a[i+1],a[i]]
+            //         i=-1;
+            //     }
+                
+            // }
+            // console.log(a);
+            //-----------------------------------(tasBk-24)----------------------
             // Print Patter using loop.
 
             // 1
@@ -395,8 +548,94 @@
             //     }
             //     console.log(a);
             // }
+            
+        
+            //-----------------------------------(task-25)--------------------
+            // 25. C Program to Calculate the Power of a Number(using loop only).
+			// Input: n=5, p=3
+			// Output: 5 ^ 3 = 125
+			// Explanation: 5 x 5 x 5 = 125
+            
+            // function name() {
+            //     // return n**p
+            //     return Math.pow(5,3)
+            // }
+            // console.log(name());
 
-            //------------------------------------(task-32)--------------------
+            // let n=5;
+            // let b=3;
+            // let num=1;
+            // for (let i = 1; i <= b; i++) {
+            //     num*=n
+                
+            // }
+            // console.log(`5 ^ 3 = ${num}`);
+            
+        //-------------------------------------(task-26)--------------------
+        // let a=9;
+        // let b=true;
+        // for (let i = 2; i < a; i++) {
+        //     if (a%i==0) {
+        //         b=false;
+        //         break;
+        //     } 
+        //     else{
+        //         if (b) {
+        //         console.log(`${a} it is prime num`);
+        //     }
+        //     else{
+        //         console.log(`${a} it is not a prime num`);
+        //     }
+        //     }
+        // }
+    
+
+        ///-------------------------------------(task-28)------------------
+        // Program to Display Characters from A to Z Using Loop with count.
+
+		// 	Output: A1 B2 C3 D4 E5 F6 ……. Z26 
+        //     let a="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        //     let b=[];
+        // for (let i = 0; i <= a.length; i++) {
+        //     b.push(a[i])
+        // }
+        // console.log(b);
+
+
+        //-------------------------------------(task-30)-----------------------
+        // Program to count vowels and consonants in a given String.
+
+		// 	Input: i am ram 
+        // let a="i am ram";
+        // let b=[];
+        // let c=[];
+        // for (let i = 0; i < a.length; i++) {
+        //     if (a[i]=="a" || a[i]=="e" || a[i]=="i" || a[i]=="o" || a[i]=="u") {
+        //         b.push(a[i])
+        //     }
+        //     else if(a[i]!=="a" && a[i]!=="e" && a[i]!=="i" && a[i]!=="o" && a[i]!=="u" && a[i]!==" "){
+        //         c.push(a[i])
+        //     }
+            
+        // }
+        // // console.log(b.length);
+        // // console.log(c.length);
+        // console.log(`${b.length} Vowels & ${c.length} constants `);
+
+        //------------------------------------(task-31)-----------------------------
+        // 31. program to insert  the elements of an array for specific index.
+
+		// 	Input: [1,2,3,4,5,7,8,9,10] , index=5
+		// 	Output: [1,2,3,4,5,6,78,9,10]
+
+        // let a=[1,2,3,4,5,7,8,9,10];
+        // console.log(a.splice(5,2,6,78));
+        // console.log(a);
+
+        // let b=a.slice(5,6);
+        // console.log(b);
+
+        //------------------------------------(task-32)-----------------------------
 
             // Reverse a number using while Loop
 
@@ -907,15 +1146,12 @@
 //     console.log(a[i]);
 //     for (let j = 0; j < a[i].length; j++) {
 //         console.log(a[i][j]);
-        
 //     }
-    
 // }
 
-let a="123"
-for (let i = a.length-1; i>=0; i--) {
-    console.log(a[i]);
-}
+
+
+
 
 
 
