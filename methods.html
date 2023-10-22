@@ -75,7 +75,7 @@
 
         //The replaceAll() method allows you to specify a regular expression instead of a string to be replaced.
 
-        // console.log(d.replaceAll(/dd/,"ii"));
+       //  console.log(d.replaceAll(/dd/,"ii"));
 
         // if dont set to the global below error will throw 
         //     Uncaught TypeError: String.prototype.replaceAll called with a non-global RegExp argument
@@ -111,7 +111,8 @@
     let u="deepthi";
     console.log(u.split("e")); //hear it convert to array of substrings (like this ['d', '', 'pthi'])
     console.log(u.split("e").join());//hear im used join method array substrings will join like this (d,,pthi)
-    console.log(u.split("e").join(""));//o/p will (dpthi)
+    console.log(u.split("e").join("12"));//o/p will (dpthi)
+    console.log(u.split("i"));
 
 //---------------------(Extracting String Parts)--------------------------------
     //There are 3 methods for extracting a part of a string:
@@ -125,18 +126,36 @@
 
     // The method takes 2 parameters: start position, and end position (end not included).
 
+    console.log(u.slice(4,6));
+
+    console.log(u.substring(-1,2));
+    
+    //     Syntax
+    //     string.substr(start, length)
+
+    console.log(u.substr(-4,-2));
 
 
     //----------------------------(indexof)
-    let e="helleoh";
+    let e="Helleoh";
+//syntax
+//     string.indexOf(searchvalue, start)
     console.log(e.indexOf("h",2));
+//syntax
+//     string.lastIndexOf(searchvalue, start)
     console.log(e.lastIndexOf("h",2));
-
+//syntax
+// string.search(searchValue)
+    console.log(e.search(/e/));
     console.log(e.search(/e/g));
+//syntax
+//     string.match(match)
+console.log(e.match(/h/));
+console.log(e.match(/h/gi));
 
     console.log(Array.from(e.matchAll(/e/gi)));
     
-    console.log(e.includes("e"));
+    console.log(e.includes("e",));
     console.log(e.startsWith("e",4));
     console.log(e.endsWith("e",5));
 

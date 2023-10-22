@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //-------------------------------(string methods)------------------------
+        //-----length------
+        //it returns the length of the given string
+        
+        //syntax:
+        // string.length;
+        // ex:
+        // let a="deepthi"
+        // console.log(a.length);
+
+        //--------charAt-------
+        // it returns the charcter at the spectified index(poistion) of the string
+        
+        //syntax:
+        // string.charAt(index);
+        // ex:
+        // let a="deepthi"
+        // console.log(a.charAt());//if we give empty it will take as 0 index 
+        // console.log(a.charAt(5));
+
+        //---------CharCodeAt()------------
+        //it return the return the unicode of the charcter ata a specified index(position) in a string.
+        // charCodeAt() is UTF-16, codePointAt() is Unicode.
+        // charCodeAt() returns a number between 0 and 65535.
+
+        //syntax:
+        // string.charCodeAt(index);
+        // ex:
+
+        //  let a="deepthi"
+        //  console.log(a.charCodeAt(4));//unicode wii return
+
+         //-----padStart--------
+         //it return the pads a string of the start.
+         //padStart method pads a string with a another string (multiple time) untill the reaches given the length
+
+         //syntax:
+        // string.padstart(length,string);
+        // // ex:
+
+        // let a="d"
+        // console.log(a.padStart(5,5));
+        // console.log(a.padStart(3,"g"));
+
+        //------padEnd----------
+        //it returns the pad of the string at the end
+        //padend method pads the end of the string to anothoer string (multile time)untill reaches given the length
+
+        //syntax:
+        // string.padEnd(length,string)
+        // ex:
+
+        // let a="e";
+        // console.log(a.padEnd(4,"d"));
+
+        //---------replace------
+        //this method returns the new string with replaced values
+        //this method a searches a string for a  values  or regular expression
+
+        //syntax:
+        // string.replace(searchvalue,newvalue)
+        //ex:
+
+        // let a="deepthi"
+        // console.log(a.replace("d","g"));
+        // console.log(a.replace(/d/,"g"));//we can search with regular expression /g,/i
+
+        //---------replaceAll()----------
+        //this method will returns the new string with replaces all values
+
+        //syntax:
+        // string.replaceAll(searchvalue,newvalue)
+        //ex:
+
+        // let a="deepthi"
+        // console.log(a.replaceAll("e","g"));
+        // console.log(a.replaceAll(/d/,"g"));//if we use regular expression we need to set the global tag other wise error will throw
+        // console.log(a.replaceAll(/e/g,"g"));
+
+        //--------toUppercase--------
+        //this method will return the string to convert the uppercase letters
+        //syntax:
+        //string.toUpperCase()
+        // let a="deepthi"
+        // console.log(a.toUpperCase());
+
+        //--------toLowercase-------
+        //this method will return the string convert to the lowercase letters
+
+        //syntax:
+        //string.toLowerCase()
+        // let a="DEEPTHI"
+        // console.log(a.toLowerCase());
+
+        //---------trim------------
+        //this method will remove the whitespaces at start and end of the string
+
+        //syntax:
+        //string.trim()
+
+        // let a=" d deepthi  ";
+        // console.log(a.trim());
+
+        //---------trimEnd----------
+        //this method remove the spaces at the end of the string
+
+        //syntax:
+        //string.trimEnd()
+
+        // let a=" d deepthi  ";
+        // console.log(a.trimEnd());
+
+        //---------trimstart----------
+        //this method remove the spaces at the start of the string
+
+        //syntax:
+        //string.trimStart()
+
+        // let a=" d deepthi  ";
+        // console.log(a.trimStart());
+
+        //--------split---------------
+        //this method splits a string into a array of substrings
+        //this method it does not change the original string.
+        //it will retrun new array 
+
+        //syntax:
+        // string.split(separator,limit)
+
+        // let a="deepthi"
+        // console.log(a.split("e",4));
+        // console.log(a.split());//if u omites the parameter values it will returb the original string into array
+
+        //------slice---------------
+        //this method will extract the part of the string.return the new string.
+        //the start & end of the parameter specifies the part of the string to extract.
+
+        //syntax:
+        //string.slice(start, end)
+
+        // let a="deepthi";
+        // console.log(a.slice(3,6));
+        // console.log(a.slice(3));
+
+        //----------sunstring---------
+        //this method same as slice 
+        //but in substring if we give start & end lessthan 0 it will consider as 0
+        
+        //syntax:
+        //string.substring(start, end)
+
+        // let a="deepthi";
+        // console.log(a.substring(3,6));
+        // console.log(a.substring(3));
+        // console.log(a.substring(-1,4));
+        // console.log(a.substring(-1,-4));
+
+        //----------sunstr()------------
+        //this method also same as slice
+        //The method takes 2 parameters: start position, and end position (it will take length to extract the string)
+
+         //syntax:
+        //string.substr(start, length)
+
+        // let a="deepthi";
+        // console.log(a.substr(3,6));
+        // console.log(a.substr(3));
+        // console.log(a.substr(-1,4));
+        // console.log(a.substr(-1,-4));
+
+        //---------------------------search-methods----------------------
+        //-------indexof()---------------
+        //this method return the position of the  first occrence of a value in a string
+        //if in value is not fount return the -1
+        //the indexof() method id sensitive
+
+        //syntax:
+        //string.indexof(searchvalue,start)
+
+        // let a="deepthi"
+        // console.log(a.indexOf("e",1));
+        // console.log(a.indexOf("d",0));
+        // console.log(a.indexOf("d",2));
+
+        //----------lastindexof()-------------
+        //this method will return the position of the last occrence of a value in a string
+        //if in value is not fount return the -1
+        //the indexof() method id sensitive
+
+        //syntax:
+        //string.indexof(searchvalue,end)
+
+        // let a="deepthi"
+        // console.log(a.indexOf("e",1));
+        // console.log(a.indexOf("d",0));
+        // console.log(a.indexOf("d",2));
+
+        //----------endwith-------------
+        // The endsWith() method returns true if a string ends with a specified string.
+        // Otherwise it returns false.
+        // The endsWith() method is case sensitive.
+        //synatx:
+        // string.endsWith(searchvalue, length)
+
+        // let a="deepthi"
+        // console.log(a.endsWith("i",7));
+
+         //----------startwith-------------
+        // The endsWith() method returns true if a string start with a specified string.
+        // Otherwise it returns false.
+        // The startsWith() method is case sensitive.
+        //synatx:
+        // string.startWith(searchvalue, length)
+
+        // let a="deepthi"
+        // console.log(a.startsWith("i",6));
+
+        //--------------match----------------
+        // The match() method matches a string against a regular expression **
+
+        // The match() method returns an array with the matches.
+
+        // The match() method returns null if no match is found.
+
+        //syntax:
+        //string.match(match)
+        
+        // let a="deepthi"
+        // console.log(a.match("i"));
+        // console.log(a.match(/k/));//if it is not match null will return
+
+        //-----------------matchAll----------------
+        // The match() method matches a string against a regular expression **
+
+        // The match() method returns an array with the matches.
+
+        // The match() method returns null if no match is found.
+
+        //syntax:
+        //string.matchAll(match)
+
+        // let a="deepthi"
+        // console.log(Array.from(a.matchAll(/e/gi)));//while using matchall we need add array.from other wise it wont work
+
+        //------------------includes-------------------
+        // The includes() method returns true if a string contains a specified value.
+
+        // Otherwise it returns false.
+
+        //synax:
+        // string.includes(searchvalue, start)
+        // let a="deepthi";
+        // console.log(a.includes("k"));//if it not found the value it will return false
+        // console.log(a.includes("i"))
+
+        //--------------------search()-------------------
+        //  The search() method matches a string against a regular expression **
+
+        // The search() method returns the index (position) of the first match.
+
+        // The search() method returns -1 if no match is found.
+
+        // The search() method is case sensitive.
+
+        //syntax
+        // string.search(searchValue)
+
+        let a="deephthi";
+        console.log(a.search("g"));//if it is not found return the -1 value
+        console.log(a.search("i"));//return the index value
+
+    </script>
+</body>
+</html>
