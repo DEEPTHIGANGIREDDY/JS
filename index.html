@@ -601,6 +601,47 @@
         // }
         // console.log(b);
 
+        //--------------------------------------(task-29)-------------------
+        // 29. Program to find a missing number
+
+		// 	Input:  n=5(length of array), arr= [5,3,1,4]
+		// 	Output: 2 is missing
+
+		// Using loop only(you can not use predefined function)
+
+        // let b=[1,2,3,4,5]
+        // let arr=[5,3,1,4]
+        // let c=arr.sort()
+        // let d=[]
+        // for (let i = 1; i <= 5; i++) {
+        //    b.push(i)
+        // }
+        // for (let i = 0; i < c.length; i++) {
+        //     if (b[i]=== c[i]) {
+        //         d.push(b[i])
+        //     }
+        //     else{
+        //         d.push(b[i])
+        //     }
+        // }
+        // console.log(d);
+
+        // for (let i = 0; i <= c.length; i++) {
+        //    if (b[i] !== c[i]) {
+        //         console.log(b[i]);
+        //    }
+        // }
+
+        // const arr=[1,2,3,4,5];
+        // const m=arr.map((val,index)=>{
+        //     if (index<3) {
+        //         return val;
+        //     }
+        // });
+        // console.log(m);
+
+        
+
 
         //-------------------------------------(task-30)-----------------------
         // Program to count vowels and consonants in a given String.
@@ -656,7 +697,105 @@
             // let b=a.toString().split('').reverse().join('');
             // console.log(b);
 
+            //---------------------------------(task-33)------------------------------
+            // Count occurrence of number:
+
+			// Input: [1,6,3,1,5,9,7,2,1,9,3,7,8,9,10] , no find=7
+			// Output: 7 present 2 times.
+
+            // let a=[1,6,3,1,5,9,7,2,1,9,3,7,8,9,10]
+            // let b=[]
+            // for (let i = 0; i < a.length; i++) {
+            //     if (a[i]==7) {
+            //         b.push(a[i])
+            //     }
+            // }
+            // console.log(b);
             
+            //---------------------------------------(medium level problems)--------------------------------------
+            
+            //-----------------------------------------(task-1)---------------------------------------------------
+
+            // Write a function that converts an object into an array, where each element represents a key-value pair in the form of an array.
+
+            // Examples :
+
+            // toArray({ a: 1, b: 2 }) ➞ [["a", 1], ["b", 2]]
+
+            // let a={
+            //     a:1,
+            //     b:2
+            // }
+            // let b=(Object.entries(a));
+            // console.log(b);
+
+            // let c={ shrimp: 15, tots: 12 }
+            // console.log(Object.entries(c));
+            //  let d={}
+            //  console.log(Object.keys(d));
+
+            //-----------------------------------------(task-2)---------------------------------------------------
+            // Create a function that takes two numbers as arguments (num, length) and returns an array of multiples of num until the array length reaches length.
+            // Examples :
+
+            // arrayOfMultiples(7, 5) ➞ [7, 14, 21, 28, 35]
+
+            // arrayOfMultiples(12, 10) ➞ [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]
+
+            // arrayOfMultiples(17, 6) ➞ [17, 34, 51, 68, 85, 102]
+
+            // arrayOfMultiples(7, 5) ➞ [7, 14, 21, 28, 35]
+            // let c=[]
+            // function name(a,b) {
+            //     for (let i = 1; i <= b; i++) {
+            //          c.push(a*[i])
+            //     }
+            // }
+            // name(7,5);
+            // console.log(c);
+
+            // arrayOfMultiples(12, 10) ➞ [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]
+            // let c=[]
+            // function name(a,b) {
+            //     for (let i = 1; i <= b; i++) {
+            //         c.push(a*i)
+            //     }
+            // }
+            // name(12,10)
+            // console.log(c);
+
+            // arrayOfMultiples(17, 6) ➞ [17, 34, 51, 68, 85, 102]
+            // let c=[]
+            // function name(a,b) {
+            //     for (let i = 1; i <= b; i++) {
+            //        c.push(a*i)
+                    
+            //     }
+            // }
+            // name(17,6)
+            // console.log(c);
+
+            //------------------------------------------------(task-3)---------------------------------------------
+            // Create the function that takes an array with objects and returns the sum of people's budgets.
+
+            // Examples :
+
+            // getBudgets([
+            //   { name: "John", age: 21, budget: 23000 },
+            //   { name: "Steve",  age: 32, budget: 40000 },
+            //   { name: "Martin",  age: 16, budget: 2700 }
+            // ]) ➞ 65700
+
+            // getBudgets([
+            //   { name: "John",  age: 21, budget: 29000 },
+            //   { name: "Steve",  age: 32, budget: 32000 },
+            //   { name: "Martin",  age: 16, budget: 1600 }
+            // ]) ➞ 62600
+
+            
+
+
+
 //----------------------------------(For loop)---------------------------------------------------------------------
 // var a=+prompt("enter a num");
 // var b=+prompt("for loop start from")
