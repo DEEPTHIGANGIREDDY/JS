@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //----length()
+        //The length property sets or returns the number of elements in an array.
+
+        //syntax:
+        //array.length
+        let a=[1,3,4,["deepthi"]]
+        console.log(a.length);
+
+        //--------pop()
+        // The pop() method removes (pops) the last element of an array.
+
+        // The pop() method changes the original array.
+
+        // The pop() method returns the removed element.
+
+        //syntax:
+        // array.pop()
+        console.log(a.pop(3));
+        console.log(a);
+
+        //--------push()
+        // The push() method adds new items to the end of an array.
+
+        // The push() method changes the length of the array.
+
+        // The push() method returns the new length.
+
+        //syntax:
+        // array.push(item1, item2, ..., itemX)
+
+        console.log(a.push(4,5,6,["deepthi"]));
+        console.log(a);
+
+        //-----------shift()
+        // The shift() method removes the first item of an array.
+
+        // The shift() method changes the original array.
+
+        // The shift() method returns the shifted element.
+
+        // syntax
+        // array.shift()
+        console.log(a.shift());
+        console.log(a);
+
+        //-----------unshift()
+        // The unshift() method adds new elements to the beginning of an array.
+
+        // The unshift() method overwrites the original array.
+
+        //syntax:
+        // array.unshift(item1, item2, ..., itemX)
+
+        console.log(a.unshift(["nehanth","deepthi",1]));
+        console.log(a);
+
+        //-----------tostring()
+        // The toString() method returns a string with array values separated by commas.
+
+        // The toString() method does not change the original array.
+
+        // Syntax
+        // array.toString()
+
+        let b=[1,23,5,6,7,7]
+        console.log(b.toString());
+        
+        //-----------join()
+        // The join() method returns an array as a string.
+
+        // The join() method does not change the original array.
+
+        // Any separator can be specified. The default is comma (,).
+
+        //syntax:
+        // array.join(separator)
+
+        console.log(b.join("*"));
+
+        //---------delete()
+        // Array elements can be deleted using the JavaScript operator delete.
+
+        // Using delete leaves undefined holes in the array.
+
+        // Use pop() or shift() instead.
+
+        //synatx:
+        //delte array[index]
+
+        delete b[4]
+        console.log(b);
+
+        //----------concate()
+        // The concat() method concatenates (joins) two or more arrays.
+
+        // The concat() method returns a new array, containing the joined arrays.
+
+        // The concat() method does not change the existing arrays.
+
+        //syntax:
+        // array1.concat(array2, array3, ..., arrayX)
+
+        console.log(b.concat(a));
+
+        //---------flat()
+        // The flat() method concatenates sub-array elements.
+
+        //syntax:
+        // array.flat(depth)
+
+        let c=[[1,3,4,[5,6,7]],[3,5,7],[4,6,7]]
+        let d=c.flat()
+        console.log(d.flat());
+
+        //-----------splice()
+        // The splice() method adds and/or removes array elements.
+
+        // The splice() method overwrites the original array.
+
+        // Syntax
+        // array.splice(index, howmany, item1, ....., itemX)
+
+        console.log(c.splice(2,1,10));
+        console.log(c);
+
+        //----------slice()
+        // The slice() method returns selected elements in an array, as a new array.
+
+        // The slice() method selects from a given start, up to a (not inclusive) given end.
+
+        // The slice() method does not change the original array.
+
+        // Syntax
+        // array.slice(start, end)
+
+        console.log(c.slice(1,2));
+
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
