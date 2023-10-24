@@ -722,12 +722,17 @@
 
             // toArray({ a: 1, b: 2 }) ➞ [["a", 1], ["b", 2]]
 
-            // let a={
-            //     a:1,
-            //     b:2
-            // }
+            let a={
+                a:1,
+                b:2
+            }
             // let b=(Object.entries(a));
             // console.log(b);
+            let b=[]
+            for(i in a){
+                b.push(i)
+            }
+            console.log(b);
 
             // let c={ shrimp: 15, tots: 12 }
             // console.log(Object.entries(c));
