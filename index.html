@@ -8,7 +8,22 @@
 <body>
     <script>
 //-------------------------------------------(sort)---------------------------------------------------
-//sort method will sort the assending order to an array.
+
+// The sort() sorts the elements of an array.
+// The sort() overwrites the original array.
+// The sort() sorts the elements as strings in alphabetical and ascending order.
+
+//syntax:
+// array.sort(compareFunction)
+
+// let a=[5,10,23,8,15]
+// let b=[]
+// console.log(a.sort(name));
+// function name(a,b) {
+//     return a-b;
+// }
+
+
 // let a=["deepthi","reddy","gangireddy"]
 // let b=a.sort()
 // console.log(b);
@@ -37,7 +52,109 @@
 // let d=c.flat()
 // console.log(d.flat()); 
 
-//---------------------------------------------()
+//---------------------------------------------(forEach)--------------------------------------------
+// The forEach() method calls a function for each element in an array.
+// The forEach() method is not executed for empty elements.
+// Syntax
+// array.forEach(function(currentValue, index, arr), thisValue)
+
+// let a=[2,,5,8,7,9,6]
+// console.log(a.forEach(name));
+// function name(val,index,array) {
+//     console.log(val>7);
+    // return a>7; //return values it wont come 
+// }
+
+//--------------------------------------------(map)-------------------------------------------------
+// map() creates a new array from calling a function for every array element.
+// map() does not execute the function for empty elements.
+// map() does not change the original array.
+
+// Syntax
+// array.map(function(currentValue, index, arr), thisValue)
+
+// let a=[2,,5,8,7,9,6]
+// console.log(a.map(name));
+// function name(val,index,array) {
+//     console.log(val>7); //condtions does not perform only oparation will perform
+//     return val*2; //oparation will perform
+// }
+
+//----------------------------------------------(filter)-------------------------------------------
+// The filter() method creates a new array filled with elements that pass a test provided by a function.
+// The filter() method does not execute the function for empty elements.
+// The filter() method does not change the original array.
+
+// Syntax
+// array.filter(function(currentValue, index, arr), thisValue)
+
+// let a=[2,5,6,3,7,10];
+// console.log(a.filter(name));
+// function name(val,index,array) {
+//     return val>6
+// }
+
+//----------------------------------------------(reduce)------------------------------------------------
+// The reduce() method executes a reducer function for array element.
+// The reduce() method returns a single value: the function's accumulated result.
+// The reduce() method does not execute the function for empty array elements.
+// The reduce() method does not change the original array.
+
+// syntax:
+// array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
+
+// let a=[3,6,7,3,8.6,0.6]
+// console.log(a.reduce(name,5));
+// function name(total,val,ind,arr) {
+//     return total+val
+// }
+
+//------------------------------------------------(every())----------------------------------------------
+// The every() method executes a function for each array element.
+// The every() method returns true if the function returns true for all elements.
+// The every() method returns false if the function returns false for one element.
+// The every() method does not execute the function for empty elements.
+// The every() method does not change the original array
+
+//syntax:
+// array.every(function(currentValue, index, arr), thisValue)
+
+// let a=[4,2,6,7,8,20]
+// console.log(a.every(name));
+// function name(val,ind,arr) {
+//     return val<8 //the o/p will be boolean values will come
+// }                //each element must be satisfy the condition then the o/p will be true
+
+//-------------------------------------------------some()---------------------------------------------
+// The some() method checks if any array elements pass a test (provided as a callback function).
+// The some() method executes the callback function once for each array element.
+// The some() method returns true (and stops) if the function returns true for one of the array elements.
+// The some() method returns false if the function returns false for all of the array elements.
+// The some() method does not execute the function for empty array elements.
+// The some() method does not change the original array.
+
+//syntax:
+// array.some(function(value, index, arr), this)
+
+// let a=[4,6,7,8,3]  //the o/p will be boolean values will come
+// console.log(a.some(function name(val,index,arr) {
+//     return val>7  //if any one of the element satisfy the condition then the o/p will be true
+// }));
+
+//---------------------------------------------(find)--------------------------------------------------------
+// The find() method returns the value of the first element that passes a test.
+// The find() method executes a function for each array element.
+// The find() method returns undefined if no elements are found.
+// The find() method does not execute the function for empty elements.
+// The find() method does not change the original array.
+
+// Syntax
+// array.find(function(currentValue, index, arr),thisValue)
+
+// let a=[4,6,7,,2]
+// console.log(a.find(function name(val,ind,arr) {
+//     return val>5
+// }));
     </script>
 </body>
 </html>
