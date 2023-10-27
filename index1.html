@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="hi">getElementById</h1>
+    <p class="hi">deepthi121</p>
+    <h1 class="hi">getElementsByClassName</h1>
+    <h1 class="hi">getElementsByClassName</h1>
+    <h2 class="hi">getElementsByClassName</h2>
+    <h4>getElementsByTagName1</h4>
+    <h4>getElementsBy</h4>
+
+    <img src="./cat2.jpg" alt="">
+
+    <script>
+        //------------------------------------------------(DOM methods)------------------------------------
+        //-----------getElementById()
+        //returm element with specifiyed id
+        let a=document.getElementById("hi")
+        console.log(a);
+
+        //-------------getElementsByClassName()
+        // return list of all elements with specifiyed clss name
+        let b=document.getElementsByClassName("hi")
+        console.log(b);//total collect of elements will return
+        console.log(b[0]);//if we want select 1st element we use index values
+
+        //--------------getElementsByTagName()
+        // it returns list of all elemnts with specifiyed tag
+        let c=document.getElementsByTagName("h4")
+        console.log(c);
+
+        //---------------querySelector()
+        // it returns the first element matching 
+        let d=document.querySelector("#hi")
+        console.log(d);
+        let e=document.querySelector(".hi")
+        console.log(e);
+        let f=document.querySelector("h4")
+        console.log(f);
+
+        //------------------querySelectorAll()
+        //it returns all elements 
+        let x=document.querySelectorAll("#hi")
+        console.log(x);
+        console.log(x[0].innerText);
+        console.log(x[0].setAttribute("id","one"));
+        console.log(x[0].style.color="green");
+        console.log(x[0].style.backgroundColor="yellow");
+        console.log(x[0].style.visibility="hidden");
+
+        let y=document.querySelectorAll(".hi") 
+        console.log(y);
+        let z=document.querySelectorAll(".hi")
+        console.log(z[0].innerHTML);
+        let ab=document.querySelectorAll("hi")
+       
+
+        for (let i = 0; i < z.length; i++) {
+            // z[i].innerText="deepthi"
+            z[i].innerHTML="<h1>123</h1>"
+            
+        }
+        console.log(z);
+
+        
+        //----------------------------------------DOM properties-------------------------------------------------
+
+        //----------------------document---------------
+        let aa=document
+        console.log(aa);
+        //----------------------document.body-----
+        let aa1=document.body
+        console.log(aa1);
+       var aa2=document.title//-------title
+        console.log(aa2);
+        aa2=document.head
+        console.log(aa2);
+
+        // attribute selector
+        let abb=document.querySelector("img")
+        console.log(abb);
+        console.log(abb.getAttribute("src"));
+        console.log(abb.setAttribute("src","./cat4.jpg"));
+        console.log(abb.getAttribute("src"));
+
+        
+    </script>
+</body>
+</html>

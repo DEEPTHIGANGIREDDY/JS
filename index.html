@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        #button{
+            width: 100px;
+            background-color: silver;
+            color: black;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-left: 20px;
+            height: 30px;
+            font-size: large;
+            
+        }
+        .pstyle{
+            font-weight: bold;
+            background-color: white;
+            color: black;
+        }
+        body{
+            font-family: sans-serif;
+            background-color: black;
+            color: white;
+            font-size: larger;
+        }
+        h1{
+            text-align: center;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Array MCQ</h1>
+    <p>
+        1. Which array method adds one or more elements to the end of an array and returns the new length of the array?
+    </p>
+    <button id="b1" onclick="fun()">Click Hear</button>
+    <p id="p1" class="pstyle"></p>
+    
+    <p>
+        2. What does the `pop()` method do in JavaScript?
+    </p>
+    <button onclick="alert('Removes the last element from an array and returns it')">Click Hear</button>
+
+    <p>
+        3. Which array method creates a new array by applying a function to each element in the calling array?
+    </p>
+
+    <button id="b2">Click Hear</button>
+    <p id="p2" class="pstyle"></p>
+
+    <p>
+        4. What does the `shift()` method do in JavaScript?
+    </p>
+    <button id="b3" onclick="fun1()">Click Hear</button>
+    <p id="p3" class="pstyle"></p>
+
+    <p>
+        5. Which array method is used to join all elements of an array into a string?
+    </p>
+    <button id="b4">Click Hear</button>
+    <p id="p4" class="pstyle"></p>
+
+    <p>
+        6. What does the `splice()` method do in JavaScript?
+    </p>
+    <button id="b5">Click Hear</button>
+    <p id="p5" class="pstyle"></p>
+    <p>
+        7. Which array method removes elements from an array based on a specified condition and returns a new array?
+    </p>
+    <button id="b6">Click Hear</button>
+    <p id="p6" class="pstyle"></p>
+    <p>
+        8. What does the `concat()` method do in JavaScript?
+    </p>
+    <button id="b7">Click Hear</button>
+    <p id="p7" class="pstyle"></p>
+    <p>
+        9. Which array method sorts the elements of an array in place and returns the sorted array?
+    </p>
+    <button id="b8">Click Hear</button>
+    <p id="p8" class="pstyle"></p>
+    <p>
+        10. What does the `indexOf()` method return if the specified element is not found in the array?
+    </p>
+    <button id="b9">Click Hear</button>
+    <p id="p9" class="pstyle"></p>
+
+
+
+
+
+
+
+    <script>
+        let btn=document.querySelectorAll('button')
+        for (let i = 0; i < btn.length; i++) {
+            btn[i].setAttribute("id","button")
+            
+        }
+        
+        function fun() {
+            // document.write(`Removes the last element from an array and returns it`)
+            // document.getElementById('b1')
+            document.getElementById('p1').innerText="push()"
+        }
+
+        btn[2].addEventListener("click",function(){
+                document.getElementById('p2').innerText="map()"
+        })
+
+        function fun1() {
+            // document.getElementById('b2')
+            document.getElementById('p3').innerText="Removes the first element from an array and returns it"
+        }
+        btn[4].addEventListener("click",function () {
+            document.getElementById("p4").innerText="join()"
+        })
+        btn[5].addEventListener("click",function(){
+            document.getElementById("p5").innerText="Removes elements from an array and, if necessary, replaces them with new elements"
+        })
+        btn[6].addEventListener("click",function(){
+            document.getElementById("p6").innerText="filter()"
+        })
+        btn[7].addEventListener("click",function(){
+            document.getElementById("p7").innerText="Merges two or more arrays and returns a new array"
+        })
+        btn[8].addEventListener("click",function(){
+            document.getElementById("p8").innerText="sort()"
+        })
+        btn[9].addEventListener("click",function(){
+            document.getElementById("p9").innerText="-1"
+        })
+    </script>
+</body>
+</html>
