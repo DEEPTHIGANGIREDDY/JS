@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+// 1. **Reverse a String:**
+//    Write a function that takes a string as input and returns the string reversed.
+
+function name(a) {
+    let b="";
+    for (let i = a.length-1; i >= 0; i--) {
+        b+=a[i]
+    }
+    return b
+}
+console.log(name("deepthi"));
+
+// 2. **Palindrome Check:**
+//    Write a function that checks whether a given string is a palindrome (reads the same forwards and backward).
+//     Ignore spaces, punctuation, and capitalization.
+
+function name1(a,b) {
+    for (let i = a.length-1; i >= 0; i--) {
+    b+=a[i]
+}
+if (a==b) {
+    return `a is palindrome`;
+}
+else{
+    return `a is not palindrome`
+} 
+}
+console.log(name1("madam",""));
+
+// 3. **Anagram Detection:**
+//    Write a function that checks if two words are anagrams of each other. Anagrams are words or phrases formed by rearranging the letters of another.
+
+
+
+// 4. **Count Vowels and Consonants:**
+//    Write a function that counts the number of vowels and consonants in a given string.
+let a="deepthi"
+function name2(a) {
+    let b="";
+    let c="";
+    for (let i = 0; i < a.length; i++) {
+    if (a[i]=="a" || a[i]=="e" || a[i]=="i" || a[i]=="o" || a[i]=="u") {
+        b++
+    }
+    else{
+        c++
+    }
+}
+return `${b}  vowels and ${c} consonants  `
+}
+console.log(name2("deepthi"));
+
+// 5. **Capitalize the First Letter of Each Word:**
+//    Write a function that capitalizes the first letter of each word in a given sentence.
+
+
+    </script>
+</body>
+</html>
