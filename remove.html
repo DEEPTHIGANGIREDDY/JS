@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 150px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <marquee behavior="" direction="">Click hear to remove img</marquee>
+    <button>img1</button>
+    <button>img2</button>
+    <button>img3</button>
+    <button>img4</button>
+    <table>
+        <tr>
+            <td id="tdid">
+                <img src="./cat1.jpg" alt="">
+            </td>
+            <td id="tdid">
+                <img src="./cat2.jpg" alt="">
+            </td>
+            <td id="tdid">
+                <img src="./cat3.jpg" alt="">
+            </td>
+            <td id="tdid">
+                <img src="./cat4.jpg" alt="">
+            </td>
+           
+        </tr>
+    </table>
+
+    <script>
+        let tablegetting=document.querySelectorAll("table")
+        let trgetting=document.getElementsByTagName("tr")
+        let tdgetting=document.querySelectorAll("#tdid")
+        
+        let btn=document.querySelectorAll("button")
+        btn[0].addEventListener("click",function name() {
+            trgetting[0].removeChild(tdgetting[0])
+        })
+
+        btn[1].addEventListener("click",function name() {
+            trgetting[0].removeChild(tdgetting[1])
+        })
+
+        btn[2].addEventListener("click",function name() {
+            trgetting[0].removeChild(tdgetting[2])
+        })
+
+        btn[3].addEventListener("click",function name() {
+            trgetting[0].removeChild(tdgetting[3])
+        })
+
+        
+        // trgetting[0].insertBefore(newtd,tdgetting)
+        // trgetting[0].replaceWith(newtd,tdgetting)
+
+        trgetting[0].replaceChild(newtd,tdgetting)//replaceing child
+        trgetting[0].removeChild(newtd) //removing child
+
+       
+
+
+
+
+    </script>
+</body>
+</html>

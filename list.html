@@ -4,17 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-    </style>
 </head>
 <body>
-    <table>
+    <ul>
 
-    </table>
+    </ul>
 
     <script>
         let arr=[{
@@ -258,52 +252,44 @@
 }
 }]
 
-let tablegetting=document.getElementsByTagName("table")
+let ulgetting=document.getElementsByTagName("ul")
 
 arr.filter(function name(val,index,array) {
-    let trcrete=document.createElement("tr")
-    let tdcrete=document.createElement("td")
-    tdcrete.innerText=val.id
-    trcrete.appendChild(tdcrete)
+    let li1create=document.createElement("li")
+    li1create.innerText=val.id;
+    ulgetting[0].appendChild(li1create)
 
-    let tdcreate1=document.createElement("td")
-    tdcreate1.innerText=val.title
-    trcrete.appendChild(tdcreate1)
+    let li1create2=document.createElement("li")
+    li1create2.innerText=val.title
+    ulgetting[0].appendChild(li1create2)
 
-    let tdcrete2=document.createElement("td")
-    tdcrete2.innerText=val.price
-    trcrete.appendChild(tdcrete2)
+    let li1create3=document.createElement("li")
+    li1create3.innerText=val.price
+    ulgetting[0].appendChild(li1create3)
 
-    let tdcreate3=document.createElement("td")
-    tdcreate3.innerText=val.description
-    trcrete.append(tdcreate3)
+    let li1create4=document.createElement("li")
+    li1create4.innerText=val.description
+    ulgetting[0].appendChild(li1create4)
 
-    let tdcreate4=document.createElement("td")
-    tdcreate4.innerText=val.category
-    trcrete.append(tdcreate4)
+    let li1create5=document.createElement("li")
+    li1create5.innerText=val.category
+    ulgetting[0].appendChild(li1create5)
 
-    let tdcreate5=document.createElement("td")
+    let li1create6=document.createElement("li")
     let img=document.createElement("img")
-    // tdcreate5.innerText=val.image
-    img.setAttribute("src",val.image)
     img.style.width="50px"
-    tdcreate5.appendChild(img)
-    trcrete.append(tdcreate5)
+    img.setAttribute("src",val.image)
+    li1create6.appendChild(img)
+    ulgetting[0].appendChild(li1create6)
 
-    let tdcreate6=document.createElement("td")
-    tdcreate6.innerText=val.price
-    trcrete.appendChild(tdcreate6)
-    
-    let tdcreate7=document.createElement("td")
-    tdcreate7.innerText=val.rating.rate
-    trcrete.appendChild(tdcreate7)
+    let li1create7=document.createElement("li")
+    li1create7.innerText=val.rating.rate
+    ulgetting[0].appendChild(li1create7)
 
-    let tdcreate8=document.createElement("td")
-    tdcreate8.innerText=val.rating.count
-    trcrete.appendChild(tdcreate8)
+    let li1create8=document.createElement("li")
+    li1create8.innerText=val.rating.count
+    ulgetting[0].appendChild(li1create8)
 
-    console.log(val);
-    tablegetting[0].appendChild(trcrete)
 })
 
     </script>

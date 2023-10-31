@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Cat1</button>
+    <button>Cat2</button>
+    <button>Cat3</button>
+    <button>Cat4</button>
+    <button>Cat5</button>
+    <button>Cat6</button>
+    <button>Cat7</button>
+    <button id="getting">Cat8</button><br><br>
+
+    <script>
+        
+   
+        let btn=document.querySelectorAll("button")
+        let btnidgetting=document.getElementById("getting")
+        btn[0].addEventListener("click",function name() {
+        let img=document.createElement("img")
+        img.setAttribute("src","./cat1.jpg")
+        img.style.width="150px"
+        btnidgetting.insertAdjacentElement("afterend",img)
+   })
+    </script>
+</body>
+</html>

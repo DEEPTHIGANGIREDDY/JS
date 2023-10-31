@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grid{
+            display: grid;
+            grid-template-columns: 32% 32% 32%;
+            grid-row: 10%;
+
+        }
+        img{
+            width: 410px;
+            height: 250px;
+        }
+        button{
+            margin-left: 10%;
+            width: 150px;
+            height: 30px;
+            border: none;
+            background: black;
+            color: white;
+            border-radius: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <button>Grid Space On</button>
+    <button>Grid Space Off</button>
+    <button>Suffile</button>
+    <button>Suffile off</button>
+    <br><br>
+    <div id="grid">
+        <img style="grid-column: 1/2; grid-row: 1/2;" src="./cat1.jpg" alt="img">
+        <img style="grid-column: 2/3; grid-row: 1/2;" src="./cat2.jpg" alt="img">
+        <img style="grid-column: 3/4; grid-row: 1/2;" src="./cat3.jpg" alt="img">
+        <img style="grid-column: 1/2; grid-row: 2/3;" src="./cat4.jpg" alt="img">
+        <img style="grid-column: 2/3; grid-row: 2/3;" src="./cat1.jpg" alt="img">
+        <img style="grid-column: 3/4; grid-row: 2/3;" src="./cat2.jpg" alt="img">
+        <img style="grid-column: 1/2; grid-row: 3/4;" src="./cat3.jpg" alt="img">
+        <img style="grid-column: 2/3; grid-row: 3/4;" src="./cat4.jpg" alt="img">
+        <img style="grid-column: 3/4; grid-row: 3/4;" src="./cat1.jpg" alt="img">
+    </div>
+    
+    <script>
+        let btn=document.querySelectorAll("button")
+        btn[0].addEventListener("click",function name() {
+            let b=document.querySelectorAll("div")
+            b[0].style.gridGap="50px"
+        })
+        btn[1].addEventListener("click",function name() {
+            let b=document.querySelectorAll("div")
+            b[0].style.gridGap="0px"
+        })
+        
+        btn[2].addEventListener("click",function name() {
+            let a=document.querySelectorAll("img")
+            
+            a[0].setAttribute("src","./cat1.jpg")
+            a[1].setAttribute("src","./cat1.jpg")
+            a[2].setAttribute("src","./cat1.jpg")
+            a[3].setAttribute("src","./cat2.jpg")
+            a[4].setAttribute("src","./cat2.jpg")
+            a[5].setAttribute("src","./cat2.jpg")
+            a[6].setAttribute("src","./cat3.jpg")
+            a[7].setAttribute("src","./cat3.jpg")
+            a[8].setAttribute("src","./cat3.jpg")
+        
+        })
+
+        btn[3].addEventListener("click",function name() {
+            let a=document.querySelectorAll("img")
+    
+            a[0].setAttribute("src","./cat1.jpg")
+            a[1].setAttribute("src","./cat2.jpg")
+            a[2].setAttribute("src","./cat3.jpg")
+            a[3].setAttribute("src","./cat4.jpg")
+            a[4].setAttribute("src","./cat1.jpg")
+            a[5].setAttribute("src","./cat2.jpg")
+            a[6].setAttribute("src","./cat3.jpg")
+            a[7].setAttribute("src","./cat4.jpg")
+            a[8].setAttribute("src","./cat1.jpg")
+        
+        })
+
+        
+    </script>
+</body>
+</html>
