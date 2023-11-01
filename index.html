@@ -266,6 +266,17 @@ let tablegetting=document.getElementsByTagName("table")
 
 let btn=document.querySelectorAll("button")
 
+btn[0].addEventListener("click",()=>{
+    let a=[]
+for(i in arr){
+    if (arr[i]) {
+        a.push(arr[i])
+    }
+}
+console.log(a);
+name(a)
+})
+
 btn[1].addEventListener("click",()=>{
     let a=[]
 for(i in arr){
@@ -336,6 +347,7 @@ function name(callingfun) {
     tablegetting[0].appendChild(trcrete)
 })
 }
+
     </script>
 </body>
 </html>
