@@ -12,6 +12,7 @@
     </style>
 </head>
 <body>
+    
     <button>All</button>
     <button>Men Category</button>
     <button>Women Category</button>
@@ -266,48 +267,9 @@ let tablegetting=document.getElementsByTagName("table")
 
 let btn=document.querySelectorAll("button")
 
-btn[0].addEventListener("click",()=>{
-    btn[0].style.display="none"
-    btn[1].style.display="none"
-    btn[2].style.display="none"
-    let a=[]
-for(i in arr){
-    if (arr[i]) {
-        a.push(arr[i])
-    }
+function clear() {
+    
 }
-console.log(a);
-name(a)
-})
-
-btn[1].addEventListener("click",()=>{
-    btn[0].style.display="none"
-    btn[1].style.display="none"
-    btn[2].style.display="none"
-    let a=[]
-for(i in arr){
-    if (arr[i].category=="men's clothing") {
-        a.push(arr[i])
-    }
-}
-console.log(a);
-name(a)
-})
-
-
-
-btn[2].addEventListener("click",()=>{
-    btn[0].style.display="none"
-    btn[1].style.display="none"
-    btn[2].style.display="none"
-    let b=[]
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i].category=="women's clothing") {
-            b.push(arr[i])
-        } 
-    }
-    name(b)
-})
 
 function name(callingfun) {
     callingfun.filter(function name(val,index,array) {

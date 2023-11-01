@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mem() {
+            let obj={}
+            return function (sum) {
+                
+                if (obj[sum]!==undefined) {
+                    return `this num already given ${obj[sum]}`
+                }
+                else{
+                    let totalsum=0
+                    for (let i = 0; i <= sum; i++) {
+                        totalsum+=i
+                        obj[sum]=totalsum
+                    }
+                    return totalsum
+                }
+            }
+            
+        }
+        let b=mem()
+        console.log(b(4));
+        console.log(b(3));
+        console.log(b(4));
+        
+    </script>
+</body>
+</html>
