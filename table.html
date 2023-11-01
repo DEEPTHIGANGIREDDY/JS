@@ -13,11 +13,11 @@
 </head>
 <body>
     
-    <button>All</button>
-    <button>Men Category</button>
-    <button>Women Category</button>
+    <button id="btn1">All</button>
+    <button id="btn2">Men Category</button>
+    <button id="btn3">Women Category</button>
 
-    <table>
+    <table id="tb">
 
     </table>
 
@@ -98,7 +98,7 @@
 "id":7,
 "title":"White Gold Plated Princess",
 "price":9.99,
-"description":"Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+"description":"Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, a[i]entine's Day...",
 "category":"jewelery",
 "image":"https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
 "rating":{
@@ -263,61 +263,87 @@
 }
 }]
 
-let tablegetting=document.getElementsByTagName("table")
+let tablegetting=document.getElementById("tb")
 
-let btn=document.querySelectorAll("button")
+let btn=document.getElementById("btn1")
+let btn1=document.getElementById("btn2")
+let btn2=document.getElementById("btn3")
 
-function clear() {
-    
-}
+btn.addEventListener("click",()=>{
+    // let a= "men's clothing"  
+    // let b="women's clothing"
+    display(arr)
+    // display()
+})
 
-function name(callingfun) {
-    callingfun.filter(function name(val,index,array) {
-    let trcrete=document.createElement("tr")
+
+btn1.addEventListener("click",()=>{
+
+    display("men's clothing")
+})
+
+btn2.addEventListener("click",()=>{
+    display("women's clothing")
+})
+
+function display(category) {
+    clear()
+   let a= arr.filter((val)=>{
+        return val.category==category
+    })
+
+    for(i=0;i<a.length;i++){
+        let trcrete=document.createElement("tr")
     let tdcrete=document.createElement("td")
-    tdcrete.innerText=val.id
+    tdcrete.innerText=a[i].id
     trcrete.appendChild(tdcrete)
 
     let tdcreate1=document.createElement("td")
-    tdcreate1.innerText=val.title
+    tdcreate1.innerText=a[i].title
     trcrete.appendChild(tdcreate1)
 
     let tdcrete2=document.createElement("td")
-    tdcrete2.innerText=val.price
+    tdcrete2.innerText=a[i].price
     trcrete.appendChild(tdcrete2)
 
     let tdcreate3=document.createElement("td")
-    tdcreate3.innerText=val.description
+    tdcreate3.innerText=a[i].description
     trcrete.append(tdcreate3)
 
     let tdcreate4=document.createElement("td")
-    tdcreate4.innerText=val.category
+    tdcreate4.innerText=a[i].category
     trcrete.append(tdcreate4)
 
     let tdcreate5=document.createElement("td")
     let img=document.createElement("img")
-    // tdcreate5.innerText=val.image
-    img.setAttribute("src",val.image)
+    // tdcreate5.innerText=a[i].image
+    img.setAttribute("src",a[i].image)
     img.style.width="50px"
     tdcreate5.appendChild(img)
     trcrete.append(tdcreate5)
 
     let tdcreate6=document.createElement("td")
-    tdcreate6.innerText=val.price
+    tdcreate6.innerText=a[i].price
     trcrete.appendChild(tdcreate6)
     
     let tdcreate7=document.createElement("td")
-    tdcreate7.innerText=val.rating.rate
+    tdcreate7.innerText=a[i].rating.rate
     trcrete.appendChild(tdcreate7)
 
     let tdcreate8=document.createElement("td")
-    tdcreate8.innerText=val.rating.count
+    tdcreate8.innerText=a[i].rating.count
     trcrete.appendChild(tdcreate8)
 
-    console.log(val);
-    tablegetting[0].appendChild(trcrete)
-})
+    tablegetting.appendChild(trcrete)
+    }
+
 }
+
+function clear() {
+    tablegetting.innerText="";
+}
+
+
 
     </script>
 </body>
