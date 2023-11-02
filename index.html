@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>helo</h1>
+    <button>Forward</button>
+    <button>Open</button>
+
+    <script>
+        let btn=document.getElementsByTagName("button")
+        btn[0].addEventListener("click",()=>{
+            let b= confirm("open")
+            if (b) {
+                window.location.assign("./dummy.html")
+                window.history.forward()
+            }
+            else{
+
+            }
+        })
+        btn[1].addEventListener("click",()=>{
+            window.open("./dummy.html","_self")
+        })
+
+        setTimeout(()=>{
+            console.log("deephti");
+        },1000)
+
+
+
+
+        let a={
+            "let":"deepthi",
+            "var":"web"
+        }
+
+        localStorage.setItem("value",a)
+        let c=localStorage.setItem("value",JSON.stringify(a))//coverting to object to string
+        let e=localStorage.setItem("value","task")
+        console.log(c);
+        let d=localStorage.getItem("value") //getting local storage
+        console.log(d);
+        JSON.parse(localStorage.getItem("value"))
+        let val=JSON.parse(localStorage.getItem("value")) //convereting to object 
+        console.log(val);
+
+        localStorage.removeItem("value")//removing one item 
+    </script>
+</body>
+</html>

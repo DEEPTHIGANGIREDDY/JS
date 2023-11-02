@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <ul></ul>
+        <button>Back</button>
+    </body>
+    <script>  
+        let ulget=document.getElementsByTagName("ul");
+        let btn=document.getElementsByTagName("button");
+        //console.log(btn);
+        
+        // let val=JSON.parse(localStorage.getItem("seemore"));
+        console.log(val);
+    
+        let liget=document.createElement("li");
+        let img=document.createElement("img");
+        img.style.width="100px";
+        img.setAttribute("src",val.image);
+        liget.appendChild(img)
+        ulget[0].appendChild(liget)
+    
+        btn[0].addEventListener("click",()=>{
+            // window.history.back();
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul></ul>
+    <button>Back</button>
+    <script>
+
+        let btn=document.getElementsByTagName("button")
+        let ulgetting=document.getElementsByTagName("ul")
+
+        let vall=JSON.parse(localStorage.getItem("seemore"))
+      
+        let li1create6=document.createElement("li")
+    let img=document.createElement("img")
+    img.style.width="50px"
+    img.setAttribute("src",vall.image)
+    li1create6.appendChild(img)
+    ulgetting[0].appendChild(li1create6)
+
+        let li1create=document.createElement("li")
+    li1create.innerText=vall.id;
+    ulgetting[0].appendChild(li1create)
+
+    let li1create2=document.createElement("li")
+    li1create2.innerText=vall.title
+    ulgetting[0].appendChild(li1create2)
+
+    let li1create3=document.createElement("li")
+    li1create3.innerText=vall.price
+    ulgetting[0].appendChild(li1create3)
+
+    let li1create4=document.createElement("li")
+    li1create4.innerText=vall.description
+    ulgetting[0].appendChild(li1create4)
+
+    let li1create5=document.createElement("li")
+    li1create5.innerText=vall.category
+    ulgetting[0].appendChild(li1create5)
+
+    let li1create7=document.createElement("li")
+    li1create7.innerText=vall.rating.rate
+    ulgetting[0].appendChild(li1create7)
+
+    let li1create8=document.createElement("li")
+    li1create8.innerText=vall.rating.count
+    ulgetting[0].appendChild(li1create8)
+
+        btn[0].addEventListener("click",()=>{
+
+            window.history.back()
+        })
+
+     
+    </script>
+</body>
+</html>
