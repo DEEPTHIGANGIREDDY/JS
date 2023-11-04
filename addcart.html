@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+
+    </div>
+    <button>items in cart <sup></sup></button>
+    <script>
+        let btngetting=document.getElementsByTagName("button")
+        
+
+        let cartgetting=localStorage.getItem("Cart")
+        console.log(cartgetting);
+
+          cartgetting==null?cartgetting=[]:cartgetting=JSON.parse(cartgetting);
+        
+          cartgetting.map((val,ind)=>{
+
+          let  btnbuycreating=document.createElement("button")
+          btnbuycreating.innerText="buy now"
+          btnbuycreating.addEventListener("click",()=>{
+            window.location.assign("./buynow.html")
+          })
+          let imgcreating=document.createElement("img")
+          imgcreating.setAttribute("src",val["images"])
+          
+          imgcreating.style.width="100px";
+          let divv=document.createElement("h1")
+          divv.innerText=val["title"]
+
+
+          document.body.appendChild(imgcreating)
+          document.body.appendChild(divv)
+          document.body.appendChild(btnbuycreating)
+        })
+        btngetting[0].innerText="items added to cart "+"+"+cartgetting.length
+        // btngetting[0].addEventListener("click",()=>{
+        //         localStorage.clear()
+        // })
+    </script>
+</body>
+</html>
