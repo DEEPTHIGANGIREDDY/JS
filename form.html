@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="inp1">
+        <input type="text" id="inp2">
+        <input type="submit" id="inp3">
+        <input type="button" id="inp4" value="reset">
+        <div style="overflow: scroll;"></div>
+    </form>
+
+    <script>
+        let forms=document.forms
+        console.log(forms[0].target);
+    
+        let arr=[];
+        forms[0].addEventListener("submit",(e)=>{
+            e.preventDefault()
+            console.log(forms[0]);
+            let inputgetting1=document.getElementById("inp1")
+            
+            // console.log(inputgetting1.value);
+
+            console.log(e.target[1].value);
+
+            let username=e.target[0].value
+            let password=e.target[1].value
+            
+            
+            arr.push({username:username,password:password})
+            console.log(arr);
+
+            arr.map((val,ind)=>{
+                let divgetting=document.getElementsByTagName("div")
+                let ulcreting=document.createElement("ul")
+                let licreting1=document.createElement("li")
+                let licreting2=document.createElement("li")
+                licreting1.innerText=val.username
+                licreting2.innerText=val.password
+                ulcreting.appendChild(licreting1)
+                ulcreting.appendChild(licreting2)
+                divgetting[0].appendChild(ulcreting)
+            })
+        //     if (username[0]==username[0].toUpperCase() && username.length ==10) {
+        //         window.location.assign("./Buynow.html")
+        //     }
+        //     else{
+        //         alert("Please enter Valid Details")
+        //     }
+        //     e.target[0].value=""
+        //     e.target[1].value=""
+        })
+        
+        let inputgetting4=document.getElementById("inp4")
+        inputgetting4.addEventListener("click",()=>{
+            let inputgetting1=document.getElementById("inp1")
+            let inputgetting2=document.getElementById("inp2")
+            // console.log(inputgetting1.value);
+            // console.log(inputgetting2.value);
+            inputgetting1.value=""
+            inputgetting2.value=""
+        })
+        
+    </script>
+</body>
+</html>
