@@ -40,7 +40,7 @@
 
         localStorage.setItem("value",a)
         let c=localStorage.setItem("value",JSON.stringify(a))//coverting to object to string
-        let e=localStorage.setItem("value","task")
+        let e=localStorage.setItem("value",a)
         console.log(c);
         let d=localStorage.getItem("value") //getting local storage
         console.log(d);
@@ -48,7 +48,7 @@
         let val=JSON.parse(localStorage.getItem("value")) //convereting to object 
         console.log(val);
 
-        localStorage.removeItem("value")//removing one item 
+        // localStorage.removeItem("value")//removing one item 
     </script>
 </body>
 </html>
