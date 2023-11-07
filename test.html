@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+</head>
+<body>
+    <div>
+        <form id="form">
+            <legend>User Registration</legend><br>
+            <input type="text" name="username" id="username" required placeholder="Enter your username"><br><br>
+            <input type="password" name="password" id="password" required placeholder="Password"><br><br>
+            <input type="password" name="confirmPassword" id="confirmPassword" required placeholder="Confirm Password"><br><br>
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById("form");
+        const storageKey = "users";
+
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+
+            if (username[0] !== username[0].toUpperCase() || username.length !== 10) {
+                alert("Username must start with an uppercase letter and be 10 characters long.");
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                alert("Password and Confirm Password do not match.");
+                return;
+            }
+
+            const user = { username, password };
+
+            let users = JSON.parse(localStorage.getItem(storageKey)) || [];
+            users.push(user);
+            localStorage.setItem(storageKey, JSON.stringify(users));
+
+            alert("User registered successfully!");
+            form.reset();
+        });
+    </script>
+</body>
+</html>
