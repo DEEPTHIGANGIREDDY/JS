@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a="Deepthi"
+        //modifiers
+        console.log(a.match(/e/g));  //g
+        console.log(a.match(/e/i));  //i
+        console.log(a.match(/^de/m));  //m
+        console.log(a.match(/i$/m));  //m
+
+        //brackets
+        console.log(a.match(/[thi]/g));
+        console.log(a.match(/[b-d]/g));
+        console.log(a.match(/[A-Z]/g));
+        console.log(a.match(/[a-z]/g));
+        console.log(a.match(/[A-z]/g));
+        
+        console.log("new");
+        console.log(a.match(/[^D-e]/g));
+        console.log(a.match(/[^A-Z]/g));
+        console.log(a.match(/[^a-z]/g));
+        console.log(a.match(/[^A-z]/g));
+
+        let b="9876 dee%"
+        console.log(b.match(/[0-9]/g));
+        console.log(b.match(/[^0-9]/g));
+
+        console.log(b.match(/[d|8|0]/g));
+
+        // metacharacter 
+
+        console.log(b.match(/d.e/g));
+        console.log(b.match(/\w/g));
+        // The \w metacharacter matches word characters. 
+        // A word character is a character a-z, A-Z, 0-9, including _ (underscore).
+        console.log(b.match(/\W/g)); 
+        // The \W metacharacter matches non-word characters:
+        // A word character is a character a-z, A-Z, 0-9, including _ (underscore).
+
+        console.log(b.match(/\d/g)); 
+        //The \d metacharacter matches digits from 0 to 9.
+
+        console.log(b.match(/\D/g));
+        console.log(b.match(/\s/g)); //Find a whitespace character
+        console.log(b.match(/\S/g)); //Find a non-whitespace character
+
+        // Quantifier
+        console.log(b.match(/\e+/g));
+        console.log(b.match(/\d*/g));
+        console.log(b.match(/\d?/g));
+
+    </script>
+</body>
+</html>
