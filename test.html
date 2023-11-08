@@ -1,49 +1,101 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>User Registration</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  background-image: url(https://www.flipbuilder.com/templates-themes/img/theme/classical_reminiscence.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+form{
+    /* background-color: #fff; */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(157, 183, 183);
+
+}
+input{
+    width: 200px;
+    margin-left: 50px;
+    height: 25px;
+}
+button{
+    background-color: rgb(0, 174, 255);
+    color: black;
+    border-radius: 5px;
+    max-width: 60px;
+}
+    </style>
 </head>
+
 <body>
     <div>
         <form id="form">
-            <legend>User Registration</legend><br>
+            <legend><h1>User Registration</h1></legend>
             <input type="text" name="username" id="username" required placeholder="Enter your username"><br><br>
             <input type="password" name="password" id="password" required placeholder="Password"><br><br>
-            <input type="password" name="confirmPassword" id="confirmPassword" required placeholder="Confirm Password"><br><br>
-            <input type="submit" value="Sign Up">
+            <input type="password" name="confirmPassword" id="confirmPassword" required
+                placeholder="Confirm Password"><br><br>
+            <input type="submit" value="Sign Up" style="background-color: rgb(230, 226, 221);font-weight: bold;border-radius: 5px;"><br>
+            <button id="btn"><b>Login</b></button>
         </form>
+        
     </div>
 
     <script>
         const form = document.getElementById("form");
-        const storageKey = "users";
+        let btngetting = document.getElementById("btn")
+        btngetting.addEventListener("click", () => {
+            window.location.assign("./login.html")
+        })
 
-        form.addEventListener("submit", function(e) {
+        form.addEventListener("submit", function (e) {
             e.preventDefault();
 
             const username = document.getElementById("username").value;
             const password = document.getElementById("password").value;
             const confirmPassword = document.getElementById("confirmPassword").value;
 
-            if (username[0] !== username[0].toUpperCase() || username.length !== 10) {
+            if (username[0] !== username[0].toUpperCase() || username.length < 6) {
                 alert("Username must start with an uppercase letter and be 10 characters long.");
                 return;
             }
 
-            if (password !== confirmPassword) {
+            let passlength = password.length >= 8;
+            let patternCon = /[A-Z]/.test(password) && /[a-z]/.test(password) && /\d/.test(password);
+            if (password !== confirmPassword || !passlength || !patternCon) {
                 alert("Password and Confirm Password do not match.");
                 return;
             }
 
             const user = { username, password };
 
-            let users = JSON.parse(localStorage.getItem(storageKey)) || [];
+            let users = JSON.parse(localStorage.getItem("s")) || [];
+            let duplicate=users.find((val)=>val.username===username);
+            if (duplicate) {
+                alert("user already exits")
+            }
+            else{
             users.push(user);
-            localStorage.setItem(storageKey, JSON.stringify(users));
-
+            localStorage.setItem("s", JSON.stringify(users));
             alert("User registered successfully!");
             form.reset();
+            }
         });
     </script>
 </body>
+
 </html>

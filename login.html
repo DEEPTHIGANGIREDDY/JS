@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url(https://www.flipbuilder.com/templates-themes/img/theme/classical_reminiscence.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      form{
+          /* background-color: #fff; */
+          background-color: rgb(157, 183, 183);
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+      }
+      button{
+          background-color: rgb(0, 174, 255);
+          color: black;
+          border-radius: 5px;
+          max-width: 60px;
+      }
+      #login{
+        background-color: rgb(0, 174, 255);
+    color: black;
+    border-radius: 5px;
+    max-width: 60px;
+      }
+      input{
+        width: 200px;
+        height: 25px;
+        margin-left: 50px;
+      }
+          </style>
+</head>
+
+<body>
+    <form action="">
+        <legend><h1>User Login</h1></legend>
+        <input type="text" placeholder="username" id="username"><br>
+        <input type="password" name="password" id="password" required placeholder="Password"><br>
+        <input type="submit" name="login" id="login" value="login">
+    </form>
+    <script>
+
+
+        let formgetting = document.forms
+        let usergetting = document.getElementById("username")
+        let passgetting = document.getElementById("password")
+
+        formgetting[0].addEventListener("submit", (e) => {
+            e.preventDefault();
+            let valuesgetting = JSON.parse(localStorage.getItem("s"))
+            console.log(valuesgetting);
+            let uservalidate = usergetting.value;
+            let passvalidate = passgetting.value;
+
+            let userval = valuesgetting.find((val) => {
+                return val["username"] === uservalidate
+            })
+            let passval = valuesgetting.find((val) => {
+                return val["password"] === passvalidate
+            })
+
+            if (userval && passval) {
+                window.location.assign("./index.html")
+            }
+            else {
+                alert("this credetinals in valid")
+            }
+        })
+    </script>
+</body>
+
+</html>

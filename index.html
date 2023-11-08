@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+        font-family: Arial, sans-serif;
+        background-image: url(https://www.flipbuilder.com/templates-themes/img/theme/classical_reminiscence.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
         #product{
             display: flex;
             flex-wrap: wrap;
@@ -29,19 +35,25 @@
        }
        nav{
         text-align: center;
-        
-       
     
+       }
+       button{
+        height: 50px;
+        width: 160px;
+        margin-left: 20px;
+        font-size: large;
+
        }
     </style>
 </head>
 <body>
     <nav>
-        <button id="btn1">All</button>
+        <!-- <button id="btn1">All</button> -->
         <button id="btn2">Smartphones</button>
         <button id="btn3">groceries</button>
         <button id="btn4">home-decoration</button>
         <button id="cart">view cart</button>
+        <button id="logout">logout</button>
     </nav>
     <div id="product"></div>
 
@@ -590,6 +602,10 @@
         
         let divgetting=document.getElementById("product")
         
+        let logout=document.getElementById("logout")
+        logout.addEventListener("click",()=>{
+            window.location.assign("./login.html")
+        })
         let btn = document.getElementById("btn1")
         let btn1 = document.getElementById("btn2")
         let btn2 = document.getElementById("btn3")
@@ -599,8 +615,8 @@
             window.location.assign("./AddCart.html")
         })
 
-        btn.addEventListener("click",()=>{
-            clear()
+        // btn.addEventListener("click",()=>{
+        //     clear()
             api.filter( (val,ind,array)=>{
                 let divcreating=document.createElement("div")
                 divcreating.className="product-card";
@@ -635,8 +651,24 @@
                 productBrand.innerText=`Brand : ${val.brand}`
                 divcreating.appendChild(productBrand)
 
+                let seemore=document.createElement("button")
+                seemore.innerText="See more"
+                seemore.style.width="90px"
+                seemore.style.height="30px"
+                seemore.style.fontSize="small"
+                seemore.style.borderRadius="10px"
+                seemore.addEventListener("click",()=>{
+                    localStorage.setItem("seemore",JSON.stringify(api[ind]))
+                    window.location.assign("./seemore.html")
+                })
+                divcreating.appendChild(seemore)
+
                 let productAddCart=document.createElement("button")
                 productAddCart.innerText="Add to cart"
+                productAddCart.style.width="100px"
+                productAddCart.style.height="30px"
+                productAddCart.style.fontSize="small"
+                productAddCart.style.borderRadius="10px"
                 
                 productAddCart.addEventListener("click",()=>{
                     
@@ -649,6 +681,10 @@
                 })
                 let productBuy=document.createElement("button")
                 productBuy.innerText="Buy Now"
+                productBuy.style.width="85px"
+                productBuy.style.height="30px"
+                productBuy.style.fontSize="small"
+                productBuy.style.borderRadius="10px"
                 productBuy.addEventListener("click",()=>{
                     window.location.assign("./buynow.html")
                     localStorage.setItem("buy",val)
@@ -662,7 +698,7 @@
             })
             
             
-        })
+        // })
         btn1.addEventListener("click",()=>{
             
             displayProducts("smartphones")
