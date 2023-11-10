@@ -1,152 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
         body {
-        font-family: Arial, sans-serif;
-        background-image: url(https://www.flipbuilder.com/templates-themes/img/theme/classical_reminiscence.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
-        #product{
+            font-family: Arial, sans-serif;
+            background-image: url("https://www.revieyou.com/wp-content/uploads/2020/07/unnamed.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        #product {
             display: flex;
             flex-wrap: wrap;
-            
+            /* background-color: black; */
+            color: white;
+            margin-left: 25px;
+
         }
-       .product-card{
-        display: inline-block;
-        width: 250px;
-       
-        margin: 10px;
-        border: 1px solid white;
-        border-radius: 10px;
-        padding: 10px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-       }
-       .product-card img{
-        height: 200px;
-       }
-       body{
-        background-color: black;
-        color: white;
-       }
-       button{
-        height: 40px;
-        width: 160px;
-        margin-left: 20px;
-        font-size: large;
-       }
+
+        #product .product-card:hover {
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: black;
+            display: inline-block;
+            width: 300px;
+            color: white;
+            margin: 30px;
+            border: 1px solid white;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            height: 200px;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        nav {
+            text-align: center;
+            background-color: black;
+            height: 60px;
+
+
+        }
+
+        button {
+            margin-top: 10px;
+            height: 40px;
+            width: 160px;
+            margin-left: 0px;
+            font-size: large;
+        }
+
+        span {
+            margin-left: 270px;
+        }
     </style>
 </head>
+
 <body>
     <button id="clear">clear Cart</button>
     <button id="proctobuy">Proceed to buy</button>
-    <h2 id="totalammount"></h2>
+    <h2 id="totalammount" style="color: black;"></h2>
     <div id="product">
-        
+
     </div>
 
     <script>
-        
-        let divgetting=document.getElementById("product")
-        let clearbtn=document.getElementById("clear")
-        clearbtn.addEventListener("click",()=>{
+
+        let divgetting = document.getElementById("product")
+        let clearbtn = document.getElementById("clear")
+        clearbtn.addEventListener("click", () => {
             localStorage.clear()
         })
 
-        let itemGetting=localStorage.getItem("view_cart")
+        let itemGetting = localStorage.getItem("view_cart")
         console.log(itemGetting);
-        itemGetting==null?itemGetting=[]:itemGetting=JSON.parse(itemGetting);
+        itemGetting == null ? itemGetting = [] : itemGetting = JSON.parse(itemGetting);
         console.log(itemGetting);
 
-        let Proceedtobuy=document.getElementById("proctobuy")
-            Proceedtobuy.addEventListener("click",()=>{
-                    window.location.assign("./buynow.html")
-                    localStorage.setItem("buy",val)
-                })
+        let Proceedtobuy = document.getElementById("proctobuy")
+        Proceedtobuy.addEventListener("click", () => {
+            window.location.assign("./buynow.html")
+            localStorage.setItem("buy", val)
+        })
 
-        let totalammount=document.getElementById("totalammount")
-        var tlamnt=0;
-          for (let i = 0; i < itemGetting.length; i++) {
-            tlamnt+=itemGetting[i].price
-            
-          }
-           console.log(tlamnt);
-        totalammount.innerText=`Total Ammount : ${tlamnt}`
+        let totalammount = document.getElementById("totalammount")
+        var tlamnt = 0;
+        for (let i = 0; i < itemGetting.length; i++) {
+            tlamnt += itemGetting[i].price
 
-        itemGetting.map((val,ind,array)=>{
-           
-           let divcreating=document.createElement("div")
-           divcreating.className="product-card";
-           let productImg=document.createElement("img")
-            productImg.setAttribute("src",val.thumbnail)
-            productImg.style.width="100%"
+        }
+        console.log(tlamnt);
+        totalammount.innerText = `Total Ammount : ${tlamnt}`
+
+        itemGetting.map((val, ind, array) => {
+
+            let divcreating = document.createElement("div")
+            divcreating.className = "product-card";
+            let productImg = document.createElement("img")
+            productImg.setAttribute("src", val.thumbnail)
+            productImg.style.width = "100%"
             divcreating.appendChild(productImg)
 
-           let productId=document.createElement("p")
-           productId.innerText=`ID : ${val.id}`
-           divcreating.appendChild(productId)
+            let productId = document.createElement("p")
+            productId.innerText = `ID : ${val.id}`
+            divcreating.appendChild(productId)
 
-           let productTitle=document.createElement("h2")
-                productTitle.innerText=`${val.title}`
-                productTitle.style.color="aqua"
-                divcreating.appendChild(productTitle)
+            let productTitle = document.createElement("h2")
+            productTitle.innerText = `${val.title}`
+            productTitle.style.color = "aqua"
+            divcreating.appendChild(productTitle)
 
-                let productDescription=document.createElement("p")
-                productDescription.innerText=`Description : ${val.description}`
-                divcreating.appendChild(productDescription)
+            let productDescription = document.createElement("p")
+            productDescription.innerText = `Description : ${val.description}`
+            divcreating.appendChild(productDescription)
 
-                let productPrice=document.createElement("p")
-                productPrice.innerText=`Price : ${val.price}`
-                divcreating.appendChild(productPrice)
+            let productPrice = document.createElement("p")
+            productPrice.innerText = `Price : ${val.price}`
+            divcreating.appendChild(productPrice)
 
-                let productDiscountPercentage=document.createElement("p")
-                productDiscountPercentage.innerText=`DiscountPercentage : ${val.discountPercentage}`
-                divcreating.appendChild(productDiscountPercentage)
+            let productDiscountPercentage = document.createElement("p")
+            productDiscountPercentage.innerText = `DiscountPercentage : ${val.discountPercentage}`
+            divcreating.appendChild(productDiscountPercentage)
+
+            let productBrand = document.createElement("p")
+            productBrand.innerText = `Brand : ${val.brand}`
+            divcreating.appendChild(productBrand)
+
+            let buyProduct = document.createElement("button")
+
+            buyProduct.innerText = "BUY"
+            buyProduct.addEventListener("click", () => {
+                window.location.assign("./Buynow.html")
+            })
+
+
+            divcreating.appendChild(buyProduct)
+
+            let removeProduct = document.createElement("button")
+            removeProduct.innerText = "Remove"
+
+            removeProduct.addEventListener("click", () => {
+                console.log("click");
+                // const index = itemGetting.findIndex((item) => {
+                //     return item.id == val.id
+
+                // })
+                // if (index > -1) {
+                //     itemGetting.splice(index, 1)
+                //     divcreating.remove()
+                // }
+
+                // console.log(index)
+                itemGetting.splice(ind, 1);
+                localStorage.setItem("view_cart", JSON.stringify(itemGetting));
+                divgetting.removeChild(divcreating);
+            })
+
+
+            divcreating.appendChild(removeProduct)
+
+            // divcreating.appendChild(productBuy)
+
+            divgetting.appendChild(divcreating)
             
-                let productBrand=document.createElement("p")
-                productBrand.innerText=`Brand : ${val.brand}`
-                divcreating.appendChild(productBrand)
-
-                let buyProduct=document.createElement("button")
-
-                buyProduct.innerText="BUY"
-                buyProduct.addEventListener("click",()=>{
-                    window.location.assign("./Buynow.html")
-                })
-
-
-                divcreating.appendChild(buyProduct)
-
-                let removeProduct=document.createElement("button")
-                removeProduct.innerText="Remove"
-                
-                removeProduct.addEventListener("click",()=>{
-                    console.log("click");
-                   const index = itemGetting.findIndex((item)=>{
-                   return item.id == val.id
-                    
-                   })
-                   if(index>-1){
-                    itemGetting.splice(index,1)
-                    divcreating.remove()
-                   }
-                   
-                   console.log(index)
-                })
-
-
-                divcreating.appendChild(removeProduct)
-                
-                // divcreating.appendChild(productBuy)
-
-           divgetting.appendChild(divcreating)  
         })
-        
-        
+
+
     </script>
 </body>
+
 </html>

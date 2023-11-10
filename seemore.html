@@ -4,23 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://www.revieyou.com/wp-content/uploads/2020/07/unnamed.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        #product {
+            display: flex;
+            flex-wrap: wrap;
+            /* background-color: black; */
+            color: white;
+            margin-left: 25px;
+
+        }
+       #product .product-card:hover {
+           padding: 20px;
+        }
+
+        .product-card {
+            
+            background-color: black;
+            display: inline-block;
+            width: 300px;
+            color: white;
+            margin: 30px;
+            border: 1px solid white;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            height: 200px;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        nav {
+            text-align: center;
+            background-color: black;
+            height: 60px;
+            
+
+        }
+
+        button {
+            margin-top: 10px;
+            height: 40px;
+            width: 160px;
+            margin-left: 0px;
+            font-size: large;
+        }
+        span{
+            margin-left: 270px;
+        }
+    </style>
 </head>
 <body>
     <div></div>
 
     <script>
+        let api=[]
        let getitems= JSON.parse(localStorage.getItem("seemore"));
+
        console.log(getitems);
+       api.push(getitems)
+       console.log(api)
+       console.log(typeof(getitems))
+       
+    //    api.push((val)=>{
+    //     console.log(val)
+        
+    //    })
+       
+       let divgetting=document.getElementsByTagName("div")
+       api.filter((val, ind, array) => {
+            let divcreating = document.createElement("div")
+            divcreating.className = "product-card";
 
-  
-    // getitems.filter((val,ind)=>{
-    //     let divgetting=document.getElementsByTagName("div")
-    //     let img=document.createElement("img")
-    //     img.setAttribute("src",val["image"])
-    //     img.style.width="200px"
-    //     divgetting[0].appendChild(img)
+            let productImg = document.createElement("img")
+            productImg.setAttribute("src", val.thumbnail)
+            productImg.style.width = "100%"
+            divcreating.appendChild(productImg)
 
-    // })
+            let productId = document.createElement("p")
+            productId.innerText = `ID : ${val.id}`
+            divcreating.appendChild(productId)
+
+            let productTitle = document.createElement("h3")
+            productTitle.innerText = `${val.title}`
+            productTitle.style.color = "aqua"
+            divcreating.appendChild(productTitle)
+
+            let productDescription = document.createElement("p")
+            productDescription.innerText = `Description : ${val.description}`
+            divcreating.appendChild(productDescription)
+
+            let productPrice = document.createElement("p")
+            productPrice.innerText = `Price : ${val.price}`
+            divcreating.appendChild(productPrice)
+
+            let productDiscountPercentage = document.createElement("p")
+            productDiscountPercentage.innerText = `DiscountPercentage : ${val.discountPercentage}`
+            divcreating.appendChild(productDiscountPercentage)
+
+            let productBrand = document.createElement("p")
+            productBrand.innerText = `Brand : ${val.brand}`
+            divcreating.appendChild(productBrand)
+
+            let productBuy = document.createElement("button")
+            productBuy.innerText = "Buy Now"
+            productBuy.style.width = "85px"
+            productBuy.style.height = "30px"
+            productBuy.style.fontSize = "small"
+            productBuy.style.border = "none"
+            productBuy.style.borderRadius = "2px"
+            productBuy.style.marginLeft = "100px"
+            productBuy.style.backgroundColor = "#FFA500"
+
+            productBuy.addEventListener("click", () => {
+                window.location.assign("./buynow.html")
+                localStorage.setItem("buy", val)
+            })
+            divcreating.appendChild(productBuy)
+            divgetting[0].appendChild(divcreating)
+
+       })
+
     </script>
 </body>
 </html>

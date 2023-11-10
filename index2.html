@@ -81,8 +81,8 @@
         <span id="cart" class="material-symbols-outlined">
             shopping_cart_checkout
             </span>
-            <button id="login" style="width: 70px;margin-left: 30px;">Signin</button>
-        <!-- <button id="logout" style="width: 80px;">Signout</button> -->
+            <!-- <button id="login" style="width: 70px;margin-left: 30px;">Signin</button> -->
+        <button id="logout" style="width: 80px;">Signout</button>
     </nav>
     <div id="product"></div>
 
@@ -631,14 +631,14 @@
 
         let divgetting = document.getElementById("product")
 
-        let login = document.getElementById("login")
-        login.addEventListener("click", () => {
-            window.location.assign("./login.html")
-        })
-        // let logout = document.getElementById("logout")
-        // logout.addEventListener("click", () => {
+        // let login = document.getElementById("login")
+        // login.addEventListener("click", () => {
         //     window.location.assign("./login.html")
         // })
+        let logout = document.getElementById("logout")
+        logout.addEventListener("click", () => {
+            window.location.assign("./login.html")
+        })
         let btn = document.getElementById("btn1")
         let btn1 = document.getElementById("btn2")
         let btn2 = document.getElementById("btn3")
@@ -647,7 +647,7 @@
         let btn5 = document.getElementById("btn5")
         let btn6 = document.getElementById("btn6")
         btn3.addEventListener("click", () => {
-            window.location.assign("./test.html")
+            window.location.assign("./AddCart.html")
         })
 
         // btn.addEventListener("click",()=>{
@@ -759,13 +759,13 @@
         })
         btn5.addEventListener("click", () => {
 
-        displayProducts("laptops")
-        })
-        btn6.addEventListener("click", () => {
-
-        displayProducts("skincare")
+displayProducts("laptops")
 })
-       
+btn6.addEventListener("click", () => {
+
+displayProducts("skincare")
+})
+        laptops
         function displayProducts(category) {
             clear();
             let a = api.filter((val, ind, array) => {
