@@ -808,6 +808,12 @@ displayProducts("skincare")
 
                 let productAddCart = document.createElement("button")
                 productAddCart.innerText = "Add to cart"
+                productAddCart.style.width = "100px"
+            productAddCart.style.height = "30px"
+            productAddCart.style.fontSize = "small"
+            productAddCart.style.border = "none"
+            productAddCart.style.borderRadius = "2px"
+            productAddCart.style.marginLeft = "100px"
                 productAddCart.addEventListener("click", () => {
 
                     let cartgetting = localStorage.getItem("view_cart")
@@ -819,6 +825,12 @@ displayProducts("skincare")
                 })
                 let productBuy = document.createElement("button")
                 productBuy.innerText = "Buy Now"
+                productBuy.style.width = "85px"
+            productBuy.style.height = "30px"
+            productBuy.style.fontSize = "small"
+            productBuy.style.border = "none"
+            productBuy.style.borderRadius = "2px"
+            productBuy.style.backgroundColor = "#00BFFF"
                 productBuy.addEventListener("click", () => {
                     window.location.assign("./buynow.html")
                     localStorage.setItem("buy", val)

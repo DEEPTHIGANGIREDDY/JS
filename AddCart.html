@@ -140,18 +140,32 @@
             productBrand.innerText = `Brand : ${val.brand}`
             divcreating.appendChild(productBrand)
 
-            let buyProduct = document.createElement("button")
+            let productBuy = document.createElement("button")
 
-            buyProduct.innerText = "BUY"
-            buyProduct.addEventListener("click", () => {
+            productBuy.innerText = "Buy now"
+            productBuy.style.width = "85px"
+            productBuy.style.height = "30px"
+            productBuy.style.fontSize = "small"
+            productBuy.style.border = "none"
+            productBuy.style.borderRadius = "2px"
+            productBuy.style.marginLeft = "30px"
+            productBuy.style.backgroundColor = "#00BFFF"
+            productBuy.addEventListener("click", () => {
                 window.location.assign("./Buynow.html")
             })
 
 
-            divcreating.appendChild(buyProduct)
+            divcreating.appendChild(productBuy)
 
             let removeProduct = document.createElement("button")
             removeProduct.innerText = "Remove"
+            removeProduct.style.width = "90px"
+            removeProduct.style.height = "30px"
+            removeProduct.style.fontSize = "small"
+            removeProduct.style.border = "none"
+            removeProduct.style.borderRadius = "2px"
+            removeProduct.style.marginLeft = "50px"
+            removeProduct.style.backgroundColor = "#FFA500"
 
             removeProduct.addEventListener("click", () => {
                 console.log("click");
