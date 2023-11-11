@@ -560,7 +560,6 @@
             // let num=1;
             // for (let i = 1; i <= b; i++) {
             //     num*=n
-                
             // }
             // console.log(`5 ^ 3 = ${num}`);
             
@@ -1047,38 +1046,23 @@
 //                       Subseq2 = [7, -1, 4, -3]            : false
 //            Subseq3 = [ -1]                        : true
 //                       Subseq4 = [13, -3, 4, 1]           : false
-// let arr = [5, 7, 3, 2, 2, 7,-1, 5, -3, 13, 4];
-//  let Subseq1 = [7, -1, 5, -3]
-// let Subseq2 = [7, -1, 4, -3]
-// let Subseq3 = [ -1] 
-// let Subseq4 = [13, -3, 4, 1]
-// let num=0;
-// for (let i = 0; i < arr.length; i++) {
-//     if (arr[i]==Subseq1[num]) {
-//         num++;
-//     }
-//     if (num==Subseq1.length) {
-//         console.log(true);
-//     }
-//     console.log(false);
-// }
 
-function name(a,Subseq1) {
-    let val=0;
-    for (let i = 0; i < a.length; i++) {
-        if (a[i]==Subseq1[val]) {
-            val++;
-        }
-        if (val==Subseq1.length) {
-            return true
-        }
-    }
-    return false
-}
-console.log(name([5, 7, 3, 2, 2, 7,-1, 5, -3, 13, 4],[7, -1, 5, -3]));
-console.log(name([5, 7, 3, 2, 2, 7,-1, 5, -3, 13, 4],[7, -1, 4, -3]));
-console.log(name([5, 7, 3, 2, 2, 7,-1, 5, -3, 13, 4],[-1]));
-console.log(name([5, 7, 3, 2, 2, 7,-1, 5, -3, 13, 4],[13, -3, 4, 1]));
+// function name(a,Subseq1) {
+//     let val=0;
+//     for (let i = 0; i < a.length; i++) {
+//         if (a[i]==Subseq1[val]) {
+//             val++;
+//         }
+//         if (val==Subseq1.length) {
+//             return true
+//         }
+//     }
+//     return false
+// }
+// console.log(name([5, 7, 3, 2, 2, 7,-1, 5, -3, 13, 4],[7, -1, 5, -3]));
+// console.log(name([5, 7, 3, 2, 2, 7,-1, 5, -3, 13, 4],[7, -1, 4, -3]));
+// console.log(name([5, 7, 3, 2, 2, 7,-1, 5, -3, 13, 4],[-1]));
+// console.log(name([5, 7, 3, 2, 2, 7,-1, 5, -3, 13, 4],[13, -3, 4, 1]));
 // let a="";
 // for (let i = 1; i <=5 ; i++) {
 //     for (let j = 1; j <= i ; j++) {
