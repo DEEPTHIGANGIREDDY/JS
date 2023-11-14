@@ -37,6 +37,7 @@
             justify-content: center;
             color: white;
             margin-top: 50px;
+            
         }
 
         #product .product-card:hover {
@@ -58,6 +59,7 @@
 
         .product-card img {
             height: 200px;
+            
         }
 
         nav {
@@ -65,8 +67,8 @@
             background-color: black;
             height: 60px;
             position: fixed;
-            top: 0%;
             width: 100%;
+            top: 0%;
 
 
         }
@@ -111,6 +113,9 @@
             width: auto;
            } 
         }
+        nav button:hover{
+            padding: 10px;
+        }
     </style>
 </head>
 
@@ -122,7 +127,7 @@
         <button id="btn4">home-decoration</button>
         <button id="btn5">laptops</button>
         <button id="btn6">skincare</button>
-        <span id="cart" class="material-symbols-outlined">
+        <span id="cart" class="material-symbols-outlined" style="color: #FFA500;">
             shopping_cart_checkout
             </span>
             <!-- <button id="login" style="width: 70px;margin-left: 30px;">Signin</button> -->
@@ -825,30 +830,46 @@ displayProducts("skincare")
                 productImg.style.width = "100%"
                 divcreating.appendChild(productImg)
 
-                let productId = document.createElement("p")
-                productId.innerText = `ID : ${val.id}`
-                divcreating.appendChild(productId)
+                // let productId = document.createElement("p")
+                // productId.innerText = `ID : ${val.id}`
+                // divcreating.appendChild(productId)
 
                 let productTitle = document.createElement("h2")
                 productTitle.innerText = `${val.title}`
                 productTitle.style.color = "aqua"
                 divcreating.appendChild(productTitle)
 
-                let productDescription = document.createElement("p")
-                productDescription.innerText = `Description : ${val.description}`
-                divcreating.appendChild(productDescription)
+                // let productDescription = document.createElement("p")
+                // productDescription.innerText = `Description : ${val.description}`
+                // divcreating.appendChild(productDescription)
 
                 let productPrice = document.createElement("p")
                 productPrice.innerText = `Price : ${val.price}`
                 divcreating.appendChild(productPrice)
 
-                let productDiscountPercentage = document.createElement("p")
-                productDiscountPercentage.innerText = `DiscountPercentage : ${val.discountPercentage}`
-                divcreating.appendChild(productDiscountPercentage)
+                // let productDiscountPercentage = document.createElement("p")
+                // productDiscountPercentage.innerText = `DiscountPercentage : ${val.discountPercentage}`
+                // divcreating.appendChild(productDiscountPercentage)
 
                 let productBrand = document.createElement("p")
                 productBrand.innerText = `Brand : ${val.brand}`
                 divcreating.appendChild(productBrand)
+
+                let seemore = document.createElement("button")
+            seemore.innerText = "See more"
+            seemore.style.width = "90px"
+            seemore.style.height = "30px"
+            seemore.style.fontSize = "small"
+            seemore.style.border = "none"
+            seemore.style.borderRadius = "2px"
+            seemore.style.marginLeft = "50px"
+            seemore.style.backgroundColor = "#FFA500"
+            seemore.addEventListener("click", () => {
+                window.location.assign("./seemore.html")
+                localStorage.setItem("seemore", JSON.stringify(api[ind]))
+
+            })
+            divcreating.appendChild(seemore)
 
                 let productAddCart = document.createElement("button")
                 productAddCart.innerText = "Add to cart"
