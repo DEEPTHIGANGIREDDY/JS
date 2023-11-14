@@ -1156,31 +1156,39 @@
 // weeklySalary([10, 10, 10, 0, 8, 0, 0]) ➞ 410
 // weeklySalary([0, 0, 0, 0, 0, 12, 0]) ➞ 280
 
-let a=[8, 8, 8, 8, 8, 0, 0]
-let b=0
-for (let i = 0; i < a.length; i++) {
-    if (i<=4) {
-        if (a[i]<=8) {
+// let a=[8, 8, 8, 8, 8, 0, 0]
+// let b=0
+// for (let i = 0; i < a.length; i++) {
+
+
+    if (i<5) {
+        if (i<=8) {
             b+=(a[i]*10);
         }
         else{
-            b+=(a[i]*15);
+            b+=((a[i]-1)*15);
         }
-    }
-    else if(i>4){
-        if (a[i]>8) {
-            console.log(a[i]*20);
-        }
-        else{
-            console.log(a[i]*30);
-        }
-    }
-    else{
-        console.log("");
     }
     
+   
+    
+// }
+// console.log(b);
+
+// let a = [8, 8, 8, 8, 8, 0, 0];
+let a=[10, 10, 10, 0, 8, 0, 0]
+let b = 0;
+
+for (let i = 0; i < a.length; i++) {
+    if (i <= 4) {
+        b += (a[i] <= 8) ? a[i] * 10 : a[i] * 15;
+    } else {
+        b += (a[i] > 8) ? a[i] * 20 : a[i] * 30;
+    }
 }
-console.log(b);
+
+console.log(b); // Output: 400
+
 
 
 // 6. Given a String(Note:- String Will Contain all later from A-Z except 1 letter, that letter you need to find out) :-
