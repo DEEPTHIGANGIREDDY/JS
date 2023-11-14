@@ -1093,6 +1093,169 @@
 // console.log(name([1, 2, 2, 1, 3, 5, 1]));
 
 //-------------------------------------------(Hard-level)-------------------------------------------------
+//1. Create a function that converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized.
+
+// Examples :
+
+// toCamelCase("A-B-C") ➞ "ABC"
+
+// toCamelCase("the-stealth-warrior") ➞ "theStealthWarrior"
+
+// toCamelCase("The_Stealth_Warrior") ➞ "TheStealthWarrior"
+
+// function name(a) {
+//     let c=""
+//     for (let i = 0; i < a.length; i++) {
+//         if (!/^[\W_]/.test(a[i]) ) {
+//              c+=(a[i]);
+//         }
+//     }
+//     return c
+// }
+// console.log(name("A-B-C"));
+// console.log(name("the-stealth-warrior"));
+// console.log(name("The_Stealth_Warrior"));
+
+
+
+// 2.Create a function that takes an array of strings and returns an array with only the strings that have numbers in them. If there are no strings containing numbers, return an empty array.	
+
+// Examples :
+
+// numInStr(["1a", "a", "2b", "b"]) ➞ ["1a", "2b"]
+
+// numInStr(["abc", "abc10"]) ➞ ["abc10"]
+
+// numInStr(["abc", "ab10c", "a10bc", "bcd"]) ➞ ["ab10c", "a10bc"]
+
+// numInStr(["this is a test", "test1"]) ➞ ["test1"]
+
+// function missing(a) {
+//    let b=[]
+//     for (let i = 0; i < a.length; i++) {
+//         if ((a[i].match(/[0-9]/))) {
+//            b.push(a[i]);
+//         }
+//     }
+//    return b  
+// }
+// console.log(missing(["1a", "a", "2b", "b"]));
+// console.log(missing(["abc", "abc10"]));
+// console.log(missing(["abc", "ab10c", "a10bc", "bcd"]));
+// console.log(missing(["this is a test", "test1"]));
+
+
+// 3.Write a function that takes a list of hours and returns the total weekly salary.
+// The input list hours is listed sequentially, ordered from Monday to Sunday.
+// A worker earns $10 an hour for the first 8 hours.
+// For every overtime hour, he earns $15.
+// On weekends, the employer pays double the usual rate, regardless how many hours were worked previously that week. For instance, 10 hours worked on a weekday would pay 80+30 = $110, but on a weekend it would pay 160+60 = $220.
+
+// Examples :
+// weeklySalary([8, 8, 8, 8, 8, 0, 0]) ➞ 400
+// weeklySalary([10, 10, 10, 0, 8, 0, 0]) ➞ 410
+// weeklySalary([0, 0, 0, 0, 0, 12, 0]) ➞ 280
+
+let a=[8, 8, 8, 8, 8, 0, 0]
+let b=0
+for (let i = 0; i < a.length; i++) {
+    if (i<=4) {
+        if (a[i]<=8) {
+            b+=(a[i]*10);
+        }
+        else{
+            b+=(a[i]*15);
+        }
+    }
+    else if(i>4){
+        if (a[i]>8) {
+            console.log(a[i]*20);
+        }
+        else{
+            console.log(a[i]*30);
+        }
+    }
+    else{
+        console.log("");
+    }
+    
+}
+console.log(b);
+
+
+// 6. Given a String(Note:- String Will Contain all later from A-Z except 1 letter, that letter you need to find out) :-
+
+// Input string=“6 E @ f w 3 x y g N 1 o p Q A b c h i j # K l  d  m  R  T U V  Z”
+
+// Output = ‘’S is missing from the String”
+
+// Note:- (
+// Time Complexity:- O(n) means only 1 loop you can use.
+// without using any predefined function.
+// )
+
+
+// let input = "6E@fw3xygN1opQAbchij#KldmRTUVZ";
+
+// for(i=97;i<=122;i++){
+//     var b=String.fromCharCode(i)
+// c=0
+//    for(j=0;j<input.length;j++){
+
+//    if(input[j]==b || input[j]==b.toUpperCase()){
+//     c=c+1
+//    }
+// }
+// if(c==0){
+//     console.log(b);
+// }
+// }
+
+// function name(a) {
+//     let b="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+//     for(let i of b){
+//         let letter=i.toLowerCase()
+        
+//         if (!a.includes(i) && !a.includes(letter)) {
+//             return(`${i}`); 
+//         }
+//     }
+// }
+// console.log(name("6 E @ f w 3 x y g N 1 o p Q A b c h i j # K l  d  m  R  T U V  Z"));
+
+
+// 7.  Given a string s, return the longest 
+// Palindromic Substring
+ 
+// Input: s = "babad"
+// Output: "bab"
+// Explanation: "aba" is also a valid answer.
+
+// Input: s = "cbbd"
+// Output: "bb"
+// let a="madad"
+
+// let b=""
+// for (let i = a.length-1; i >= 0; i--) {
+//     b+=a[i]
+    
+// }
+// console.log(b);
+// if (a==b) {
+//     console.log("plain");
+// }
+// else{
+//     console.log("not palin");
+// }
+
+// let c=a.split("")
+// console.log(c.reverse().join(""));
+
+
+
+
+
+
 // 8.  Given an unsorted array of integers nums, return the length of    the longest consecutive elements sequence.
 // You must write an algorithm that runs in O(n) time.
 // Input: nums = [100,4,200,1,3,2]
@@ -1101,7 +1264,8 @@
 // Input: nums = [0,3,7,2,5,8,4,6,0,1]
 // Output: 9
 
-let a=[100,4,200,1,2,2]
+// let a=[100,4,200,1,2,2,3,4]
+// // let a=[0,3,7,2,5,8,4,6,0,1]
 
 // for (let i = 0; i < a.length; i++) {
 //     for (let j = i+1; j < a.length; j++) {
@@ -1112,37 +1276,20 @@ let a=[100,4,200,1,2,2]
 //     }
     
 // }
-let b=a.sort()
+// console.log(a);
 
-let max=1
-let cur=1
-for (let i = 0; i < b.length; i++) {
-    if (a[i]===a[i-1]+1) {
-        cur++
-        if (cur>max) {
-            max=cur;
-        }
-    }
-
-}
-console.log(max);
-
-
-// function find(arr) { 
-    
-//   let cur= 1;
-//   let max = 1;
-//   for (let i = 1; i < arr.length; i++) {
-//     if (arr[i] === arr[i - 1] + 1) {
-//       cur++;
-//       if (cur> max) {
-//         max=cur;
-//       }
-//     } 
-//   }
-//   return max;
+// let max=1
+// let cur=1
+// for (let i = 0; i < a.length; i++) {
+//     if (a[i]===a[i-1]+1) {
+//         cur++
+//         if (cur>max) {
+//             max=cur;
+//         }
+//     }
 // }
-// console.log(find( [100,4,200,1,2,3]))
+// console.log(max);
+
 
 
 //----------------------------------(For loop)---------------------------------------------------------------------
