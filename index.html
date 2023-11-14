@@ -1157,37 +1157,42 @@
 // weeklySalary([0, 0, 0, 0, 0, 12, 0]) ➞ 280
 
 // let a=[8, 8, 8, 8, 8, 0, 0]
+// let a=[10, 10, 10, 0, 8, 0, 0]
 // let b=0
 // for (let i = 0; i < a.length; i++) {
 
 
-    if (i<5) {
-        if (i<=8) {
-            b+=(a[i]*10);
-        }
-        else{
-            b+=((a[i]-1)*15);
-        }
-    }
+//         if (i<5) {
+//             if (i<9) {
+//                 b+=(a[i]*10);
+//             }
+//             else{
+//                 b+=((a[i])*15);
+//             }
+//         }
     
    
     
 // }
 // console.log(b);
 
-// let a = [8, 8, 8, 8, 8, 0, 0];
-let a=[10, 10, 10, 0, 8, 0, 0]
-let b = 0;
+// function name(a,b){
 
-for (let i = 0; i < a.length; i++) {
-    if (i <= 4) {
-        b += (a[i] <= 8) ? a[i] * 10 : a[i] * 15;
-    } else {
-        b += (a[i] > 8) ? a[i] * 20 : a[i] * 30;
-    }
-}
+// for(i=0;i<a.length;i++){
 
-console.log(b); // Output: 400
+//    if (i < 5) {
+//     b+= (a[i]<=8) ? a[i]*10 :(8*10)+(a[i]-8)*15 
+//    }
+//    else{
+//     b+=(a[i]*2)*10
+//    }
+// }
+// return b
+// }
+
+// console.log(name([8, 8, 8, 8, 8, 0, 0],0));
+// console.log(name([10, 10, 10, 0, 8, 0, 0],0));
+// console.log(name([0, 0, 0, 0, 0, 12, 0],0));
 
 
 
