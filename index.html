@@ -1157,25 +1157,6 @@
 // weeklySalary([10, 10, 10, 0, 8, 0, 0]) ➞ 410
 // weeklySalary([0, 0, 0, 0, 0, 12, 0]) ➞ 280
 
-// let a=[8, 8, 8, 8, 8, 0, 0]
-// let a=[10, 10, 10, 0, 8, 0, 0]
-// let b=0
-// for (let i = 0; i < a.length; i++) {
-
-
-//         if (i<5) {
-//             if (i<9) {
-//                 b+=(a[i]*10);
-//             }
-//             else{
-//                 b+=((a[i])*15);
-//             }
-//         }
-    
-   
-    
-// }
-// console.log(b);
 
 // function name(a,b){
 
@@ -1195,6 +1176,70 @@
 // console.log(name([10, 10, 10, 0, 8, 0, 0],0));
 // console.log(name([0, 0, 0, 0, 0, 12, 0],0));
 
+// 4.Create a function which takes in an encoded string and returns an object according 
+// to the following example:
+// parseCode("John000Doe000123") ➞ {
+// firstName: "John",
+// lastName: "Doe",
+// id: "123"
+// }
+
+// function name(a) {
+    
+// let b=a.split("0").filter(Boolean);
+// if (b.length==3) {
+//     let [
+//     first,last,id
+// ]=b
+
+// return {first,last,id}
+// }
+// else{
+//     console.log("in valid");
+// }
+// }
+
+// console.log(name("John000Doe00012300"));
+
+// parseCode("michael0smith004331") ➞ {
+// firstName: "michael",
+// lastName: "smith",
+// id: "4331"
+// }
+
+
+// function name(a) {
+// let b=a.split("0").filter(Boolean)
+// if (b.length==3) {
+//     let [firstName,lastName,id]=b
+//     return {firstName,lastName,id}
+// }
+// else{
+//     console.log("in valid");
+// }
+// }
+// console.log(name("michael0smith004331"));
+
+// parseCode("Thomas00LEE0000043") ➞ {
+// firstName: "Thomas",
+// lastName: "LEE",
+// id: "43"
+// }
+
+
+// function name(a) {
+// let b=a.split("0").filter(Boolean)
+// if (b.length==3) {
+//     let [firstName,lastName,id]=b
+//     return {firstName,lastName,id}
+// }
+// else{
+//     console.log("in valid");
+// }
+// }
+// console.log(name("Thomas00LEE0000043"));
+
+
 
 
 // 6. Given a String(Note:- String Will Contain all later from A-Z except 1 letter, that letter you need to find out) :-
@@ -1207,7 +1252,6 @@
 // Time Complexity:- O(n) means only 1 loop you can use.
 // without using any predefined function.
 // )
-
 
 // let input = "6E@fw3xygN1opQAbchij#KldmRTUVZ";
 
