@@ -109,6 +109,13 @@ console.log(objjj);
         })
         cc.then((val)=>{console.log(val)}).catch((err)=>{console.log(err)})
 
+        async function asy() {
+            let a=await fetch("https://jsonplaceholder.typicode.com/users")
+            console.log(a);
+            let b=await a.json()
+            console.log(b);
+        }
+        asy()
     </script>
 </body>
 
