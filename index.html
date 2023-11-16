@@ -1,20 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-     function name() {
-        let a=10;
-     while (a%2==0) {
-        console.log(a);
-        return a
-     }
-     }
-     console.log(name());
+        class deepthi {
+            constructor(name, pass) {
+                this.name = name;
+                this.pass = pass;
+            }
+            static dee(obj) {
+                console.log(obj);
+                return `${obj.name} & ${obj.pass} `
+            }
+        }
+        let obj = new deepthi("deepthi123", "123")
+        console.log(deepthi.dee(obj));
+
+
+        class getting {
+            constructor(name, classs) {
+                this.name = name;
+                this.classs = classs;
+            }
+            set setclg(c) {
+                this.coll = c
+            }
+            get getcls() {
+                return `this ${this.name} collage ${this.coll}`
+            }
+        }
+        let objj = new getting("dee", "mech")
+        objj.setclg="abr"
+        console.log(objj.coll);
+        console.log(objj.getcls);
+
+        class school extends getting{
+            constructor(n,c,sn){
+             super(n,c)
+                this.schooloname=sn;
+            }
+        }
+let objjj=new school("deepthi","abr","schhool")
+console.log(objjj);
+        // ------------------------------------
+        // function name() {
+            
+        // return new Promise((resolve, reject) => {
+        //     var b = 10;
+        //     if (b % 2 == 0) {
+        //         resolve("even")
+        //     } else {
+        //         reject("odd")
+        //     }
+        // })
+        // // a.then((val) => { console.log(val) }).catch((err) => { console.log(err) })
+        // }
+        // name().then((val)=>{console.log(val)}).catch((err)=>{console.log(err);})
+
+        //--------------------------------------
+
+        // function name() {
+        //     return new Promise((resolve, reject) => {
+        //     var b = +prompt("enter numer");
+        //     if (b % 2 == 0) {
+        //         resolve("even")
+        //     } else {
+        //         reject("odd")
+        //     }
+        // })
+        // // a.then((val) => { console.log(val) }).catch((err) => { console.log(err) })
+        // }
+        // name().then((val)=>{console.log(val)}).catch((val)=>{console.log(val);})
+
+        //-------------------------------------------
+        function name() {
+            
+        return new Promise((resolve, reject) => {
+            var b = true;
+            if (b ) {
+                c=[]
+                for (let i = 1; i <= 10; i++) {
+                    c.push(i)
+                    
+                }
+                resolve(`${c.join(" ")}`)
+            } else {
+                reject("in valid")
+            }
+        })
+        // a.then((val) => { console.log(val) }).catch((err) => { console.log(err) })
+        }
+        name().then((val)=>{console.log(val)}).catch((error)=>{console.log(error);})
+
+        let cc=new Promise((deepthi,deepthi1)=>{
+            let a=10;
+            if (a%2==0) {
+                deepthi("even")
+            }
+            else{
+                deepthi1("odd")
+            }
+        })
+        cc.then((val)=>{console.log(val)}).catch((err)=>{console.log(err)})
+
     </script>
 </body>
+
 </html>
