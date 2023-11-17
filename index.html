@@ -693,6 +693,7 @@
             // console.log(rev);
             // console.log(typeof(rev));
 
+            // let a=123
             // let b=a.toString().split('').reverse().join('');
             // console.log(b);
 
@@ -1177,23 +1178,23 @@
 
 
 //function name(a,b=0){
-let a=[0, 0, 0, 0, 0, 12]
-let b=0
-for(i=0;i<a.length;i++){
+// let a=[0, 0, 0, 0, 0, 12]
+// let b=0
+// for(i=0;i<a.length;i++){
 
-   if (i < 5) {
-    console.log(a[i]);
-    b+= (a[i]<=8) ? a[i]*10 :(8*10)+(a[i]-8)*15 ;
+//    if (i < 5) {
+//     console.log(a[i]);
+//     b+= (a[i]<=8) ? a[i]*10 :(8*10)+(a[i]-8)*15 ;
     
-   }
-   else if(i>=5){
-     (a[i]<=8)?b+=((8*2)*10):b
-   }
-   else if(i>=5){
-     (a[i]>=8)?b+=((8*2)*10)+(a[i]-8*2)*15:b
-   }
-}
-console.log(b);
+//    }
+//    else if(i>=5){
+//      (a[i]<=8)?b+=((8*2)*10):b
+//    }
+//    else if(i>=5){
+//      (a[i]>=8)?b+=((8*2)*10)+(a[i]-8*2)*15:b
+//    }
+// }
+// console.log(b);
 // }
 
 //function name(a,b=0) {
@@ -1761,6 +1762,36 @@ console.log(b);
 // }
 // console.log(prime(4));
 
+
+// for (let i = 2; i <= 50; i++) {
+//     let a=0;
+//     for (let j = 1; j <= i; j++) {
+//         if (i%j==0) {
+//             a++
+//         }
+        
+//     }
+//     if (a==2) {
+//         console.log(i);
+//     }
+// }
+
+for ( i = 2; i <= 50; i++) {
+     isprime=true;
+    for ( j = 2; j < i; j++) {
+        if (i%j==0) {
+            isprime=false;
+            break;
+        }
+        
+    }
+    if (isprime) {
+        console.log(i);
+    }
+
+}
+
+
 //-----------------------------------------(fibanocis)--------------------------------------
 // var number=+prompt("enter a value")
 //     var n1=0; n2=1; nexterm;
@@ -1902,18 +1933,34 @@ console.log(b);
 // }
 // console.log(d);
 
-
-let aa="abc"
-let c="abcdef"
-let dd=0
-for (let i = 0; i < c.length; i++) {
-    if (aa[i]==c[i]) {
-        dd++
-    }
+// let aa="abc"
+// let c="abcdef"
+// let dd=0
+// for (let i = 0; i < c.length; i++) {
+//     if (aa[i]==c[i]) {
+//         dd++
+//     }
     
-}
-console.log(dd);
-console.log(c.match(/^abc/));
+// }
+// console.log(dd);
+// console.log(c.match(/^abc/));
+
+// let str=["string1234","cahita7234ya","kama286kiran"]
+
+// let bb=[]
+
+// for (let i = 0; i < str.length; i++) {
+//     let b=0
+//     for (let j = 0; j < str[i].length; j++) {
+//         if ((/\d/).test(str[i][j])) {
+//         b+=parseInt((str[i][j]))
+//         }
+//         bb.push(b)
+//     }
+// }
+// console.log(bb);
+
+
 
 
 
