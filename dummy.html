@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class classname{
+            constructor(name,pass){
+                this.name=name,
+                this.password=pass
+            }
+          static  dummy (obj){
+                return(`${obj.name} and ${obj.password}`);
+            }
+        }
+        let obj=new classname("deepthi","123")
+        console.log(classname.dummy(obj));
+    </script>
+</body>
+</html>
