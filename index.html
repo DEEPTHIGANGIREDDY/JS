@@ -680,8 +680,8 @@
 
             // Reverse a number using while Loop
 
-			// Input: 123
-			// Output: 321
+			Input: 123
+			Output: 321
 
             // let num=123;
             // let temp=num;
@@ -1777,20 +1777,19 @@
 //     }
 // }
 
-for ( i = 2; i <= 50; i++) {
-     isprime=true;
-    for ( j = 2; j < i; j++) {
-        if (i%j==0) {
-            isprime=false;
-            break;
-        }
-        
-    }
-    if (isprime) {
-        console.log(i);
-    }
+// for ( i = 2; i <= 50; i++) {
+//      isprime=true;
+//     for ( j = 2; j < i; j++) {
+//         if (i%j==0) {
+//             isprime=false;
+//             break;
+//         }
+//     }
+//     if (isprime) {
+//         console.log(i);
+//     }
 
-}
+// }
 
 
 //-----------------------------------------(fibanocis)--------------------------------------
@@ -2209,7 +2208,6 @@ for ( i = 2; i <= 50; i++) {
 // let a=[1,1,2,2,4,4,8,8,10,11,11,12,12]
 // let b={}
 // for (let i = 0; i < a.length; i++) {
-    
 //     if (b[a[i]]) {
 //         b[a[i]]++
 //     }
@@ -2241,6 +2239,78 @@ for ( i = 2; i <= 50; i++) {
 //         console.log(b(4));
 //         console.log(b(3));
 //         console.log(b(4));
+
+// function capitalizeFirstLetter(inputString) {
+//   // Split the input string into an array of words
+//   const words = inputString.split(' ');
+
+//   // Capitalize the first letter of each word
+// //   const capitalizedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1));
+// let b=""
+// for(i=0;i<words.length;i++){
+//     if(words[i][0]===words[i][0].toLowerCase()){
+//         b+=words[i].charAt(0).toUpperCase()
+//     }
+//     else{
+//         b+=words[i][i]
+//     }
+// }
+
+
+//   // Join the words back into a string
+// //   const resultString = capitalizedWords.join(' ');
+
+//   return b;
+// }
+
+// // Example usage:
+// const input = "deepthi ayisha pravallika";
+// const output = capitalizeFirstLetter(input);
+// console.log(output);
+
+
+// let a=["avinash","vinay "]
+// let b=[]
+// for (let i = 0; i < a.length; i++) {
+//     for (let j = 0; j < a[i].length; j++) {
+//         if ([j]%2==0) {
+//         b.push(a[i][j])
+//     }   
+//     }
+// }
+// console.log(b);
+
+
+// fetch("https://jsonplaceholder.typicode.com/users").then((val)=>{
+//     return val.json()
+// }).then((val)=>{
+//     console.log(val);
+//     val.map((val)=>{
+//         let div=document.createElement("p")
+//         div.innerText=val.id
+//         document.body.appendChild(div)
+//     })
+// })
+
+// let a=new Promise(resolve,reject){
+//     let d=10;
+
+// }
+
+
+// let a=["deepthi","deepthi"]
+// for(i=0;i<a.length;i++){
+//     // for(j=0;j<a[i].length;j++){
+//         if(a[i][0].length===a[i][1].length){
+//             console.log(i);
+//             break
+//         }
+//         else{
+//             console.log("worong")
+//         }
+//     // }
+// }
+
 
     </script>
 </body>

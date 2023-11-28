@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Assignment 1:
+        // Write a JavaScript function that takes a number as a parameter 
+        // and prints whether it's positive, negative, or zero.
+        function fun1(a) {
+            if(a>0) {
+                console.log("Positive num");
+            }
+            else if(a<0){
+                console.log("negative num");
+            }
+        }
+        console.log(fun1(-1));
+
+        // Assignment 2:
+        // Write a JavaScript function that takes a positive integer as a parameter and calculates 
+        // its factorial using a for loop. The factorial of a number N is the product of all positive 
+        // integers less than or equal to N.
+
+        function fun2(n) {
+            a=1
+            for (let i = 1; i <= n; i++) {
+                a*=i
+            }
+            return a
+        }
+        console.log(fun2(4));
+
+        // Assignment 3:
+        // Write a JavaScript function that takes two numbers as parameters 
+        // and returns the larger one.
+
+        function fun3(a,b) {
+            if (a>b) {
+                return `${a} is larger one`
+            }else{
+                return `${b} is larger one`
+            }
+        }
+        console.log(fun3(4,5));
+
+        // Assignment 4:
+        // Write a JavaScript function that takes a string as a parameter and determines whether it's 
+        // a palindrome or not. A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization).
+
+        function fun4(a) {
+            let b=""
+            for (let i = a.length-1; i >= 0; i--) {
+                b+=a[i]
+            }
+            if (a==b) {
+                return `${a} is palindrome`
+            }else{
+                return `${a} is not a palindrome`
+            }
+        }
+        console.log(fun4("ded"));
+        console.log(fun4("dede"));
+
+        // Assignment 5:
+        // Write a JavaScript function that takes a positive integer as a parameter and prints all 
+        // the prime numbers less than or equal to that integer. A prime number is a natural number 
+        // greater than 1 that is not a product of two smaller natural numbers.
+
+        
+     </script>
+
+</body>
+</html>
