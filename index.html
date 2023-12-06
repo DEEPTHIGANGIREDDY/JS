@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="icon" href="data:image/png;base64,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" type="icon">
+    <link rel="icon"
+        href="data:image/png;base64,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"
+        type="icon">
 </head>
+
 <body>
     <script>
         //-----------------------------------(task-1)-----------------------------------------------------------------
@@ -33,7 +37,7 @@
         // else{
         //     alert("in valid sec")
         // }
-        
+
         //---funtion----------------
         // function min(m) {
         //     return `${m*=60} sec`
@@ -64,7 +68,7 @@
         // else{
         //     alert("in valid")
         // }
-        
+
         //---(function)-------
         // function age(y) {
         //     return `${y*365.25}`
@@ -83,7 +87,7 @@
         //     return power=voltage*current
         // }
         // console.log(power(10,10))
-        
+
         //-----------------------------------(task-6)-----------------------------------------------------------------
         // 6.Write a function that returns the string "something" joined with a space " " and the given argument a.
 
@@ -116,7 +120,7 @@
 
         // var a=prompt("enter name a")
         // var b=prompt("enter name b")
-        
+
         // var lengtha = a.length;
         // var lengthb = b.length;
         // lengtha===lengthb ? alert("Number of characters in name a: " + lengtha):alert("flase");
@@ -130,7 +134,7 @@
         //----------------------------------------(task-9)-----------------------------------------------------------
         // Create a function that takes a name and returns a greeting in the form of a string. 
         // Don't use a normal function, use an arrow function.
-        
+
         // function name(a) {
         //     return `Good morning ${a}`
         // }
@@ -182,7 +186,7 @@
         //         b+=a[i][j]
         //     }
         //     c.push(b)
-            
+
         // }
         // console.log(c.sort());
 
@@ -195,7 +199,7 @@
         // }
         // console.log(a);
 
-        
+
         //-----------------------------------------(task-12)------------------------------
         //Create a function that takes an array of arrays with numbers. Return a new (single) array with the largest numbers of each.
         // Example:
@@ -212,7 +216,7 @@
         //     }b.push(max);
         // }
         // console.log(b);
-        
+
         //--------------------------------------------(task-13)---------------------------
         //         Create a function that takes an array of numbers and returns the second largest number.
         // Example:]
@@ -222,12 +226,12 @@
         //     let max=a.sort();
         //     console.log(max);
         //     let c=[]
-            
+
         // for (let i = 0; i < max.length; i++) {
         //     if (!c.includes(max[i])) {
         //         c.push(max[i])
         //     }
-            
+
         // }
         // console.log(c[c.length-2]);
         // console.log(c);
@@ -243,7 +247,7 @@
         //         i=0;
         //     i=1;
         //     }
-            
+
         // }
         // console.log(a[a.length-2]);
 
@@ -253,7 +257,7 @@
         //     return a-b
         // }
         // console.log(b);
-        
+
         //----------------------------------------(task-14)----------------------------------
         // Create a function that takes an array of items, removes all duplicate items and returns a new array in the 
         // same sequential order as the old array (minus duplicates).
@@ -279,7 +283,7 @@
         //     if (!b.includes(a[i])) {
         //         b.push(a[i])
         //     }
-            
+
         // }
         // return b
         // }
@@ -304,13 +308,13 @@
         //         console.log(a[i]);
         //     }
         // }
-        
+
         //----------------------------------------(task-16)------------------------------------------------------
         // Create a function that takes two strings as arguments and returns the number of times the first string 
         // (the single character) is found in the second string.
         // Example:
         // charCount("c", "Chamber of secrets") ➞ 1
-        
+
         // function name(a,b) {
         //     let c="";
         //     for (let i = 0; i < b.length; i++) {
@@ -343,7 +347,7 @@
         //Given a string, create a function to reverse the case. All lower-cased letters should be upper-cased, and vice versa.
         // Example:
         // reverseCase("Happy Birthday") ➞ "hAPPY bIRTHDAY"
-        
+
         // let a="Haappy Birthday"
         // let b=""
         // for (let i = 0; i < a.length; i++) {
@@ -360,229 +364,229 @@
         //------------------------------------------(task-19)---------------------------------------------
         // Take one integer n, loop till n and pass each value to a function, create a function that takes one 
         // integer parameter, and multiply with 2 in every integer.
-		// 	Input:      n=5
-		// 	Output:   2 4 6 8 10
+        // 	Input:      n=5
+        // 	Output:   2 4 6 8 10
 
         // let b=[]
         // function name(n) {
         //     for (let i = 1; i <=n; i++) {
         //          b.push(i*2)
-                
+
         //     }
         //     return b
         // }
         // console.log(name(5));
-        
+
 
         //------------------------------------(task-20)----------------------------------------------------------------
 
         //20.  Create Function that will take one parameter and return type of the data.
-           
-			// Input:       500
-			// Output:     Integer
-			// Input:       Coding
-			// Output:    String
 
-            //**************************(scenario-1)********************************************************
+        // Input:       500
+        // Output:     Integer
+        // Input:       Coding
+        // Output:    String
 
-            //(1-way)(note: if we don't want i/p values from the o/p use "1st way"  )
-            // var a= +prompt("enter num or value")
-            // if (a) {
-            //     alert(typeof(a))
-            //     console.log(a);
-                
-            // }
-            // else{
-            //     alert("string")
-            //     console.log(a);
-            // }    
+        //**************************(scenario-1)********************************************************
 
-            //**************************(scenario-2)********************************************************
+        //(1-way)(note: if we don't want i/p values from the o/p use "1st way"  )
+        // var a= +prompt("enter num or value")
+        // if (a) {
+        //     alert(typeof(a))
+        //     console.log(a);
 
-            //(2-way) //(note: if we want to print  i/p values in o/p in that scenario use "2nd way"  )
+        // }
+        // else{
+        //     alert("string")
+        //     console.log(a);
+        // }    
 
-            // var a= prompt("enter num or value")
-            // var b=+a;
-            // if (b==a) {
-            //     alert(typeof(b))
-            //     console.log(typeof(b));
-            //     console.log(b);
-            // }
-            // else{
-            //     alert(typeof(a))
-            //     console.log(typeof(a));
-            //     console.log(a);
-            // }
-            //----------------------------------(scenario-3)--------------------------------------------------
-            // function type(a){
-            //     console.log(typeof(a))
-            // }
-            // type(null)
+        //**************************(scenario-2)********************************************************
 
-            //**************************(scenario-4)********************************************************
+        //(2-way) //(note: if we want to print  i/p values in o/p in that scenario use "2nd way"  )
 
-            //(3-way not working)
-            // var a= prompt("enter num or value")
-            // var b=+a;
-            // switch (a) {
-            //     case number:
-            //         alert("this is num");
-            //         break;
-            //       case "string":
-            //         alert("this is string")  
+        // var a= prompt("enter num or value")
+        // var b=+a;
+        // if (b==a) {
+        //     alert(typeof(b))
+        //     console.log(typeof(b));
+        //     console.log(b);
+        // }
+        // else{
+        //     alert(typeof(a))
+        //     console.log(typeof(a));
+        //     console.log(a);
+        // }
+        //----------------------------------(scenario-3)--------------------------------------------------
+        // function type(a){
+        //     console.log(typeof(a))
+        // }
+        // type(null)
 
-            //     default:
-            //     // alert(typeof(a))
-            //         break;
-            // }
-//-------------------------------------(scenario-5)---------------------------------------------------------
-            //     var a="hjhj";
-            // switch (typeof a) {
-            //         case 'string':
-            //         alert( 'It is a string');
-            //         break
-            //         case 'number':
-            //         alert( 'It is a number');
-            //         break
-            //         case 'boolean':
-            //         alert( 'It is a boolean');
-            //         break
-            //         default:
-            //         alert("in valid")
-            // }
+        //**************************(scenario-4)********************************************************
 
-            // var a=[1,2];
-            // switch (typeof a) {
-            //         case 'string':
-            //         alert( 'It is a string');
-            //         break
-            //         case 'number':
-            //         alert( 'It is a number');
-            //         break
-            //         case 'boolean':
-            //         alert( 'It is a boolean');
-            //         break
-            //         case "Array":
-            //         alert( 'It is a Array');
-            //         break
-            //         default:
-            //         alert("in valid")
-            // }
+        //(3-way not working)
+        // var a= prompt("enter num or value")
+        // var b=+a;
+        // switch (a) {
+        //     case number:
+        //         alert("this is num");
+        //         break;
+        //       case "string":
+        //         alert("this is string")  
 
-            //--------------------------------------(task-21)---------------------------------------------------------
+        //     default:
+        //     // alert(typeof(a))
+        //         break;
+        // }
+        //-------------------------------------(scenario-5)---------------------------------------------------------
+        //     var a="hjhj";
+        // switch (typeof a) {
+        //         case 'string':
+        //         alert( 'It is a string');
+        //         break
+        //         case 'number':
+        //         alert( 'It is a number');
+        //         break
+        //         case 'boolean':
+        //         alert( 'It is a boolean');
+        //         break
+        //         default:
+        //         alert("in valid")
+        // }
 
-            //21 Program to find greatest of three numbers(using ternery operator).
+        // var a=[1,2];
+        // switch (typeof a) {
+        //         case 'string':
+        //         alert( 'It is a string');
+        //         break
+        //         case 'number':
+        //         alert( 'It is a number');
+        //         break
+        //         case 'boolean':
+        //         alert( 'It is a boolean');
+        //         break
+        //         case "Array":
+        //         alert( 'It is a Array');
+        //         break
+        //         default:
+        //         alert("in valid")
+        // }
 
-			// Input:  4 8 2
-			// Output: 8 is gretest
+        //--------------------------------------(task-21)---------------------------------------------------------
 
-            // var a=+prompt("enter a value")
-            // var b=+prompt("enter b value")
-            // var c=+prompt("enter c value")
-            // a>b && a>c ? alert(a + " is gretest"):
-            // b>a && b>c ? alert(b + " is gretest"):
-            // c>a && c>b ? alert(c + " is gretest"):
-            // alert("in valid");
+        //21 Program to find greatest of three numbers(using ternery operator).
 
-            //------------------------------------(task-22)-------------------------------
-            // Program to find factorial of number.
-			// Input: n=5
-			// Output: 120
-			// Explanation: 5 x 4 x 3 x 2 x 1 = 120
+        // Input:  4 8 2
+        // Output: 8 is gretest
 
-            // function fact(n) {
-            //     var a=1;
-            //     for (let i = 1; i <= n; i++) {
-            //          a=a*i;
-                    
-            //     }
-            //     return a;
-            // }
-            // console.log(fact(5));
+        // var a=+prompt("enter a value")
+        // var b=+prompt("enter b value")
+        // var c=+prompt("enter c value")
+        // a>b && a>c ? alert(a + " is gretest"):
+        // b>a && b>c ? alert(b + " is gretest"):
+        // c>a && c>b ? alert(c + " is gretest"):
+        // alert("in valid");
 
-            //----------------------------------(task-23)--------------------------------
-            // Program to arrange numbers in ascending order
-			// Input: [2,3,1,5,4]
-			// Output: [1,2,3,4,5]
+        //------------------------------------(task-22)-------------------------------
+        // Program to find factorial of number.
+        // Input: n=5
+        // Output: 120
+        // Explanation: 5 x 4 x 3 x 2 x 1 = 120
 
-		    // Sort the Array using loop only(you can not use predefined function).
+        // function fact(n) {
+        //     var a=1;
+        //     for (let i = 1; i <= n; i++) {
+        //          a=a*i;
 
-            // let a=[2,3,1,5,4];
-            // for (let i = 0; i < a.length; i++) {
-            //     for (let j = i+1; j < a.length; j++) {
-            //         if (a[i]>a[j]) {
-            //         [a[i],a[j]]=[a[j],a[i]];
-            //     }  
-            //     }
-            // }
-            // console.log(a);
+        //     }
+        //     return a;
+        // }
+        // console.log(fact(5));
 
-            //2nd example
-            // for (let i = 0; i < a.length; i++) {
-            //     if (a[i]>a[i+1]) {
-            //         [a[i],a[i+1]]=[a[i+1],a[i]]
-            //         i=-1;
-            //     }
-                
-            // }
-            // console.log(a);
-            //-----------------------------------(tasBk-24)----------------------
-            // Print Patter using loop.
+        //----------------------------------(task-23)--------------------------------
+        // Program to arrange numbers in ascending order
+        // Input: [2,3,1,5,4]
+        // Output: [1,2,3,4,5]
 
-            // 1
-            // 1 2
-            // 1 2 3
-            // 1 2 3 4
-            // 1 2 3 4 5
+        // Sort the Array using loop only(you can not use predefined function).
 
-            // for (let i = 0; i <= 5; i++) {
-            //     let a=""
-            //     for (let j = 1; j <= i; j++) {
-                    
-            //         a+=j
-            //     }
-            //     console.log(a);
-            // }
-            
+        // let a=[2,3,1,5,4];
+        // for (let i = 0; i < a.length; i++) {
+        //     for (let j = i+1; j < a.length; j++) {
+        //         if (a[i]>a[j]) {
+        //         [a[i],a[j]]=[a[j],a[i]];
+        //     }  
+        //     }
+        // }
+        // console.log(a);
 
-// let n1 = 5;
+        //2nd example
+        // for (let i = 0; i < a.length; i++) {
+        //     if (a[i]>a[i+1]) {
+        //         [a[i],a[i+1]]=[a[i+1],a[i]]
+        //         i=-1;
+        //     }
 
-// for (let i = 1; i <= n1; i++) {
-//   let space = "";
-//   let a = "";
-//   for (let k = 1; k <= n1 - i; k++) {
-//     space += " "; 
-//   }
-//   for (let j = 1; j <= i; j++) {
-//     a += "*"; 
-//   }
-//   console.log(space + a);
-// }
+        // }
+        // console.log(a);
+        //-----------------------------------(tasBk-24)----------------------
+        // Print Patter using loop.
+
+        // 1
+        // 1 2
+        // 1 2 3
+        // 1 2 3 4
+        // 1 2 3 4 5
+
+        // for (let i = 0; i <= 5; i++) {
+        //     let a=""
+        //     for (let j = 1; j <= i; j++) {
+
+        //         a+=j
+        //     }
+        //     console.log(a);
+        // }
 
 
-// 
+        // let n1 = 5;
 
-        
-            //-----------------------------------(task-25)--------------------
-            // 25. C Program to Calculate the Power of a Number(using loop only).
-			// Input: n=5, p=3
-			// Output: 5 ^ 3 = 125
-			// Explanation: 5 x 5 x 5 = 125
-            
-            // function name() {
-            //     // return n**p
-            //     return Math.pow(5,3)
-            // }
-            // console.log(name());
+        // for (let i = 1; i <= n1; i++) {
+        //   let space = "";
+        //   let a = "";
+        //   for (let k = 1; k <= n1 - i; k++) {
+        //     space += " "; 
+        //   }
+        //   for (let j = 1; j <= i; j++) {
+        //     a += "*"; 
+        //   }
+        //   console.log(space + a);
+        // }
 
-            // let n=5;
-            // let x=3;
-            // let num=1;
-            // for (let i = 1; i <= x; i++) {
-            //     num*=n
-            // }
-            // console.log(`5 ^ 3 = ${num}`);
-            
+
+        // 
+
+
+        //-----------------------------------(task-25)--------------------
+        // 25. C Program to Calculate the Power of a Number(using loop only).
+        // Input: n=5, p=3
+        // Output: 5 ^ 3 = 125
+        // Explanation: 5 x 5 x 5 = 125
+
+        // function name() {
+        //     // return n**p
+        //     return Math.pow(5,3)
+        // }
+        // console.log(name());
+
+        // let n=5;
+        // let x=3;
+        // let num=1;
+        // for (let i = 1; i <= x; i++) {
+        //     num*=n
+        // }
+        // console.log(`5 ^ 3 = ${num}`);
+
         //-------------------------------------(task-26)--------------------
         // let a=7;
         // let b=true;
@@ -598,8 +602,8 @@
         // else{
         //         console.log(`${a} it is not a prime num`);
         //     }
-            
-       //------------------------------------(task-27)----------------------------
+
+        //------------------------------------(task-27)----------------------------
         //  27. Program to find LCM of two numbers using while loop
         // Input: 15 50
         // Output: Lcm of 15 and 50 is 150.
@@ -617,7 +621,7 @@
         ///-------------------------------------(task-28)------------------
         // Program to Display Characters from A to Z Using Loop with count.
 
-		// 	Output: A1 B2 C3 D4 E5 F6 ……. Z26 
+        // 	Output: A1 B2 C3 D4 E5 F6 ……. Z26 
         //     let a="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         //     let b=[];
         // for (let i = 0; i < a.length; i++) {
@@ -628,10 +632,10 @@
         //--------------------------------------(task-29)-------------------
         // 29. Program to find a missing number
 
-		// 	Input:  n=5(length of array), arr= [5,3,1,4]
-		// 	Output: 2 is missing
+        // 	Input:  n=5(length of array), arr= [5,3,1,4]
+        // 	Output: 2 is missing
 
-		// Using loop only(you can not use predefined function)
+        // Using loop only(you can not use predefined function)
 
         // let arr=[5,3,1,4]
         // let b=[]
@@ -641,12 +645,12 @@
         //    }
         // }
         // console.log(b);
-        
-        
+
+
         //-------------------------------------(task-30)-----------------------
         // Program to count vowels and consonants in a given String.
 
-		// 	Input: i am ram 
+        // 	Input: i am ram 
         // let a="i am ram";
         // let b=[];
         // let c=[];
@@ -657,7 +661,7 @@
         //     else if(a[i]!=="a" && a[i]!=="e" && a[i]!=="i" && a[i]!=="o" && a[i]!=="u" && a[i]!==" "){
         //         c.push(a[i])
         //     }
-            
+
         // }
         // // console.log(b.length);
         // // console.log(c.length);
@@ -666,8 +670,8 @@
         //------------------------------------(task-31)-----------------------------
         // 31. program to insert  the elements of an array for specific index.
 
-		// 	Input: [1,2,3,4,5,7,8,9,10] , index=5
-		// 	Output: [1,2,3,4,5,6,78,9,10]
+        // 	Input: [1,2,3,4,5,7,8,9,10] , index=5
+        // 	Output: [1,2,3,4,5,6,78,9,10]
 
         // let a=[1,2,3,4,5,7,8,9,10];
         // console.log(a.splice(5,2,6,78));
@@ -678,1040 +682,1040 @@
 
         //------------------------------------(task-32)-----------------------------
 
-            // Reverse a number using while Loop
-
-			Input: 123
-			Output: 321
-
-            // let num=123;
-            // let temp=num;
-            // let rev=0;
-            // while (temp>0) {
-            // var  lstdigit=temp%10;
-            //     rev=rev*10+lstdigit;
-            //     temp=parseInt(temp/10);
-            // }
-            // console.log(rev);
-            // console.log(typeof(rev));
-
-            // let a=123
-            // let b=a.toString().split('').reverse().join('');
-            // console.log(b);
-
-            //---------------------------------(task-33)------------------------------
-            // Count occurrence of number:
-
-			// Input: [1,6,3,1,5,9,7,2,1,9,3,7,8,9,10] , no find=7
-			// Output: 7 present 2 times.
-
-            // let a=[1,6,3,1,5,9,7,2,1,9,3,7,8,9,10]
-            // let b=[]
-            // for (let i = 0; i < a.length; i++) {
-            //     if (a[i]==7) {
-            //         b.push(a[i])
-            //     }
-            // }
-            // console.log(b);
-            
-            //---------------------------------------(medium level problems)--------------------------------------
-            
-            //-----------------------------------------(task-1)---------------------------------------------------
-
-            // Write a function that converts an object into an array, where each element represents a key-value pair in the form of an array.
-
-            // Examples :
-
-            // toArray({ a: 1, b: 2 }) ➞ [["a", 1], ["b", 2]]
-
-            // let a={
-            //     a:1,
-            //     b:2
-            // }
-            // let b=(Object.entries(a));
-            // console.log(b);
-
-            // let c={ shrimp: 15, tots: 12 }
-            // console.log(Object.entries(c));
-            //  let d={}
-            //  console.log(Object.keys(d));
-
-            //-----------------------------------------(task-2)---------------------------------------------------
-            // Create a function that takes two numbers as arguments (num, length) and returns an array of multiples of num until the array length reaches length.
-            // Examples :
-
-            // arrayOfMultiples(7, 5) ➞ [7, 14, 21, 28, 35]
-
-            // arrayOfMultiples(12, 10) ➞ [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]
-
-            // arrayOfMultiples(17, 6) ➞ [17, 34, 51, 68, 85, 102]
-
-            // arrayOfMultiples(7, 5) ➞ [7, 14, 21, 28, 35]
-            // let c=[]
-            // function name(a,b) {
-            //     for (let i = 1; i <= b; i++) {
-            //          c.push(a*[i])
-            //     }
-            // }
-            // name(7,5);
-            // console.log(c);
-
-            // arrayOfMultiples(12, 10) ➞ [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]
-            // let c=[]
-            // function name(a,b) {
-            //     for (let i = 1; i <= b; i++) {
-            //         c.push(a*i)
-            //     }
-            // }
-            // name(12,10)
-            // console.log(c);
-
-            // arrayOfMultiples(17, 6) ➞ [17, 34, 51, 68, 85, 102]
-            // let c=[]
-            // function name(a,b) {
-            //     for (let i = 1; i <= b; i++) {
-            //        c.push(a*i)
-                    
-            //     }
-            // }
-            // name(17,6)
-            // console.log(c);
-
-            //------------------------------------------------(task-3)---------------------------------------------
-            // Create the function that takes an array with objects and returns the sum of people's budgets.
-
-            // Examples :
-
-            // getBudgets([
-            //   { name: "John", age: 21, budget: 23000 },
-            //   { name: "Steve",  age: 32, budget: 40000 },
-            //   { name: "Martin",  age: 16, budget: 2700 }
-            // ]) ➞ 65700
-
-            // let a=[ { name: "John", age: 21, budget: 23000 },
-            //         { name: "Steve",  age: 32, budget: 40000 },
-            //         { name: "Martin",  age: 16, budget: 2700 }
-            //     ]
-                // function add(a){
-                //     c=0;
-                // for( i in a){
-                //     c+=a[i].budget
-                // }
-                // return c
-                // }
-                // console.log(add([ { name: "John", age: 21, budget: 23000 },
-                //     { name: "Steve",  age: 32, budget: 40000 },
-                //     { name: "Martin",  age: 16, budget: 2700 }
-                // ]));
-
-            // getBudgets([
-            //   { name: "John",  age: 21, budget: 29000 },
-            //   { name: "Steve",  age: 32, budget: 32000 },
-            //   { name: "Martin",  age: 16, budget: 1600 }
-            // ]) ➞ 62600
-
-            // function name(a) {
-            //     c=0;
-            //     for(i in a){
-            //         c+=a[i].budget
-            //     }
-            //     return c
-            // }
-            // console.log(name([
-            //   { name: "John",  age: 21, budget: 29000 },
-            //   { name: "Steve",  age: 32, budget: 32000 },
-            //   { name: "Martin",  age: 16, budget: 1600 }
-            // ]));
-
-
-//--------------------------------------------------(task-4)---------------------------------------------------------
-// Create a function that takes an array of objects like { name: "John", notes: [3, 5, 4]} and returns an array of objects like 
-// { name: "John", avgNote: 4 }. If a student has no notes (an empty array) then let's assume avgNote: 0.
-// 	Example :
-
-// [
-//   { name: "John", notes: [3, 5, 4]}
-// ] ➞ [
-//   { name: "John", avgNote: 4 }
-// ]
-
-// function name(a,b,c) {
-//     b=a[0].notes
-//     c=0
-//     for (let i = 0; i < b.length; i++) {
-//         c+=b[i]
-//     }
-//     return c=(c/b.length)
-// }
-// console.log(name([{ name: "John", notes: [3, 5, 4]}]));
-
-// 2nd way
-// let a=[{ name: "John", notes: [3, 5, 4]}]
-// let c=0
-// for (let i = 0; i < a[0].notes.length; i++) {
-//     c+=a[0].notes[i]
-// }
-// console.log((c/a[0].notes.length));
-
-
-//-----------------------------------------------------(task-5)---------------------------------------
-// Create a function that moves all capital letters to the front of a word.
-// 	Examples :
-
-// capToFront("hApPy") ➞ "APhpy"
-
-// capToFront("moveMENT") ➞ "MENTmove"
-
-// capToFront("shOrtCAKE") ➞ "OCAKEshrt"
-
-// capToFront("hApPy") ➞ "APhpy"
-// let a="hApPy";
-// let b=""
-// for (let i = 0; i < a.length; i++) {
-//     if (a[i]==a[i].toUpperCase()) {
-        
-//         b+=a[i]
-//     } 
-// }
-// for (let i = 0; i < a.length; i++) {
-//     if (a[i]==a[i].toLowerCase()) {
-        
-//         b+=a[i]
-//     }
-// }
-// console.log(b);
-
-// capToFront("moveMENT") ➞ "MENTmove"
-// let a="moveMENT"
-// let b="";
-// for (let i = 0; i < a.length; i++) {
-//     if (a[i]==a[i].toUpperCase()) {
-//         b+=a[i]
-//     }
-// }
-// for (let i = 0; i < a.length; i++) {
-//     if (a[i]==a[i].toLowerCase()) {
-//         b+=a[i]
-//     }
-// }
-// console.log(b);
-
-// capToFront("shOrtCAKE") ➞ "OCAKEshrt"
-// let a="shOrtCAKE"
-// let b=""
-// for (let i = 0; i < a.length; i++) {
-//     if (a[i]==a[i].toUpperCase()) {
-//         b+=a[i]
-//     }
-// }
-// for (let i = 0; i < a.length; i++) {
-//     if (a[i]==a[i].toLowerCase()) {
-//         b+=a[i]
-//     }
-// }
-// console.log(b);
-
-//------------------------------------------------(task-6)-----------------------------------------------
-// Count each occurrence of number(can not use predefined function).
-
-// 			Input: [1,6,3,1,5,9,7,2,1,9,3,7,8,9,10] , no find=7
-// 			Output: 1 present 2 times.
-// 				   2 present 1 times.
-// 				   3 present 2 times.
-// 				   5 present 1 times …….  Etc
-
-// let a=[1,6,3,1,5,9,7,2,1,9,3,7,8,9,10]
-// for (let i = 0; i < a.length; i++) {
-//     let b=0
-//     for (let j = 0; j < a.length; j++) {
-//         if (a[i]==a[j]) {
-//             b++;
-//         }
-        
-//     }
-//     console.log(`${a[i]} present ${b} times`);
-// }
-
-//------------------------------------------------(task-7)------------------------------------------------
-// Write a function that accepts an array of strings. Return the longest string(can not use predefined function).
-
-// 		Input: [‘nik’, ’mikhil’, ’Cow’,’Elephant’] 							
-// Output: Elephant
-
-// function name(a) {
-    
-//     for (let i = 0; i < a.length; i++) {
-//        for (let j = 0; j < a.length-1-i; j++) {
-//         if (a[j].length>a[j+1].length) {
-//             [a[j],a[j+1]]=[a[j+1],a[j]]
-//         }
-//        }
-//     }
-//     return a
-// }
-// console.log(name(['nik', 'mikhil', 'Cow','Elephant']));
-
-// function name(a) {
-   
-// let max=a[0].length
-// let c=""
-// for (let i = 0; i < a.length; i++) {
-//     if (a[i].length>max) {
-//         max=a[i].length
-//         c=a[i]
-//     }
-// }
-// return c
-// }
-// console.log(name(['nik', 'mikhil', 'Cow','Elephant']));
-
-//----------------------------------------------(task-8)-------------------------------------------------
-// Most Commonly Used two Character in String(can not use predefined function)
-
-// Input: ‘Hii i am ram’
-// Output; i, a 
-
-// let a="Hiiiamram";
-
-// let b="";
-
-// for(i=0;i<a.length;i++){
-
-//     if(a[i]==="i" || a[i]==="a"){
-
-//         b+=a[i]
-//     }
-// }
-// console.log(b);
-
-
-//------------------------------------------------(task-9)---------------------------------------------
-// Write Program to remove duplicate elements in an array and sort it in descending order(can not use predefined function).
-
-// 			Input: [5,3,5,2,1,1,7,3,5,6]
-// 			Output: [7,6,5,32,1]
-
-
-
-// function name(a) {
-//    let c=a.sort()
-// let b=[]
-// for (let i = c.length-1; i >0 ; i--) {
-//     if (!b.includes(c[i])) {
-//         b.push(c[i])
-//     }
-   
-// }
-// return b 
-// }
-// console.log(name([5,3,5,2,1,1,7,3,5,6]));
-
-
-//------------------------------------------------------(task-10)----------------------------------------
-// Write a Program to Remove brackets from an algebraic expression(can not use predefined function).
-
-// 			Input: a + b-(9+c)=3
-// 			Output: a + b- 9+c=3
-
-// function name(a) {
-//     let b=""
-// for (let i = 0; i < a.length; i++) {
-//     if (a[i]!=="(" && a[i]!==")") {
-//         b+=a[i]
-//     }
-// }
-// return b
-// }
-// console.log(name("a + b-(9+c)=3"));
-//------------------------------------------------(task-11)----------------------------------------------
-// Write Program to remove duplicate elements in an array and sort it in Accending order(can not use predefined function).
-
-// 			Input: [Z, A, P, C, A, Z , K, N, C]
-// 			Output: [A, C, K,N, P, Z]
-
-
-// function name(a) {
-//     console.log(a.sort());
-// let b=[]
-// for (let i = 0; i < a.length; i++) {
-//     if (!b.includes(a[i])) {
-//         b.push(a[i])
-//     }
-    
-// }
-// return b
-// }
-// console.log(name(["Z","A","P","C","A","Z","K","N","C"]));
-
-// let a=["Z","A","P","C","A","Z","K","N","C"]
-// let b=[]
-// for (let i = 0; i < a.length; i++) {
-//     for (let j = 0; j < a.length-1-i; j++) {
-//         if (a[j]>a[j+1]) {
-//             [a[j],a[j+1]]=[a[j+1],a[j]]
-//         }
-//     }
-// }
-// for (let i = 0; i < a.length; i++) {
-//     if (!b.includes(a[i])) {
-//         b.push(a[i])
-//     }
-    
-// }
-// console.log(b);
-
-//-------------------------------------------------(task-12)---------------------------------------------
-// If subseq's  array  sequence is present in the array, returns true or else returns false.                                                    
-// Let arr = [5, 7, 3, 2, 2, 7,-1, 5, -3, 13, 4]
-// Example: 
-//            Input : Subseq1 = [7, -1, 5, -3] Output:  true
-//                       Subseq2 = [7, -1, 4, -3]            : false
-//            Subseq3 = [ -1]                        : true
-//                       Subseq4 = [13, -3, 4, 1]           : false
-
-// function name(a,Subseq1) {
-//     let val=0;
-//     for (let i = 0; i < a.length; i++) {
-//         if (a[i]==Subseq1[val]) {
-//             val++;
-//         }
-//         if (val==Subseq1.length) {
-//             return true
-//         }
-//     }
-//     return false
-// }
-// console.log(name([5, 7, 3, 2, 2, 7,-1, 5, -3, 13, 4],[7, -1, 5, -3]));
-// console.log(name([5, 7, 3, 2, 2, 7,-1, 5, -3, 13, 4],[7, -1, 4, -3]));
-// console.log(name([5, 7, 3, 2, 2, 7,-1, 5, -3, 13, 4],[-1]));
-// console.log(name([5, 7, 3, 2, 2, 7,-1, 5, -3, 13, 4],[13, -3, 4, 1]));
-// let a="";
-// for (let i = 1; i <=5 ; i++) {
-//     for (let j = 1; j <= i ; j++) {
-//         a+=j
-        
-//     }
-//     a+="\n"
-// }
-// console.log(a);
-//-------------------------------------------------(task-13)----------------------------------------------
-// Find sum of the Unique numbers: 
-// Example : Let arr = [1, 2, 2, 1, 3, 5, 1];
-//  The unique numbers are 1,2, 3, 5 so the sum should be 11.
-
-
-// function name(a) {
-//     let b=[]
-// let c=0
-// for (let i = 0; i < a.length; i++) {
-//     if (!b.includes(a[i])) {
-//         b.push(a[i]);
-//         c+=a[i]
-
-//     }
-// }
-// return (b,c)
-// }
-// console.log(name([1, 2, 2, 1, 3, 5, 1]));
-
-//-------------------------------------------(Hard-level)-------------------------------------------------
-//1. Create a function that converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized.
-
-// Examples :
-
-// toCamelCase("A-B-C") ➞ "ABC"
-
-// toCamelCase("the-stealth-warrior") ➞ "theStealthWarrior"
-
-// toCamelCase("The_Stealth_Warrior") ➞ "TheStealthWarrior"
-
-// function name(a) {
-//     let c=""
-//     for (let i = 0; i < a.length; i++) {
-//         if (!/^[\W_]/.test(a[i]) ) {
-//              c+=(a[i]);
-//         }
-//     }
-//     return c
-// }
-// console.log(name("A-B-C"));
-// console.log(name("the-stealth-warrior"));
-// console.log(name("The_Stealth_Warrior"));
-
-
-
-// 2.Create a function that takes an array of strings and returns an array with only the strings that have numbers in them. If there are no strings containing numbers, return an empty array.	
-
-// Examples :
-
-// numInStr(["1a", "a", "2b", "b"]) ➞ ["1a", "2b"]
-
-// numInStr(["abc", "abc10"]) ➞ ["abc10"]
-
-// numInStr(["abc", "ab10c", "a10bc", "bcd"]) ➞ ["ab10c", "a10bc"]
-
-// numInStr(["this is a test", "test1"]) ➞ ["test1"]
-
-// function missing(a) {
-//    let b=[]
-//     for (let i = 0; i < a.length; i++) {
-//         if ((a[i].match(/[0-9]/))) {
-//            b.push(a[i]);
-//         }
-//     }
-//    return b  
-// }
-// console.log(missing(["1a", "a", "2b", "b"]));
-// console.log(missing(["abc", "abc10"]));
-// console.log(missing(["abc", "ab10c", "a10bc", "bcd"]));
-// console.log(missing(["this is a test", "test1"]));
-
-
-// 3.Write a function that takes a list of hours and returns the total weekly salary.
-// The input list hours is listed sequentially, ordered from Monday to Sunday.
-// A worker earns $10 an hour for the first 8 hours.
-// For every overtime hour, he earns $15.
-// On weekends, the employer pays double the usual rate, regardless how many hours were worked previously that week. For instance, 10 hours worked on a weekday would pay 80+30 = $110, but on a weekend it would pay 160+60 = $220.
-
-// Examples :
-// weeklySalary([8, 8, 8, 8, 8, 0, 0]) ➞ 400
-// weeklySalary([10, 10, 10, 0, 8, 0, 0]) ➞ 410
-// weeklySalary([0, 0, 0, 0, 0, 12, 0]) ➞ 280
-
-
-//function name(a,b=0){
-// let a=[0, 0, 0, 0, 0, 12]
-// let b=0
-// for(i=0;i<a.length;i++){
-
-//    if (i < 5) {
-//     console.log(a[i]);
-//     b+= (a[i]<=8) ? a[i]*10 :(8*10)+(a[i]-8)*15 ;
-    
-//    }
-//    else if(i>=5){
-//      (a[i]<=8)?b+=((8*2)*10):b
-//    }
-//    else if(i>=5){
-//      (a[i]>=8)?b+=((8*2)*10)+(a[i]-8*2)*15:b
-//    }
-// }
-// console.log(b);
-// }
-
-//function name(a,b=0) {
-
-//     let a=[10, 10, 8, 8, 12, 0,12 ]
-//     let b=0;
-//     for (let i = 0; i < a.length; i++) {
-// //console.log(a[i]);
-//         if (i<5) {
-//             b+=a[i]<=8? a[i]*10 :(8*10)+(a[i]-8)*15
-//         }else if(i>=5){
-//            b+=((8*2)*10)+(a[i]-8*2)*15
-//         }
-        
-//     }
-//     console.log(b);
-//}
-
-//console.log(name([8, 8, 8, 8, 8, 0, 0]));
-// console.log(name([10, 10, 10, 0, 8, 0, 0],0));
-// console.log(name([0, 0, 0, 0, 0, 12, 0],0));
-
-// 4.Create a function which takes in an encoded string and returns an object according 
-// to the following example:
-// parseCode("John000Doe000123") ➞ {
-// firstName: "John",
-// lastName: "Doe",
-// id: "123"
-// }
-
-// function name(a) {
-    
-// let b=a.split("0").filter(Boolean);
-// if (b.length==3) {
-//     let [
-//     first,last,id
-// ]=b
-
-// return {first,last,id}
-// }
-// else{
-//     console.log("in valid");
-// }
-// }
-
-// console.log(name("John000Doe00012300"));
-
-// parseCode("michael0smith004331") ➞ {
-// firstName: "michael",
-// lastName: "smith",
-// id: "4331"
-// }
-
-
-// function name(a) {
-// let b=a.split("0").filter(Boolean)
-// if (b.length==3) {
-//     let [firstName,lastName,id]=b
-//     return {firstName,lastName,id}
-// }
-// else{
-//     console.log("in valid");
-// }
-// }
-// console.log(name("michael0smith004331"));
-
-// parseCode("Thomas00LEE0000043") ➞ {
-// firstName: "Thomas",
-// lastName: "LEE",
-// id: "43"
-// }
-
-
-// function name(a) {
-// let b=a.split("0").filter(Boolean)
-// if (b.length==3) {
-//     let [firstName,lastName,id]=b
-//     return {firstName,lastName,id}
-// }
-// else{
-//     console.log("in valid");
-// }
-// }
-// console.log(name("Thomas00LEE0000043"));
-
-
-
-
-// 6. Given a String(Note:- String Will Contain all later from A-Z except 1 letter, that letter you need to find out) :-
-
-// Input string=“6 E @ f w 3 x y g N 1 o p Q A b c h i j # K l  d  m  R  T U V  Z”
-
-// Output = ‘’S is missing from the String”
-
-// Note:- (
-// Time Complexity:- O(n) means only 1 loop you can use.
-// without using any predefined function.
-// )
-
-// let input = "6E@fw3xygN1opQAbchij#KldmRTUVZ";
-
-// for(i=97;i<=122;i++){
-//     var b=String.fromCharCode(i)
-// c=0
-//    for(j=0;j<input.length;j++){
-
-//    if(input[j]==b || input[j]==b.toUpperCase()){
-//     c=c+1
-//    }
-// }
-// if(c==0){
-//     console.log(b);
-// }
-// }
-
-// function name(a) {
-//     let b="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-//     for(let i of b){
-//         let letter=i.toLowerCase()
-        
-//         if (!a.includes(i) && !a.includes(letter)) {
-//             return(`${i}`); 
-//         }
-//     }
-// }
-// console.log(name("6 E @ f w 3 x y g N 1 o p Q A b c h i j # K l  d  m  R  T U V  Z"));
-
-
-// 7.  Given a string s, return the longest 
-// Palindromic Substring
- 
-// Input: s = "babad"
-// Output: "bab"
-// Explanation: "aba" is also a valid answer.
-
-// Input: s = "cbbd"
-// Output: "bb"
-// let a="madad"
-
-// let b=""
-// for (let i = a.length-1; i >= 0; i--) {
-//     b+=a[i]
-    
-// }
-// console.log(b);
-// if (a==b) {
-//     console.log("plain");
-// }
-// else{
-//     console.log("not palin");
-// }
-
-// let c=a.split("")
-// console.log(c.reverse().join(""));
-
-
-
-
-
-
-// 8.  Given an unsorted array of integers nums, return the length of    the longest consecutive elements sequence.
-// You must write an algorithm that runs in O(n) time.
-// Input: nums = [100,4,200,1,3,2]
-// Output: 4
-// Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
-// Input: nums = [0,3,7,2,5,8,4,6,0,1]
-// Output: 9
-
-// let a=[100,4,200,1,2,2,3,4]
-// // let a=[0,3,7,2,5,8,4,6,0,1]
-
-// for (let i = 0; i < a.length; i++) {
-//     for (let j = i+1; j < a.length; j++) {
-//         if (a[i]>a[j]) {
-//             [a[i],a[j]]=[a[j],a[i]]
-//         }
-  
-//     }
-    
-// }
-// console.log(a);
-
-// let max=1
-// let cur=1
-// for (let i = 0; i < a.length; i++) {
-//     if (a[i]===a[i-1]+1) {
-//         cur++
-//         if (cur>max) {
-//             max=cur;
-//         }
-//     }
-// }
-// console.log(max);
-
-
-
-//----------------------------------(For loop)---------------------------------------------------------------------
-// var a=+prompt("enter a num");
-// var b=+prompt("for loop start from")
-// var c=+prompt("for loop end")
-// for (let i=b; i<=c; i++){
-//     a=a+i;
-//     console.log(i);
-// }
-// alert(a)
-
-//-----------------------------------(while loop)----------------------------------------------------------------
-// var a=["a","b","c","d","e"]
-// var a =[1,2,3,4,5,6]
-// var i=+prompt("enter a value");
-// // console.log(a[i]);
-
-// while (a[i]=i) {
-//     console.log(a[i]);;
-//     console.log(i);;
-//     i++;
-// }
-//-----------------------------------(temparature in checker)-------------------------------------------------
-// Problem 1: The Temperature Checker
-
-// Write a program that takes a temperature in Celsius as input and 
-// logs a message indicating whether it's hot, warm, or cold.
-
-// var temp=+prompt("Enter a temparature")
-// if (temp>30) {
-//     alert(temp+" Celsius"+" whether it's hot")
-// }
-// else{
-//     alert(temp+" Celsius" +" whether it's cold")
-// }
-
-//-----------------------------------(The Grade Classifier)--------------------------------------------------
-// Problem 2: The Grade Classifier
-
-// Write a program that takes a student's score as input and logs their
-//  grade (A, B, C, D, or F) based on the following criteria:
-// A: 90-100
-// B: 80-89
-// C: 70-79
-// D: 60-69
-
-// var StdntScore=+prompt("Enter Socre")
-// if (StdntScore>=90 && StdntScore<=100){
-//     alert("Grade A")
-// }
-// else if(StdntScore>=80 && StdntScore<=89){
-//     alert("Grade B")
-// }
-// else if(StdntScore>=70 && StdntScore<=79){
-//     alert("Grade C")
-// }
-// else if(StdntScore>=60 && StdntScore<=69){
-//     alert("Grade D")
-// }
-// else{
-//     alert("Failed")
-// }
-
-//-------------------(The Number Identifier(-ve or +ve or zero))---------------------------------
-
-// Problem 3: The Number Identifier
-
-// Write a program that takes a number as input and logs whether it's positive, negative, or zero.
-// var a=+prompt("Enter a value")
-// if (a>0) {
-//     alert(a + " +ve Value")
-// }
-// else if(a<0){
-//     alert(a + " -ve value")
-// }
-// else{
-//     alert(" Zero")
-// }
-
-//-----------------------------------------------------------------------------------------------
-// Problem 4: The Leap Year Checker
-
-// Write a program that checks if a given year is a leap year. A leap year is divisible by 4,
-// but not by 100, unless it's also divisible by 400.
-
-// var year=+prompt("Enter a year")
-// if (year%4==0) {
-//     alert("leap year")
-// }
-// else{
-//     alert("this is not leap year")
-// }
-
-//----------------------------------(The Triangle Classifier)-----------------------------------
-// Problem 5: The Triangle Classifier
-// Write a program that takes three angles as input and logs whether they form a valid triangle. 
-// (The angles should add up to 180 degrees for a valid triangle.)
-
-// var a=+prompt("Enter a value")
-// var b=+prompt("Enter a value")
-// var c=+prompt("Enter a value")
-// if (a+b+c==180) {
-//     alert("180 degrees for a Vaild Triangle")
-// }
-// else{
-//     alert("In valid triangle")
-// }
-
-//--------------------------------(even or odd)--------------------------------------------------
-// Problem 6: The Even or Odd Checker
-
-// Write a program that takes a number as input and logs whether it's even or odd.
-
-// var num=+prompt("Enter a number")
-// if (num%2==0) {
-//     alert("Even number")
-// }
-// else{
-//     alert("Odd number")
-// }
-
-//------------------------------------(The Largest of Three Numbers)----------------------------
-// Problem 7: The Largest of Three Numbers
-
-// Write a program that takes three numbers as input and logs the largest one.
-// var a=+prompt("Enter a value")
-// var b=+prompt("Enter a value")
-// var c=+prompt("Enter a value")
-// if (a>b && a>c) {
-//     alert("a is largest one")
-// }
-// else if (b>a && b>c) {
-//     alert("b is largest one")
-// }
-// else if (c>a && c>b) {
-//     alert("c is largest one")
-// }
-// else if (a=b=c){
-//     alert("equal number")
-// }
-// else{
-//     alert("in valid")
-// }
-
-//------------------------( The Time Greeting)-----------------------------------------------------
-// Problem 8: The Time Greeting
-
-// Write a program that takes the current time (in 24-hour format) as input and logs a greeting 
-// (e.g., "Good morning", "Good afternoon", "Good evening", "Good night") based on the time.
-
-// var a=+prompt("enter a time")
-// if (a>=0 && a<12) {
-//     alert("Good morning")
-// }
-// else if (a>=12 && a<16) {
-//     alert("Good afternoon")
-// }
-// else if (a>=16 && a<20) {
-//     alert("Good evening")
-// }
-// else if (a>=20 && a<=24) {
-//     alert("Good night")
-// }
-// else{
-//     alert("in valid")
-// }
-//--------------------------(The Vowel Checker)-------------------------------------------------------
-// Problem 9: The Vowel Checker
-
-// Write a program that takes a character as input and logs whether it's a vowel or a consonant.
-
-
-// var a=prompt("enter vowel")
-// if (a=="a" || a=="e" || a=="i" || a=="o" || a=="u") {
-//     alert("it is vowel")
-// }
-// else{
-//     alert("constant")
-// }
-
-//---------------(2nd way)
-
-// var a=prompt("enter vowel")
-// var b=a.charAt(0)
-// if (b=="a" || b=="e" || b=="i" || b=="o" || b=="u") {
-//     alert("it is vowel")
-// }
-// else{
-//     alert("constant")
-// }
-
-//-----------------------------(The Age Group Classifier)------------------------------------
-// Problem 10: The Age Group Classifier
-
-// Write a program that takes a person's age as input and logs which age group they belong to 
-// (e.g., child, teenager, adult, senior).
-
-// var age=+prompt("enter age")
-// if (age>=0 && age<14) {
-//     alert("child")   
-// }
-// else if (age>=14 && age<21){
-//     alert("teenager")
-// }
-// else if (age>=21 && age<49){
-//     alert("adult")
-// }
-// else{
-//     alert("senior")
-// }
-//******************************************(problem solving)***********************************//
-//--------------------------------------------(10-11-2023)--------------------------------------//
-
-//---------------------------------------(square box)---------------------------------------------
-//1. take two dynamic values print square box and if condition false print it is not a square.
- 
-// var lenght=+prompt("enter a lenght");
-// var breadth=+prompt("enter a breadth");
-// if(lenght==breadth){
-//     alert("It is a square")
-// }
-// else{
-//     alert("It is a not a square")
-// }
-
-//----------------------------------------(write a arithamatic progress)--------------------------
-//2. write a arithamatic progress 
-// var a=+prompt("enter a value")
-// var b=+prompt("enter b value")
-// var c=+prompt("enter c value")
-// if (b-a == c-b) {
-//     alert("This is a Arithamatic Progress")
-// }
-// else{
-//     alert("This is not a Arithamatic Progress")
-// }
-
-//--------------------------------------------------------------------------------------------------
-//3. write a program a & b module to the c if it is true print 1 if it not true print -1
-// var a=+prompt("enter a value")
-// var b=+prompt("enter b value")
-// var c=+prompt("enter c value")
-// if (a%c==0 && b%c==0) {
-//     alert("true or 1")
-// }
-// else{
-//     alert("false or -1")
-// }
-
-//---------------------------------------------------------------------------------------------------
-//4. write take 1 & 2 & 5 & 10 coins .im having 1 rupes coins 2 & 2 rupee coins 5  and 5 rupe coins 10 & 
-// // 10 rupee coins 5 find total ammount .when you went shop your buying some things. bill is "" 
-
-// var a=1; b=2;c=5;d=10;
-// var totalamount=(a*2)+(b*5)+(c*10)+(d*5);
-// var bill=+prompt("enter bill");
-// if (bill==totalamount) {
-//     alert("paid")
-// }
-// else if (bill>totalamount){
-//     alert(bill-totalamount +" need to pay remaining ammount")
-// }
-// else{
-//     alert(totalamount-bill +" balacnce ammount")
-// }
-
-//---------------------------------(swap with empaty variable)----------------------------------
-// Wap to swap two numbers with empty variable. 
-// var a=2;b=3;c=0;
-// c=a;
-// a=b
-// b=c;
-// console.log(a,b);
-//----------------------------------(swap without variable)-------------------------------------
-// Wap to swap two numbers without using 3rd variable. 
-// var a=3;b=4;
-// a=a+b;
-// b=a-b;
-// a=a-b;
-// console.log(a,b);
-//-----------------------------------(even &odd num)-------------------------------------------
-//Wap(Write a program) to find even odd number
-// var a=+prompt("enter a value");
-// if (a%2==0) {
-//     alert(true +" this is even num")
-// }
-// else{
-//     alert(false+" this is Odd num")
-// }
-//-----------------------------------------------------------------------------------------
-// Find all even number from given array.
-// var a=prompt("enter a value")
-
-// for (b = 0; b < a.length; b++) {
-//     if (b%2==0) {
-//         console.log(a[b])
-//     }  
-// }
-// var a=[1,2,3,4,5]
-// for (let b = 0; b < a.length; b++) {
-//     if (b%2==0) {
-//         console.log(b);
-//     }
-// }
-
-//-------------------------------------------(amstrong num)-----------------------------------
-// var sum=0;
-// var number=+prompt("enter a num");
-// var temp=number;
-// while (temp>0) {
-//     lastdigit=temp%10;
-//     sum+=lastdigit*lastdigit*lastdigit;
-//     temp=parseInt(temp/10);
-// }
-// if (sum==number) {
-//     console.log("it is amstrong num");
-// }
-// else{
-//     console.log("faild");
-// }
-//-------------------------------------(palindrum)----------------------------------------------
+        // Reverse a number using while Loop
+
+        Input: 123
+        Output: 321
+
+        // let num=123;
+        // let temp=num;
+        // let rev=0;
+        // while (temp>0) {
+        // var  lstdigit=temp%10;
+        //     rev=rev*10+lstdigit;
+        //     temp=parseInt(temp/10);
+        // }
+        // console.log(rev);
+        // console.log(typeof(rev));
+
+        // let a=123
+        // let b=a.toString().split('').reverse().join('');
+        // console.log(b);
+
+        //---------------------------------(task-33)------------------------------
+        // Count occurrence of number:
+
+        // Input: [1,6,3,1,5,9,7,2,1,9,3,7,8,9,10] , no find=7
+        // Output: 7 present 2 times.
+
+        // let a=[1,6,3,1,5,9,7,2,1,9,3,7,8,9,10]
+        // let b=[]
+        // for (let i = 0; i < a.length; i++) {
+        //     if (a[i]==7) {
+        //         b.push(a[i])
+        //     }
+        // }
+        // console.log(b);
+
+        //---------------------------------------(medium level problems)--------------------------------------
+
+        //-----------------------------------------(task-1)---------------------------------------------------
+
+        // Write a function that converts an object into an array, where each element represents a key-value pair in the form of an array.
+
+        // Examples :
+
+        // toArray({ a: 1, b: 2 }) ➞ [["a", 1], ["b", 2]]
+
+        // let a={
+        //     a:1,
+        //     b:2
+        // }
+        // let b=(Object.entries(a));
+        // console.log(b);
+
+        // let c={ shrimp: 15, tots: 12 }
+        // console.log(Object.entries(c));
+        //  let d={}
+        //  console.log(Object.keys(d));
+
+        //-----------------------------------------(task-2)---------------------------------------------------
+        // Create a function that takes two numbers as arguments (num, length) and returns an array of multiples of num until the array length reaches length.
+        // Examples :
+
+        // arrayOfMultiples(7, 5) ➞ [7, 14, 21, 28, 35]
+
+        // arrayOfMultiples(12, 10) ➞ [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]
+
+        // arrayOfMultiples(17, 6) ➞ [17, 34, 51, 68, 85, 102]
+
+        // arrayOfMultiples(7, 5) ➞ [7, 14, 21, 28, 35]
+        // let c=[]
+        // function name(a,b) {
+        //     for (let i = 1; i <= b; i++) {
+        //          c.push(a*[i])
+        //     }
+        // }
+        // name(7,5);
+        // console.log(c);
+
+        // arrayOfMultiples(12, 10) ➞ [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]
+        // let c=[]
+        // function name(a,b) {
+        //     for (let i = 1; i <= b; i++) {
+        //         c.push(a*i)
+        //     }
+        // }
+        // name(12,10)
+        // console.log(c);
+
+        // arrayOfMultiples(17, 6) ➞ [17, 34, 51, 68, 85, 102]
+        // let c=[]
+        // function name(a,b) {
+        //     for (let i = 1; i <= b; i++) {
+        //        c.push(a*i)
+
+        //     }
+        // }
+        // name(17,6)
+        // console.log(c);
+
+        //------------------------------------------------(task-3)---------------------------------------------
+        // Create the function that takes an array with objects and returns the sum of people's budgets.
+
+        // Examples :
+
+        // getBudgets([
+        //   { name: "John", age: 21, budget: 23000 },
+        //   { name: "Steve",  age: 32, budget: 40000 },
+        //   { name: "Martin",  age: 16, budget: 2700 }
+        // ]) ➞ 65700
+
+        // let a=[ { name: "John", age: 21, budget: 23000 },
+        //         { name: "Steve",  age: 32, budget: 40000 },
+        //         { name: "Martin",  age: 16, budget: 2700 }
+        //     ]
+        // function add(a){
+        //     c=0;
+        // for( i in a){
+        //     c+=a[i].budget
+        // }
+        // return c
+        // }
+        // console.log(add([ { name: "John", age: 21, budget: 23000 },
+        //     { name: "Steve",  age: 32, budget: 40000 },
+        //     { name: "Martin",  age: 16, budget: 2700 }
+        // ]));
+
+        // getBudgets([
+        //   { name: "John",  age: 21, budget: 29000 },
+        //   { name: "Steve",  age: 32, budget: 32000 },
+        //   { name: "Martin",  age: 16, budget: 1600 }
+        // ]) ➞ 62600
+
+        // function name(a) {
+        //     c=0;
+        //     for(i in a){
+        //         c+=a[i].budget
+        //     }
+        //     return c
+        // }
+        // console.log(name([
+        //   { name: "John",  age: 21, budget: 29000 },
+        //   { name: "Steve",  age: 32, budget: 32000 },
+        //   { name: "Martin",  age: 16, budget: 1600 }
+        // ]));
+
+
+        //--------------------------------------------------(task-4)---------------------------------------------------------
+        // Create a function that takes an array of objects like { name: "John", notes: [3, 5, 4]} and returns an array of objects like 
+        // { name: "John", avgNote: 4 }. If a student has no notes (an empty array) then let's assume avgNote: 0.
+        // 	Example :
+
+        // [
+        //   { name: "John", notes: [3, 5, 4]}
+        // ] ➞ [
+        //   { name: "John", avgNote: 4 }
+        // ]
+
+        // function name(a,b,c) {
+        //     b=a[0].notes
+        //     c=0
+        //     for (let i = 0; i < b.length; i++) {
+        //         c+=b[i]
+        //     }
+        //     return c=(c/b.length)
+        // }
+        // console.log(name([{ name: "John", notes: [3, 5, 4]}]));
+
+        // 2nd way
+        // let a=[{ name: "John", notes: [3, 5, 4]}]
+        // let c=0
+        // for (let i = 0; i < a[0].notes.length; i++) {
+        //     c+=a[0].notes[i]
+        // }
+        // console.log((c/a[0].notes.length));
+
+
+        //-----------------------------------------------------(task-5)---------------------------------------
+        // Create a function that moves all capital letters to the front of a word.
+        // 	Examples :
+
+        // capToFront("hApPy") ➞ "APhpy"
+
+        // capToFront("moveMENT") ➞ "MENTmove"
+
+        // capToFront("shOrtCAKE") ➞ "OCAKEshrt"
+
+        // capToFront("hApPy") ➞ "APhpy"
+        // let a="hApPy";
+        // let b=""
+        // for (let i = 0; i < a.length; i++) {
+        //     if (a[i]==a[i].toUpperCase()) {
+
+        //         b+=a[i]
+        //     } 
+        // }
+        // for (let i = 0; i < a.length; i++) {
+        //     if (a[i]==a[i].toLowerCase()) {
+
+        //         b+=a[i]
+        //     }
+        // }
+        // console.log(b);
+
+        // capToFront("moveMENT") ➞ "MENTmove"
+        // let a="moveMENT"
+        // let b="";
+        // for (let i = 0; i < a.length; i++) {
+        //     if (a[i]==a[i].toUpperCase()) {
+        //         b+=a[i]
+        //     }
+        // }
+        // for (let i = 0; i < a.length; i++) {
+        //     if (a[i]==a[i].toLowerCase()) {
+        //         b+=a[i]
+        //     }
+        // }
+        // console.log(b);
+
+        // capToFront("shOrtCAKE") ➞ "OCAKEshrt"
+        // let a="shOrtCAKE"
+        // let b=""
+        // for (let i = 0; i < a.length; i++) {
+        //     if (a[i]==a[i].toUpperCase()) {
+        //         b+=a[i]
+        //     }
+        // }
+        // for (let i = 0; i < a.length; i++) {
+        //     if (a[i]==a[i].toLowerCase()) {
+        //         b+=a[i]
+        //     }
+        // }
+        // console.log(b);
+
+        //------------------------------------------------(task-6)-----------------------------------------------
+        // Count each occurrence of number(can not use predefined function).
+
+        // 			Input: [1,6,3,1,5,9,7,2,1,9,3,7,8,9,10] , no find=7
+        // 			Output: 1 present 2 times.
+        // 				   2 present 1 times.
+        // 				   3 present 2 times.
+        // 				   5 present 1 times …….  Etc
+
+        // let a=[1,6,3,1,5,9,7,2,1,9,3,7,8,9,10]
+        // for (let i = 0; i < a.length; i++) {
+        //     let b=0
+        //     for (let j = 0; j < a.length; j++) {
+        //         if (a[i]==a[j]) {
+        //             b++;
+        //         }
+
+        //     }
+        //     console.log(`${a[i]} present ${b} times`);
+        // }
+
+        //------------------------------------------------(task-7)------------------------------------------------
+        // Write a function that accepts an array of strings. Return the longest string(can not use predefined function).
+
+        // 		Input: [‘nik’, ’mikhil’, ’Cow’,’Elephant’] 							
+        // Output: Elephant
+
+        // function name(a) {
+
+        //     for (let i = 0; i < a.length; i++) {
+        //        for (let j = 0; j < a.length-1-i; j++) {
+        //         if (a[j].length>a[j+1].length) {
+        //             [a[j],a[j+1]]=[a[j+1],a[j]]
+        //         }
+        //        }
+        //     }
+        //     return a
+        // }
+        // console.log(name(['nik', 'mikhil', 'Cow','Elephant']));
+
+        // function name(a) {
+
+        // let max=a[0].length
+        // let c=""
+        // for (let i = 0; i < a.length; i++) {
+        //     if (a[i].length>max) {
+        //         max=a[i].length
+        //         c=a[i]
+        //     }
+        // }
+        // return c
+        // }
+        // console.log(name(['nik', 'mikhil', 'Cow','Elephant']));
+
+        //----------------------------------------------(task-8)-------------------------------------------------
+        // Most Commonly Used two Character in String(can not use predefined function)
+
+        // Input: ‘Hii i am ram’
+        // Output; i, a 
+
+        // let a="Hiiiamram";
+
+        // let b="";
+
+        // for(i=0;i<a.length;i++){
+
+        //     if(a[i]==="i" || a[i]==="a"){
+
+        //         b+=a[i]
+        //     }
+        // }
+        // console.log(b);
+
+
+        //------------------------------------------------(task-9)---------------------------------------------
+        // Write Program to remove duplicate elements in an array and sort it in descending order(can not use predefined function).
+
+        // 			Input: [5,3,5,2,1,1,7,3,5,6]
+        // 			Output: [7,6,5,32,1]
+
+
+
+        // function name(a) {
+        //    let c=a.sort()
+        // let b=[]
+        // for (let i = c.length-1; i >0 ; i--) {
+        //     if (!b.includes(c[i])) {
+        //         b.push(c[i])
+        //     }
+
+        // }
+        // return b 
+        // }
+        // console.log(name([5,3,5,2,1,1,7,3,5,6]));
+
+
+        //------------------------------------------------------(task-10)----------------------------------------
+        // Write a Program to Remove brackets from an algebraic expression(can not use predefined function).
+
+        // 			Input: a + b-(9+c)=3
+        // 			Output: a + b- 9+c=3
+
+        // function name(a) {
+        //     let b=""
+        // for (let i = 0; i < a.length; i++) {
+        //     if (a[i]!=="(" && a[i]!==")") {
+        //         b+=a[i]
+        //     }
+        // }
+        // return b
+        // }
+        // console.log(name("a + b-(9+c)=3"));
+        //------------------------------------------------(task-11)----------------------------------------------
+        // Write Program to remove duplicate elements in an array and sort it in Accending order(can not use predefined function).
+
+        // 			Input: [Z, A, P, C, A, Z , K, N, C]
+        // 			Output: [A, C, K,N, P, Z]
+
+
+        // function name(a) {
+        //     console.log(a.sort());
+        // let b=[]
+        // for (let i = 0; i < a.length; i++) {
+        //     if (!b.includes(a[i])) {
+        //         b.push(a[i])
+        //     }
+
+        // }
+        // return b
+        // }
+        // console.log(name(["Z","A","P","C","A","Z","K","N","C"]));
+
+        // let a=["Z","A","P","C","A","Z","K","N","C"]
+        // let b=[]
+        // for (let i = 0; i < a.length; i++) {
+        //     for (let j = 0; j < a.length-1-i; j++) {
+        //         if (a[j]>a[j+1]) {
+        //             [a[j],a[j+1]]=[a[j+1],a[j]]
+        //         }
+        //     }
+        // }
+        // for (let i = 0; i < a.length; i++) {
+        //     if (!b.includes(a[i])) {
+        //         b.push(a[i])
+        //     }
+
+        // }
+        // console.log(b);
+
+        //-------------------------------------------------(task-12)---------------------------------------------
+        // If subseq's  array  sequence is present in the array, returns true or else returns false.                                                    
+        // Let arr = [5, 7, 3, 2, 2, 7,-1, 5, -3, 13, 4]
+        // Example: 
+        //            Input : Subseq1 = [7, -1, 5, -3] Output:  true
+        //                       Subseq2 = [7, -1, 4, -3]            : false
+        //            Subseq3 = [ -1]                        : true
+        //                       Subseq4 = [13, -3, 4, 1]           : false
+
+        // function name(a,Subseq1) {
+        //     let val=0;
+        //     for (let i = 0; i < a.length; i++) {
+        //         if (a[i]==Subseq1[val]) {
+        //             val++;
+        //         }
+        //         if (val==Subseq1.length) {
+        //             return true
+        //         }
+        //     }
+        //     return false
+        // }
+        // console.log(name([5, 7, 3, 2, 2, 7,-1, 5, -3, 13, 4],[7, -1, 5, -3]));
+        // console.log(name([5, 7, 3, 2, 2, 7,-1, 5, -3, 13, 4],[7, -1, 4, -3]));
+        // console.log(name([5, 7, 3, 2, 2, 7,-1, 5, -3, 13, 4],[-1]));
+        // console.log(name([5, 7, 3, 2, 2, 7,-1, 5, -3, 13, 4],[13, -3, 4, 1]));
+        // let a="";
+        // for (let i = 1; i <=5 ; i++) {
+        //     for (let j = 1; j <= i ; j++) {
+        //         a+=j
+
+        //     }
+        //     a+="\n"
+        // }
+        // console.log(a);
+        //-------------------------------------------------(task-13)----------------------------------------------
+        // Find sum of the Unique numbers: 
+        // Example : Let arr = [1, 2, 2, 1, 3, 5, 1];
+        //  The unique numbers are 1,2, 3, 5 so the sum should be 11.
+
+
+        // function name(a) {
+        //     let b=[]
+        // let c=0
+        // for (let i = 0; i < a.length; i++) {
+        //     if (!b.includes(a[i])) {
+        //         b.push(a[i]);
+        //         c+=a[i]
+
+        //     }
+        // }
+        // return (b,c)
+        // }
+        // console.log(name([1, 2, 2, 1, 3, 5, 1]));
+
+        //-------------------------------------------(Hard-level)-------------------------------------------------
+        //1. Create a function that converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized.
+
+        // Examples :
+
+        // toCamelCase("A-B-C") ➞ "ABC"
+
+        // toCamelCase("the-stealth-warrior") ➞ "theStealthWarrior"
+
+        // toCamelCase("The_Stealth_Warrior") ➞ "TheStealthWarrior"
+
+        // function name(a) {
+        //     let c=""
+        //     for (let i = 0; i < a.length; i++) {
+        //         if (!/^[\W_]/.test(a[i]) ) {
+        //              c+=(a[i]);
+        //         }
+        //     }
+        //     return c
+        // }
+        // console.log(name("A-B-C"));
+        // console.log(name("the-stealth-warrior"));
+        // console.log(name("The_Stealth_Warrior"));
+
+
+
+        // 2.Create a function that takes an array of strings and returns an array with only the strings that have numbers in them. If there are no strings containing numbers, return an empty array.	
+
+        // Examples :
+
+        // numInStr(["1a", "a", "2b", "b"]) ➞ ["1a", "2b"]
+
+        // numInStr(["abc", "abc10"]) ➞ ["abc10"]
+
+        // numInStr(["abc", "ab10c", "a10bc", "bcd"]) ➞ ["ab10c", "a10bc"]
+
+        // numInStr(["this is a test", "test1"]) ➞ ["test1"]
+
+        // function missing(a) {
+        //    let b=[]
+        //     for (let i = 0; i < a.length; i++) {
+        //         if ((a[i].match(/[0-9]/))) {
+        //            b.push(a[i]);
+        //         }
+        //     }
+        //    return b  
+        // }
+        // console.log(missing(["1a", "a", "2b", "b"]));
+        // console.log(missing(["abc", "abc10"]));
+        // console.log(missing(["abc", "ab10c", "a10bc", "bcd"]));
+        // console.log(missing(["this is a test", "test1"]));
+
+
+        // 3.Write a function that takes a list of hours and returns the total weekly salary.
+        // The input list hours is listed sequentially, ordered from Monday to Sunday.
+        // A worker earns $10 an hour for the first 8 hours.
+        // For every overtime hour, he earns $15.
+        // On weekends, the employer pays double the usual rate, regardless how many hours were worked previously that week. For instance, 10 hours worked on a weekday would pay 80+30 = $110, but on a weekend it would pay 160+60 = $220.
+
+        // Examples :
+        // weeklySalary([8, 8, 8, 8, 8, 0, 0]) ➞ 400
+        // weeklySalary([10, 10, 10, 0, 8, 0, 0]) ➞ 410
+        // weeklySalary([0, 0, 0, 0, 0, 12, 0]) ➞ 280
+
+
+        //function name(a,b=0){
+        // let a=[0, 0, 0, 0, 0, 12]
+        // let b=0
+        // for(i=0;i<a.length;i++){
+
+        //    if (i < 5) {
+        //     console.log(a[i]);
+        //     b+= (a[i]<=8) ? a[i]*10 :(8*10)+(a[i]-8)*15 ;
+
+        //    }
+        //    else if(i>=5){
+        //      (a[i]<=8)?b+=((8*2)*10):b
+        //    }
+        //    else if(i>=5){
+        //      (a[i]>=8)?b+=((8*2)*10)+(a[i]-8*2)*15:b
+        //    }
+        // }
+        // console.log(b);
+        // }
+
+        //function name(a,b=0) {
+
+        //     let a=[10, 10, 8, 8, 12, 0,12 ]
+        //     let b=0;
+        //     for (let i = 0; i < a.length; i++) {
+        // //console.log(a[i]);
+        //         if (i<5) {
+        //             b+=a[i]<=8? a[i]*10 :(8*10)+(a[i]-8)*15
+        //         }else if(i>=5){
+        //            b+=((8*2)*10)+(a[i]-8*2)*15
+        //         }
+
+        //     }
+        //     console.log(b);
+        //}
+
+        //console.log(name([8, 8, 8, 8, 8, 0, 0]));
+        // console.log(name([10, 10, 10, 0, 8, 0, 0],0));
+        // console.log(name([0, 0, 0, 0, 0, 12, 0],0));
+
+        // 4.Create a function which takes in an encoded string and returns an object according 
+        // to the following example:
+        // parseCode("John000Doe000123") ➞ {
+        // firstName: "John",
+        // lastName: "Doe",
+        // id: "123"
+        // }
+
+        // function name(a) {
+
+        // let b=a.split("0").filter(Boolean);
+        // if (b.length==3) {
+        //     let [
+        //     first,last,id
+        // ]=b
+
+        // return {first,last,id}
+        // }
+        // else{
+        //     console.log("in valid");
+        // }
+        // }
+
+        // console.log(name("John000Doe00012300"));
+
+        // parseCode("michael0smith004331") ➞ {
+        // firstName: "michael",
+        // lastName: "smith",
+        // id: "4331"
+        // }
+
+
+        // function name(a) {
+        // let b=a.split("0").filter(Boolean)
+        // if (b.length==3) {
+        //     let [firstName,lastName,id]=b
+        //     return {firstName,lastName,id}
+        // }
+        // else{
+        //     console.log("in valid");
+        // }
+        // }
+        // console.log(name("michael0smith004331"));
+
+        // parseCode("Thomas00LEE0000043") ➞ {
+        // firstName: "Thomas",
+        // lastName: "LEE",
+        // id: "43"
+        // }
+
+
+        // function name(a) {
+        // let b=a.split("0").filter(Boolean)
+        // if (b.length==3) {
+        //     let [firstName,lastName,id]=b
+        //     return {firstName,lastName,id}
+        // }
+        // else{
+        //     console.log("in valid");
+        // }
+        // }
+        // console.log(name("Thomas00LEE0000043"));
+
+
+
+
+        // 6. Given a String(Note:- String Will Contain all later from A-Z except 1 letter, that letter you need to find out) :-
+
+        // Input string=“6 E @ f w 3 x y g N 1 o p Q A b c h i j # K l  d  m  R  T U V  Z”
+
+        // Output = ‘’S is missing from the String”
+
+        // Note:- (
+        // Time Complexity:- O(n) means only 1 loop you can use.
+        // without using any predefined function.
+        // )
+
+        // let input = "6E@fw3xygN1opQAbchij#KldmRTUVZ";
+
+        // for(i=97;i<=122;i++){
+        //     var b=String.fromCharCode(i)
+        // c=0
+        //    for(j=0;j<input.length;j++){
+
+        //    if(input[j]==b || input[j]==b.toUpperCase()){
+        //     c=c+1
+        //    }
+        // }
+        // if(c==0){
+        //     console.log(b);
+        // }
+        // }
+
+        // function name(a) {
+        //     let b="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        //     for(let i of b){
+        //         let letter=i.toLowerCase()
+
+        //         if (!a.includes(i) && !a.includes(letter)) {
+        //             return(`${i}`); 
+        //         }
+        //     }
+        // }
+        // console.log(name("6 E @ f w 3 x y g N 1 o p Q A b c h i j # K l  d  m  R  T U V  Z"));
+
+
+        // 7.  Given a string s, return the longest 
+        // Palindromic Substring
+
+        // Input: s = "babad"
+        // Output: "bab"
+        // Explanation: "aba" is also a valid answer.
+
+        // Input: s = "cbbd"
+        // Output: "bb"
+        // let a="madad"
+
+        // let b=""
+        // for (let i = a.length-1; i >= 0; i--) {
+        //     b+=a[i]
+
+        // }
+        // console.log(b);
+        // if (a==b) {
+        //     console.log("plain");
+        // }
+        // else{
+        //     console.log("not palin");
+        // }
+
+        // let c=a.split("")
+        // console.log(c.reverse().join(""));
+
+
+
+
+
+
+        // 8.  Given an unsorted array of integers nums, return the length of    the longest consecutive elements sequence.
+        // You must write an algorithm that runs in O(n) time.
+        // Input: nums = [100,4,200,1,3,2]
+        // Output: 4
+        // Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+        // Input: nums = [0,3,7,2,5,8,4,6,0,1]
+        // Output: 9
+
+        // let a=[100,4,200,1,2,2,3,4]
+        // // let a=[0,3,7,2,5,8,4,6,0,1]
+
+        // for (let i = 0; i < a.length; i++) {
+        //     for (let j = i+1; j < a.length; j++) {
+        //         if (a[i]>a[j]) {
+        //             [a[i],a[j]]=[a[j],a[i]]
+        //         }
+
+        //     }
+
+        // }
+        // console.log(a);
+
+        // let max=1
+        // let cur=1
+        // for (let i = 0; i < a.length; i++) {
+        //     if (a[i]===a[i-1]+1) {
+        //         cur++
+        //         if (cur>max) {
+        //             max=cur;
+        //         }
+        //     }
+        // }
+        // console.log(max);
+
+
+
+        //----------------------------------(For loop)---------------------------------------------------------------------
+        // var a=+prompt("enter a num");
+        // var b=+prompt("for loop start from")
+        // var c=+prompt("for loop end")
+        // for (let i=b; i<=c; i++){
+        //     a=a+i;
+        //     console.log(i);
+        // }
+        // alert(a)
+
+        //-----------------------------------(while loop)----------------------------------------------------------------
+        // var a=["a","b","c","d","e"]
+        // var a =[1,2,3,4,5,6]
+        // var i=+prompt("enter a value");
+        // // console.log(a[i]);
+
+        // while (a[i]=i) {
+        //     console.log(a[i]);;
+        //     console.log(i);;
+        //     i++;
+        // }
+        //-----------------------------------(temparature in checker)-------------------------------------------------
+        // Problem 1: The Temperature Checker
+
+        // Write a program that takes a temperature in Celsius as input and 
+        // logs a message indicating whether it's hot, warm, or cold.
+
+        // var temp=+prompt("Enter a temparature")
+        // if (temp>30) {
+        //     alert(temp+" Celsius"+" whether it's hot")
+        // }
+        // else{
+        //     alert(temp+" Celsius" +" whether it's cold")
+        // }
+
+        //-----------------------------------(The Grade Classifier)--------------------------------------------------
+        // Problem 2: The Grade Classifier
+
+        // Write a program that takes a student's score as input and logs their
+        //  grade (A, B, C, D, or F) based on the following criteria:
+        // A: 90-100
+        // B: 80-89
+        // C: 70-79
+        // D: 60-69
+
+        // var StdntScore=+prompt("Enter Socre")
+        // if (StdntScore>=90 && StdntScore<=100){
+        //     alert("Grade A")
+        // }
+        // else if(StdntScore>=80 && StdntScore<=89){
+        //     alert("Grade B")
+        // }
+        // else if(StdntScore>=70 && StdntScore<=79){
+        //     alert("Grade C")
+        // }
+        // else if(StdntScore>=60 && StdntScore<=69){
+        //     alert("Grade D")
+        // }
+        // else{
+        //     alert("Failed")
+        // }
+
+        //-------------------(The Number Identifier(-ve or +ve or zero))---------------------------------
+
+        // Problem 3: The Number Identifier
+
+        // Write a program that takes a number as input and logs whether it's positive, negative, or zero.
+        // var a=+prompt("Enter a value")
+        // if (a>0) {
+        //     alert(a + " +ve Value")
+        // }
+        // else if(a<0){
+        //     alert(a + " -ve value")
+        // }
+        // else{
+        //     alert(" Zero")
+        // }
+
+        //-----------------------------------------------------------------------------------------------
+        // Problem 4: The Leap Year Checker
+
+        // Write a program that checks if a given year is a leap year. A leap year is divisible by 4,
+        // but not by 100, unless it's also divisible by 400.
+
+        // var year=+prompt("Enter a year")
+        // if (year%4==0) {
+        //     alert("leap year")
+        // }
+        // else{
+        //     alert("this is not leap year")
+        // }
+
+        //----------------------------------(The Triangle Classifier)-----------------------------------
+        // Problem 5: The Triangle Classifier
+        // Write a program that takes three angles as input and logs whether they form a valid triangle. 
+        // (The angles should add up to 180 degrees for a valid triangle.)
+
+        // var a=+prompt("Enter a value")
+        // var b=+prompt("Enter a value")
+        // var c=+prompt("Enter a value")
+        // if (a+b+c==180) {
+        //     alert("180 degrees for a Vaild Triangle")
+        // }
+        // else{
+        //     alert("In valid triangle")
+        // }
+
+        //--------------------------------(even or odd)--------------------------------------------------
+        // Problem 6: The Even or Odd Checker
+
+        // Write a program that takes a number as input and logs whether it's even or odd.
+
+        // var num=+prompt("Enter a number")
+        // if (num%2==0) {
+        //     alert("Even number")
+        // }
+        // else{
+        //     alert("Odd number")
+        // }
+
+        //------------------------------------(The Largest of Three Numbers)----------------------------
+        // Problem 7: The Largest of Three Numbers
+
+        // Write a program that takes three numbers as input and logs the largest one.
+        // var a=+prompt("Enter a value")
+        // var b=+prompt("Enter a value")
+        // var c=+prompt("Enter a value")
+        // if (a>b && a>c) {
+        //     alert("a is largest one")
+        // }
+        // else if (b>a && b>c) {
+        //     alert("b is largest one")
+        // }
+        // else if (c>a && c>b) {
+        //     alert("c is largest one")
+        // }
+        // else if (a=b=c){
+        //     alert("equal number")
+        // }
+        // else{
+        //     alert("in valid")
+        // }
+
+        //------------------------( The Time Greeting)-----------------------------------------------------
+        // Problem 8: The Time Greeting
+
+        // Write a program that takes the current time (in 24-hour format) as input and logs a greeting 
+        // (e.g., "Good morning", "Good afternoon", "Good evening", "Good night") based on the time.
+
+        // var a=+prompt("enter a time")
+        // if (a>=0 && a<12) {
+        //     alert("Good morning")
+        // }
+        // else if (a>=12 && a<16) {
+        //     alert("Good afternoon")
+        // }
+        // else if (a>=16 && a<20) {
+        //     alert("Good evening")
+        // }
+        // else if (a>=20 && a<=24) {
+        //     alert("Good night")
+        // }
+        // else{
+        //     alert("in valid")
+        // }
+        //--------------------------(The Vowel Checker)-------------------------------------------------------
+        // Problem 9: The Vowel Checker
+
+        // Write a program that takes a character as input and logs whether it's a vowel or a consonant.
+
+
+        // var a=prompt("enter vowel")
+        // if (a=="a" || a=="e" || a=="i" || a=="o" || a=="u") {
+        //     alert("it is vowel")
+        // }
+        // else{
+        //     alert("constant")
+        // }
+
+        //---------------(2nd way)
+
+        // var a=prompt("enter vowel")
+        // var b=a.charAt(0)
+        // if (b=="a" || b=="e" || b=="i" || b=="o" || b=="u") {
+        //     alert("it is vowel")
+        // }
+        // else{
+        //     alert("constant")
+        // }
+
+        //-----------------------------(The Age Group Classifier)------------------------------------
+        // Problem 10: The Age Group Classifier
+
+        // Write a program that takes a person's age as input and logs which age group they belong to 
+        // (e.g., child, teenager, adult, senior).
+
+        // var age=+prompt("enter age")
+        // if (age>=0 && age<14) {
+        //     alert("child")   
+        // }
+        // else if (age>=14 && age<21){
+        //     alert("teenager")
+        // }
+        // else if (age>=21 && age<49){
+        //     alert("adult")
+        // }
+        // else{
+        //     alert("senior")
+        // }
+        //******************************************(problem solving)***********************************//
+        //--------------------------------------------(10-11-2023)--------------------------------------//
+
+        //---------------------------------------(square box)---------------------------------------------
+        //1. take two dynamic values print square box and if condition false print it is not a square.
+
+        // var lenght=+prompt("enter a lenght");
+        // var breadth=+prompt("enter a breadth");
+        // if(lenght==breadth){
+        //     alert("It is a square")
+        // }
+        // else{
+        //     alert("It is a not a square")
+        // }
+
+        //----------------------------------------(write a arithamatic progress)--------------------------
+        //2. write a arithamatic progress 
+        // var a=+prompt("enter a value")
+        // var b=+prompt("enter b value")
+        // var c=+prompt("enter c value")
+        // if (b-a == c-b) {
+        //     alert("This is a Arithamatic Progress")
+        // }
+        // else{
+        //     alert("This is not a Arithamatic Progress")
+        // }
+
+        //--------------------------------------------------------------------------------------------------
+        //3. write a program a & b module to the c if it is true print 1 if it not true print -1
+        // var a=+prompt("enter a value")
+        // var b=+prompt("enter b value")
+        // var c=+prompt("enter c value")
+        // if (a%c==0 && b%c==0) {
+        //     alert("true or 1")
+        // }
+        // else{
+        //     alert("false or -1")
+        // }
+
+        //---------------------------------------------------------------------------------------------------
+        //4. write take 1 & 2 & 5 & 10 coins .im having 1 rupes coins 2 & 2 rupee coins 5  and 5 rupe coins 10 & 
+        // // 10 rupee coins 5 find total ammount .when you went shop your buying some things. bill is "" 
+
+        // var a=1; b=2;c=5;d=10;
+        // var totalamount=(a*2)+(b*5)+(c*10)+(d*5);
+        // var bill=+prompt("enter bill");
+        // if (bill==totalamount) {
+        //     alert("paid")
+        // }
+        // else if (bill>totalamount){
+        //     alert(bill-totalamount +" need to pay remaining ammount")
+        // }
+        // else{
+        //     alert(totalamount-bill +" balacnce ammount")
+        // }
+
+        //---------------------------------(swap with empaty variable)----------------------------------
+        // Wap to swap two numbers with empty variable. 
+        // var a=2;b=3;c=0;
+        // c=a;
+        // a=b
+        // b=c;
+        // console.log(a,b);
+        //----------------------------------(swap without variable)-------------------------------------
+        // Wap to swap two numbers without using 3rd variable. 
+        // var a=3;b=4;
+        // a=a+b;
+        // b=a-b;
+        // a=a-b;
+        // console.log(a,b);
+        //-----------------------------------(even &odd num)-------------------------------------------
+        //Wap(Write a program) to find even odd number
+        // var a=+prompt("enter a value");
+        // if (a%2==0) {
+        //     alert(true +" this is even num")
+        // }
+        // else{
+        //     alert(false+" this is Odd num")
+        // }
+        //-----------------------------------------------------------------------------------------
+        // Find all even number from given array.
+        // var a=prompt("enter a value")
+
+        // for (b = 0; b < a.length; b++) {
+        //     if (b%2==0) {
+        //         console.log(a[b])
+        //     }  
+        // }
+        // var a=[1,2,3,4,5]
+        // for (let b = 0; b < a.length; b++) {
+        //     if (b%2==0) {
+        //         console.log(b);
+        //     }
+        // }
+
+        //-------------------------------------------(amstrong num)-----------------------------------
+        // var sum=0;
+        // var number=+prompt("enter a num");
+        // var temp=number;
+        // while (temp>0) {
+        //     lastdigit=temp%10;
+        //     sum+=lastdigit*lastdigit*lastdigit;
+        //     temp=parseInt(temp/10);
+        // }
+        // if (sum==number) {
+        //     console.log("it is amstrong num");
+        // }
+        // else{
+        //     console.log("faild");
+        // }
+        //-------------------------------------(palindrum)----------------------------------------------
         // function palindrum(num) {
         //     let rev=0;
         //     var temp=num;
@@ -1728,240 +1732,240 @@
         //     }
         // }
         // console.log(palindrum(12321));
-// -----------------------------------------(factorial)-----------------------------------------
-// function fact(n) {
-//     var a=1;
-//     for (let i = 1; i <=n; i++) {
-//     var a=a*i;
-//     }
-//     return a
+        // -----------------------------------------(factorial)-----------------------------------------
+        // function fact(n) {
+        //     var a=1;
+        //     for (let i = 1; i <=n; i++) {
+        //     var a=a*i;
+        //     }
+        //     return a
 
-// }
-// console.log(fact(3));
+        // }
+        // console.log(fact(3));
 
-//-----------------------------------------(prime num)---------------------------------------
-// function prime(n) {
-//     let isprime=true;
-//     if(n<1){
-//         console.log("give a positive prime num");
-//     }
-//     else if (n>1){
-//         for (let i = 2; i < n; i++) {
-//             if (n%i==0) {
-//                 isprime=false;
-//                 break;
-//             }
-//         }
-//         if(isprime){
-//             console.log("this is prime num");
-            
-//         }
-//         else{
-//             console.log("this is not prime num");
-//         }
-//     }
-// }
-// console.log(prime(4));
+        //-----------------------------------------(prime num)---------------------------------------
+        // function prime(n) {
+        //     let isprime=true;
+        //     if(n<1){
+        //         console.log("give a positive prime num");
+        //     }
+        //     else if (n>1){
+        //         for (let i = 2; i < n; i++) {
+        //             if (n%i==0) {
+        //                 isprime=false;
+        //                 break;
+        //             }
+        //         }
+        //         if(isprime){
+        //             console.log("this is prime num");
 
-
-// for (let i = 2; i <= 50; i++) {
-//     let a=0;
-//     for (let j = 1; j <= i; j++) {
-//         if (i%j==0) {
-//             a++
-//         }
-        
-//     }
-//     if (a==2) {
-//         console.log(i);
-//     }
-// }
-
-// for ( i = 2; i <= 50; i++) {
-//      isprime=true;
-//     for ( j = 2; j < i; j++) {
-//         if (i%j==0) {
-//             isprime=false;
-//             break;
-//         }
-//     }
-//     if (isprime) {
-//         console.log(i);
-//     }
-
-// }
+        //         }
+        //         else{
+        //             console.log("this is not prime num");
+        //         }
+        //     }
+        // }
+        // console.log(prime(4));
 
 
-//-----------------------------------------(fibanocis)--------------------------------------
-// var number=+prompt("enter a value")
-//     var n1=0; n2=1; nexterm;
-//         for (let i = 0; i <= number; i++) {
-//             console.log(n1);
-//             var nexterm=n1+n2;
-//             n1=n2;
-//             n2=nexterm;
-//         }
-//------------------------------------------------------------------------------------------
-// var a="chaithanya"
-// for(i=0;i<a.length;i++){
-//     if (a[i]=="i") {
-//         continue
-//     }
-//     console.log(a[i]);
-// }
+        // for (let i = 2; i <= 50; i++) {
+        //     let a=0;
+        //     for (let j = 1; j <= i; j++) {
+        //         if (i%j==0) {
+        //             a++
+        //         }
 
-//-------------------------------------------(12-10-23)----------------------------------------------
-//1. write a code to print the how much the power bill came .
-// function power(a) {
+        //     }
+        //     if (a==2) {
+        //         console.log(i);
+        //     }
+        // }
 
-//     if (a<100) {
-//         let b=a*2;
-//         let c=(10/100)*b;
-//         return b+c;
-//     }
-//     else if (a>100 && a<200){
-//        var b=a*3.5;
-//       var  c=(10/100)*b;
-//         return b+c ; 
-//     }
-//     else if (a>200 && a<500){
-//         var b=a*4.50;
-//         var c=(10/100)*b;
-//         return b+c;
-//     }
-//     else{
-//         var b=a*6;
-//         var c=(10/100)*b;
-//         return b+c;
-//     }
-// }
-// console.log(power(500));
-//---------------------------------------------------------------------------------------------
-//2. write a code to print wheather it rainy ot not.take two varibles humidity & temp
+        // for ( i = 2; i <= 50; i++) {
+        //      isprime=true;
+        //     for ( j = 2; j < i; j++) {
+        //         if (i%j==0) {
+        //             isprime=false;
+        //             break;
+        //         }
+        //     }
+        //     if (isprime) {
+        //         console.log(i);
+        //     }
 
-// function wheather(h,t) {
-//     if (h>90 || t<18) {
-//         return "Rainy1"
-//     }
-//     else if (h>70 && t<30) {
-//         return "Rainy2"
-//     }
-//     else if (h>60 && t<25){
-//         return "Rainy3"
-//     }
-//     else{          
-//         return "Not rainy"
-//     }
-// }
-// console.log(wheather(70,20));
+        // }
 
-//-------------------------------------------------------------------------------------------
-//
-// function deepthi(y) {
-//     if (y<25000) {
-//         return "in sufficient balance"
-//     }
-//     else if (y==25000) {
-//         return "i3 prosecer"
-//     }
-//     else if (y>25000 && y<=50000 ){
-//         return "i5 proceser"
-//     }
-//     else {
-//         return "i7 proceser"
-//     }
-// }
-// console.log(deepthi(55000));
 
-// function name(a) {
-//     let b="";
-//     for (let i = 0; i < a.length; i++) {
-//         if (a[i].match(/[aeiou]/gi)) {
-//             b+=a[i]
-//         }
-        
-//     }
-//     return b;
-// }
-// console.log(name("deepthi"))
+        //-----------------------------------------(fibanocis)--------------------------------------
+        // var number=+prompt("enter a value")
+        //     var n1=0; n2=1; nexterm;
+        //         for (let i = 0; i <= number; i++) {
+        //             console.log(n1);
+        //             var nexterm=n1+n2;
+        //             n1=n2;
+        //             n2=nexterm;
+        //         }
+        //------------------------------------------------------------------------------------------
+        // var a="chaithanya"
+        // for(i=0;i<a.length;i++){
+        //     if (a[i]=="i") {
+        //         continue
+        //     }
+        //     console.log(a[i]);
+        // }
 
-// function name(a) {
-//     let b="a,e,i,o,u,A,E,I,O,U"
-//     let c=""
-//     let d=""
-//     for (let i = 0; i < a.length; i++) {
-//         if (b.includes(a[i])) {
-//             c+=a[i]
-//         }
-//         else{
-//             d+=a[i]
-//         }
-//     }
-//     return `${c} ${d}` 
-// }
-// console.log(name("Hello"));
+        //-------------------------------------------(12-10-23)----------------------------------------------
+        //1. write a code to print the how much the power bill came .
+        // function power(a) {
 
-// var a="deepthi";
-// console.log(a.indexOf("p"));
-// console.log(a.lastIndexOf("i"));
+        //     if (a<100) {
+        //         let b=a*2;
+        //         let c=(10/100)*b;
+        //         return b+c;
+        //     }
+        //     else if (a>100 && a<200){
+        //        var b=a*3.5;
+        //       var  c=(10/100)*b;
+        //         return b+c ; 
+        //     }
+        //     else if (a>200 && a<500){
+        //         var b=a*4.50;
+        //         var c=(10/100)*b;
+        //         return b+c;
+        //     }
+        //     else{
+        //         var b=a*6;
+        //         var c=(10/100)*b;
+        //         return b+c;
+        //     }
+        // }
+        // console.log(power(500));
+        //---------------------------------------------------------------------------------------------
+        //2. write a code to print wheather it rainy ot not.take two varibles humidity & temp
 
-// let a=["deepthi","santhu"]
-// for (let i = 0; i < a.length; i++) {
-//     console.log(a[i]);
-//     for (let j = 0; j < a[i].length; j++) {
-//         console.log(a[i][j]);
-//     }
-// }
+        // function wheather(h,t) {
+        //     if (h>90 || t<18) {
+        //         return "Rainy1"
+        //     }
+        //     else if (h>70 && t<30) {
+        //         return "Rainy2"
+        //     }
+        //     else if (h>60 && t<25){
+        //         return "Rainy3"
+        //     }
+        //     else{          
+        //         return "Not rainy"
+        //     }
+        // }
+        // console.log(wheather(70,20));
 
-//--------------------------------------------------------------------------
+        //-------------------------------------------------------------------------------------------
+        //
+        // function deepthi(y) {
+        //     if (y<25000) {
+        //         return "in sufficient balance"
+        //     }
+        //     else if (y==25000) {
+        //         return "i3 prosecer"
+        //     }
+        //     else if (y>25000 && y<=50000 ){
+        //         return "i5 proceser"
+        //     }
+        //     else {
+        //         return "i7 proceser"
+        //     }
+        // }
+        // console.log(deepthi(55000));
 
-// let n=3
-// let arr =[5,10,15]
-// let ten=0,five=0,fiveteen=0;
-// for (let i = 0; i < n; i++) {
-//   if(arr[i]==5){
-//       five++
-//   }
-//   else if(arr[i]==10){
-//     if (five==0) {
-//         five--;
-//     ten++
-//     }
-//   }else{
+        // function name(a) {
+        //     let b="";
+        //     for (let i = 0; i < a.length; i++) {
+        //         if (a[i].match(/[aeiou]/gi)) {
+        //             b+=a[i]
+        //         }
 
-//   }
-// }
-// console.log(d);
+        //     }
+        //     return b;
+        // }
+        // console.log(name("deepthi"))
 
-// let aa="abc"
-// let c="abcdef"
-// let dd=0
-// for (let i = 0; i < c.length; i++) {
-//     if (aa[i]==c[i]) {
-//         dd++
-//     }
-    
-// }
-// console.log(dd);
-// console.log(c.match(/^abc/));
+        // function name(a) {
+        //     let b="a,e,i,o,u,A,E,I,O,U"
+        //     let c=""
+        //     let d=""
+        //     for (let i = 0; i < a.length; i++) {
+        //         if (b.includes(a[i])) {
+        //             c+=a[i]
+        //         }
+        //         else{
+        //             d+=a[i]
+        //         }
+        //     }
+        //     return `${c} ${d}` 
+        // }
+        // console.log(name("Hello"));
 
-// let str=["string1234","cahita7234ya","kama286kiran"]
+        // var a="deepthi";
+        // console.log(a.indexOf("p"));
+        // console.log(a.lastIndexOf("i"));
 
-// let bb=[]
+        // let a=["deepthi","santhu"]
+        // for (let i = 0; i < a.length; i++) {
+        //     console.log(a[i]);
+        //     for (let j = 0; j < a[i].length; j++) {
+        //         console.log(a[i][j]);
+        //     }
+        // }
 
-// for (let i = 0; i < str.length; i++) {
-//     let b=0
-//     for (let j = 0; j < str[i].length; j++) {
-//         if ((/\d/).test(str[i][j])) {
-//         b+=parseInt((str[i][j]))
-//         }
-//         bb.push(b)
-//     }
-// }
-// console.log(bb);
+        //--------------------------------------------------------------------------
 
-//---------------------------------------------------------------
-// let b=[]
+        // let n=3
+        // let arr =[5,10,15]
+        // let ten=0,five=0,fiveteen=0;
+        // for (let i = 0; i < n; i++) {
+        //   if(arr[i]==5){
+        //       five++
+        //   }
+        //   else if(arr[i]==10){
+        //     if (five==0) {
+        //         five--;
+        //     ten++
+        //     }
+        //   }else{
+
+        //   }
+        // }
+        // console.log(d);
+
+        // let aa="abc"
+        // let c="abcdef"
+        // let dd=0
+        // for (let i = 0; i < c.length; i++) {
+        //     if (aa[i]==c[i]) {
+        //         dd++
+        //     }
+
+        // }
+        // console.log(dd);
+        // console.log(c.match(/^abc/));
+
+        // let str=["string1234","cahita7234ya","kama286kiran"]
+
+        // let bb=[]
+
+        // for (let i = 0; i < str.length; i++) {
+        //     let b=0
+        //     for (let j = 0; j < str[i].length; j++) {
+        //         if ((/\d/).test(str[i][j])) {
+        //         b+=parseInt((str[i][j]))
+        //         }
+        //         bb.push(b)
+        //     }
+        // }
+        // console.log(bb);
+
+        //---------------------------------------------------------------
+        // let b=[]
         // let a=[1,3,2,4,5,6,7,10]
         // for (let i = 0; i < a.length; i++) {
         //     for (let j = i+1; j < a.length; j++) {
@@ -1977,7 +1981,7 @@
         // }
         // console.log(b);
 
-//--------------missing num---------------------------
+        //--------------missing num---------------------------
         // let a=[1,3,4,5]
         // let x=0
         // for (let i = 0; i < a.length; i++) {
@@ -1985,11 +1989,11 @@
         //        x=i+1;
         //        break;
         //     }
-            
+
         // }
         // console.log(x);
 
-//--------------reverse array----------------------------------
+        //--------------reverse array----------------------------------
         // let a=[1,2,3,4,5,6,7,11,2]
         // for (let i = 0; i < a.length/2; i++) {
         // [a[i],a[a.length-1-i]]=[a[a.length-1-i],a[i]]  
@@ -1997,321 +2001,347 @@
         // console.log(a);
 
 
-//--------------------------match num index print-----------
-// let a=[1,2,3,4,77]
-// let b=77
-// function name(a,b) {
-//     for (let i = 0; i < a.length; i++) {
-//     if (a[i]==b) {
-//         return i
-//     }  
-// }
-// return -1
-// }
-// console.log(name([1,2,3,4,77],77));
-// function name(a,b=0) {
-//     a.sort()
-//     for (let i = 0; i < a.length; i++) {
-//         for (let j = i+1; j < a.length; j++) {
-//             if (a[i]==a[j]) {
-//                 b+=i
-//             } 
-//         }
-//     }
-//     return b
-// }
-// console.log(name([1,2,2,3,4,4]));
-//-------------------------------------------------------------
-// let a=["a","b","c"]
-// a.splice(2,0,"f");
-// console.log(a);
+        //--------------------------match num index print-----------
+        // let a=[1,2,3,4,77]
+        // let b=77
+        // function name(a,b) {
+        //     for (let i = 0; i < a.length; i++) {
+        //     if (a[i]==b) {
+        //         return i
+        //     }  
+        // }
+        // return -1
+        // }
+        // console.log(name([1,2,3,4,77],77));
+        // function name(a,b=0) {
+        //     a.sort()
+        //     for (let i = 0; i < a.length; i++) {
+        //         for (let j = i+1; j < a.length; j++) {
+        //             if (a[i]==a[j]) {
+        //                 b+=i
+        //             } 
+        //         }
+        //     }
+        //     return b
+        // }
+        // console.log(name([1,2,2,3,4,4]));
+        //-------------------------------------------------------------
+        // let a=["a","b","c"]
+        // a.splice(2,0,"f");
+        // console.log(a);
 
-// let a=[1,0,1,0]
-// let b=[]
-// for (let i = 0; i < a.length; i++) {
-//    if (!b.includes(a[i])) {
-//     b.push(a[i])
-//    }
-    
-// }
-// console.log(b);
-//---------------------------task-15(easy-leval)--------
-// let a=[2,2,2,3,4,4,4,6,1]
-// let c=[]
-// for (let i = 0; i < a.length; i++) {
-//     let b=0
-//     for (let j = 0; j < a.length; j++) {
-//         if (a[i]==a[j]) {
-//             // b.push(a[i])
-//             b++
-//         }
+        // let a=[1,0,1,0]
+        // let b=[]
+        // for (let i = 0; i < a.length; i++) {
+        //    if (!b.includes(a[i])) {
+        //     b.push(a[i])
+        //    }
+
+        // }
+        // console.log(b);
+        //---------------------------task-15(easy-leval)--------
+        // let a=[2,2,2,3,4,4,4,6,1]
+        // let c=[]
+        // for (let i = 0; i < a.length; i++) {
+        //     let b=0
+        //     for (let j = 0; j < a.length; j++) {
+        //         if (a[i]==a[j]) {
+        //             // b.push(a[i])
+        //             b++
+        //         }
+
+        //     }
+        //     if (b==1) {
+        //         // c.push(a[i])
+        //         console.log(a[i]);
+        //     }
+
+        // }
+        // console.log(c);
+        // //--------------------(even)--------------------
+        // let a=[0,1,2,3,4,5,6,7,8,9,10]
+        // let b=[]
+        // let c=[]
+        // for(i in a){
+        //     if(a[i]%2==0){
+        //         b[b.length]=a[i]
+        //     }
+        // }
+        // console.log(b)
+        // // let b=a.filter((val)=>{
+        // //     return val%2==0;
+        // // })
+        // console.log(b)
+        //---------------------------------
+        // let a=[0,1,2,3,4,5,6,7,8,9,10]
+        // let b=[]
+
+        // for (let i = 0; i < a.length; i++) {
+        //     {
+        //     a[i]==0 ? b.push("zero"):
+        //     a[i]==1 ? b.push("one"):
+        //     a[i]==2 ? b.push("two"):
+        //     a[i]==3 ? b.push("three"):
+        //     a[i]==4 ? b.push("four"):
+        //     a[i]==5 ? b.push("five"):
+        //     a[i]==6 ? b.push("six"):
+        //     a[i]==7 ? b.push("seven"):
+        //     a[i]==8 ? b.push("eight"):
+        //     a[i]==9 ? b.push("nine"):"deepthi";
+        // }
+        // }
+        // console.log(b);
+        // checking missing and adding to the previous array and getting sequence
+        // let a=[1,2,4,6,7,8]
+        // let b=[]
+        // for (let i = 1; i < a.length; i++) {
+        //     if (!a.includes(i)) {
+        //         b.push(i)
+        //     }
+        // }
+        // console.log(a.concat(b).sort());
+
+        // let a=[1,2,4,6,7,8];
+        // let b=[]
+        // let c=1
+        // for (let i = 1; i < a.length+c; i++) {
+        //     if (!a.includes(i)) {
+        //         b.push(i)
+        //         c++
+        //     }else{
+        //         b.push(i)
+        //     }
+
+        // }
+        // console.log(b);
+
+        // let a=[1,2,4,6,7,8]
+        // let b=[]
+        // // function name(a) {
+        //     for (let i = 1; i < a.length+3; i++) {
+        //     if (a.indexOf(i)===-1) {
+        //         b.push(i)
+        //     }else{
+        //         b.push(i)
+        //     }
+        // }
+        // // return b
+        // // }
+        // // console.log(name([1,2,4,6,7,8]));
+        // console.log(b);
+
+        // let a=[0,1,2,3,4,5,6,7,8,9,10]
+        // let b=[]
+        // for(i in a){
+        //     if(a[i]%2==0){
+        //         b[b.length]=a[i]
+        //     }
+        // }
+        // console.log(b)
+
+        //----------------------------------(peak num)
+        // let a=[1,2,3,4,5,6,3,2,1]
+        // let b=[]
+        // for (let i = 0; i < a.length; i++) {
+        //     if (a[i]>a[i+1] && a[i]>a[i-1]) {
+        //         b.push(a[i])
+        //         break
+        //     }
+        // }
+        // console.log(b);
+
+
+        //--------------(reverse array)
+        // let a=[1,2,3,4,5,6]
+        // for (let i = 0; i < a.length; i++) {
+        //     for (let j =0 ; j <a.length-1 ; j++) {
+        //         if (a[i]>a[j]) {
+        //             [a[i],a[j]]=[a[j],a[i]]
+        //         } 
+        //     }
+        // }
+        // console.log(a);
+        //--------------------
+        // let a=[1,2,3,4,5,6]
+        // let b=[]
+        // for (let i = a.length-1; i > -1; i--) {
+        //     b.push(a[i])
+        // }
+        // console.log(b);
+        //------------------
+        // let a=[1,2,3,4,5,6]
+        //  i=0
+        //  j=a.length-1
+        // while (i<j) {
+        //    [a[i],a[j]]=[ a[j],a[i]]
+        //     i++
+        //     j--
+        // }
+        // console.log(a);
+
+        //----------------------(lucky unlucky)-----------------------
+        // function name(a){
+        //     if(a.length%2!==0){
+        //     return "unlucy"
+        // }
+        // let x=a[0]
+        // let y=a[1]
+        // if(x==y){
+        //    return "unlucy" 
+        // }
+        // for(i=2;i<a.length;i++){
+        //     if(i%2==0 && a[i]!==x){
+        //         return "unlucy"
+        //     }else if(i%2!==0 && a[i]!==y){
+        //         return "unlucy"
+        //     }
+        // }
+        // return "lucy"
+
+        // }
+        // console.log(name("ababac"))
+
+
+        // let a=["chaithanya","vasantha","kiran"]
+        // for (let i = 0; i < a.length; i++) {
+        //     console.log(`Good morning ${a[i]}`);
+
+        // }
+
+        //---------------------memorization
+        // let a=[1,1,2,2,4,4,8,8,10,11,11,12,12]
+        // let b={}
+        // for (let i = 0; i < a.length; i++) {
+        //     if (b[a[i]]) {
+        //         b[a[i]]++
+        //     }
+        //     else{
+        //         b[a[i]]=1
+        //     }
+        // }
+        // console.log(b);
+
+        // function mem() {
+        //             let obj={}
+        //             return function (sum) {
+
+        //                 if (obj[sum]!==undefined) {
+        //                     return `this num already given ${obj[sum]}`
+        //                 }
+        //                 else{
+        //                     let totalsum=0
+        //                     for (let i = 0; i <= sum; i++) {
+        //                         totalsum+=i
+        //                         obj[sum]=totalsum
+        //                     }
+        //                     return totalsum
+        //                 }
+        //             }
+
+        //         }
+        //         let b=mem()
+        //         console.log(b(4));
+        //         console.log(b(3));
+        //         console.log(b(4));
+
+        // function capitalizeFirstLetter(inputString) {
+        //   // Split the input string into an array of words
+        //   const words = inputString.split(' ');
+
+        //   // Capitalize the first letter of each word
+        // //   const capitalizedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1));
+        // let b=""
+        // for(i=0;i<words.length;i++){
+        //     if(words[i][0]===words[i][0].toLowerCase()){
+        //         b+=words[i].charAt(0).toUpperCase()
+        //     }
+        //     else{
+        //         b+=words[i][i]
+        //     }
+        // }
+
+
+        //   // Join the words back into a string
+        // //   const resultString = capitalizedWords.join(' ');
+
+        //   return b;
+        // }
+
+        // // Example usage:
+        // const input = "deepthi ayisha pravallika";
+        // const output = capitalizeFirstLetter(input);
+        // console.log(output);
+
+
+        // let a=["avinash","vinay "]
+        // let b=[]
+        // for (let i = 0; i < a.length; i++) {
+        //     for (let j = 0; j < a[i].length; j++) {
+        //         if ([j]%2==0) {
+        //         b.push(a[i][j])
+        //     }   
+        //     }
+        // }
+        // console.log(b);
+
+
+        // fetch("https://jsonplaceholder.typicode.com/users").then((val)=>{
+        //     return val.json()
+        // }).then((val)=>{
+        //     console.log(val);
+        //     val.map((val)=>{
+        //         let div=document.createElement("p")
+        //         div.innerText=val.id
+        //         document.body.appendChild(div)
+        //     })
+        // })
+
+        // let a=new Promise(resolve,reject){
+        //     let d=10;
+
+        // }
+
+
+        // let a=["deepthi","deepthi"]
+        // for(i=0;i<a.length;i++){
+        //     // for(j=0;j<a[i].length;j++){
+        //         if(a[i][0].length===a[i][1].length){
+        //             console.log(i);
+        //             break
+        //         }
+        //         else{
+        //             console.log("worong")
+        //         }
+        //     // }
+        // }
+
+        // let a = ["React", "js", "css", "html"]
+        // let b = []
+        // let c = []
+        // for ( i = 0; i < a.length; i++) {
+        //     if (i % 2 == 0) {
+        //         for ( j = a[i].length - 1; j >= 0; j--) {
+        //             b+=a[i][j]
+        //         }
+        //         c.push(b)
+        //         b = []
+        //     }
+        //     else {
+        //         c.push(a[i])
+        //     }
+        // }
+        // console.log(c)
+        // console.log(b)
         
-//     }
-//     if (b==1) {
-//         // c.push(a[i])
-//         console.log(a[i]);
-//     }
-    
-// }
-// console.log(c);
-// //--------------------(even)--------------------
-// let a=[0,1,2,3,4,5,6,7,8,9,10]
-// let b=[]
-// let c=[]
-// for(i in a){
-//     if(a[i]%2==0){
-//         b[b.length]=a[i]
-//     }
-// }
-// console.log(b)
-// // let b=a.filter((val)=>{
-// //     return val%2==0;
-// // })
-// console.log(b)
-//---------------------------------
-// let a=[0,1,2,3,4,5,6,7,8,9,10]
-// let b=[]
+        // let a = ["React", "js", "css", "html"]
+        // let c=a.map((val,ind)=>
+        //         (ind%2==0 ? [...val].reverse().join(""):val)
+        // )
+        // console.log(c);
 
-// for (let i = 0; i < a.length; i++) {
-//     {
-//     a[i]==0 ? b.push("zero"):
-//     a[i]==1 ? b.push("one"):
-//     a[i]==2 ? b.push("two"):
-//     a[i]==3 ? b.push("three"):
-//     a[i]==4 ? b.push("four"):
-//     a[i]==5 ? b.push("five"):
-//     a[i]==6 ? b.push("six"):
-//     a[i]==7 ? b.push("seven"):
-//     a[i]==8 ? b.push("eight"):
-//     a[i]==9 ? b.push("nine"):"deepthi";
-// }
-// }
-// console.log(b);
-// checking missing and adding to the previous array and getting sequence
-// let a=[1,2,4,6,7,8]
-// let b=[]
-// for (let i = 1; i < a.length; i++) {
-//     if (!a.includes(i)) {
-//         b.push(i)
-//     }
-// }
-// console.log(a.concat(b).sort());
-
-// let a=[1,2,4,6,7,8];
-// let b=[]
-// let c=1
-// for (let i = 1; i < a.length+c; i++) {
-//     if (!a.includes(i)) {
-//         b.push(i)
-//         c++
-//     }else{
-//         b.push(i)
-//     }
-    
-// }
-// console.log(b);
-
-// let a=[1,2,4,6,7,8]
-// let b=[]
-// // function name(a) {
-//     for (let i = 1; i < a.length+3; i++) {
-//     if (a.indexOf(i)===-1) {
-//         b.push(i)
-//     }else{
-//         b.push(i)
-//     }
-// }
-// // return b
-// // }
-// // console.log(name([1,2,4,6,7,8]));
-// console.log(b);
-
-// let a=[0,1,2,3,4,5,6,7,8,9,10]
-// let b=[]
-// for(i in a){
-//     if(a[i]%2==0){
-//         b[b.length]=a[i]
-//     }
-// }
-// console.log(b)
-
-//----------------------------------(peak num)
-// let a=[1,2,3,4,5,6,3,2,1]
-// let b=[]
-// for (let i = 0; i < a.length; i++) {
-//     if (a[i]>a[i+1] && a[i]>a[i-1]) {
-//         b.push(a[i])
-//         break
-//     }
-// }
-// console.log(b);
-
-
-//--------------(reverse array)
-// let a=[1,2,3,4,5,6]
-// for (let i = 0; i < a.length; i++) {
-//     for (let j =0 ; j <a.length-1 ; j++) {
-//         if (a[i]>a[j]) {
-//             [a[i],a[j]]=[a[j],a[i]]
-//         } 
-//     }
-// }
-// console.log(a);
-//--------------------
-// let a=[1,2,3,4,5,6]
-// let b=[]
-// for (let i = a.length-1; i > -1; i--) {
-//     b.push(a[i])
-// }
-// console.log(b);
-//------------------
-// let a=[1,2,3,4,5,6]
-//  i=0
-//  j=a.length-1
-// while (i<j) {
-//    [a[i],a[j]]=[ a[j],a[i]]
-//     i++
-//     j--
-// }
-// console.log(a);
-
-//----------------------(lucky unlucky)-----------------------
-// function name(a){
-//     if(a.length%2!==0){
-//     return "unlucy"
-// }
-// let x=a[0]
-// let y=a[1]
-// if(x==y){
-//    return "unlucy" 
-// }
-// for(i=2;i<a.length;i++){
-//     if(i%2==0 && a[i]!==x){
-//         return "unlucy"
-//     }else if(i%2!==0 && a[i]!==y){
-//         return "unlucy"
-//     }
-// }
-// return "lucy"
-
-// }
-// console.log(name("ababac"))
-
-
-// let a=["chaithanya","vasantha","kiran"]
-// for (let i = 0; i < a.length; i++) {
-//     console.log(`Good morning ${a[i]}`);
-    
-// }
-
-//---------------------memorization
-// let a=[1,1,2,2,4,4,8,8,10,11,11,12,12]
-// let b={}
-// for (let i = 0; i < a.length; i++) {
-//     if (b[a[i]]) {
-//         b[a[i]]++
-//     }
-//     else{
-//         b[a[i]]=1
-//     }
-// }
-// console.log(b);
-
-// function mem() {
-//             let obj={}
-//             return function (sum) {
-                
-//                 if (obj[sum]!==undefined) {
-//                     return `this num already given ${obj[sum]}`
-//                 }
-//                 else{
-//                     let totalsum=0
-//                     for (let i = 0; i <= sum; i++) {
-//                         totalsum+=i
-//                         obj[sum]=totalsum
-//                     }
-//                     return totalsum
-//                 }
-//             }
-            
-//         }
-//         let b=mem()
-//         console.log(b(4));
-//         console.log(b(3));
-//         console.log(b(4));
-
-// function capitalizeFirstLetter(inputString) {
-//   // Split the input string into an array of words
-//   const words = inputString.split(' ');
-
-//   // Capitalize the first letter of each word
-// //   const capitalizedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1));
-// let b=""
-// for(i=0;i<words.length;i++){
-//     if(words[i][0]===words[i][0].toLowerCase()){
-//         b+=words[i].charAt(0).toUpperCase()
-//     }
-//     else{
-//         b+=words[i][i]
-//     }
-// }
-
-
-//   // Join the words back into a string
-// //   const resultString = capitalizedWords.join(' ');
-
-//   return b;
-// }
-
-// // Example usage:
-// const input = "deepthi ayisha pravallika";
-// const output = capitalizeFirstLetter(input);
-// console.log(output);
-
-
-// let a=["avinash","vinay "]
-// let b=[]
-// for (let i = 0; i < a.length; i++) {
-//     for (let j = 0; j < a[i].length; j++) {
-//         if ([j]%2==0) {
-//         b.push(a[i][j])
-//     }   
-//     }
-// }
-// console.log(b);
-
-
-// fetch("https://jsonplaceholder.typicode.com/users").then((val)=>{
-//     return val.json()
-// }).then((val)=>{
-//     console.log(val);
-//     val.map((val)=>{
-//         let div=document.createElement("p")
-//         div.innerText=val.id
-//         document.body.appendChild(div)
-//     })
-// })
-
-// let a=new Promise(resolve,reject){
-//     let d=10;
-
-// }
-
-
-// let a=["deepthi","deepthi"]
-// for(i=0;i<a.length;i++){
-//     // for(j=0;j<a[i].length;j++){
-//         if(a[i][0].length===a[i][1].length){
-//             console.log(i);
-//             break
-//         }
-//         else{
-//             console.log("worong")
-//         }
-//     // }
-// }
 
 
     </script>
 </body>
+
 </html>

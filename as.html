@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let onj={
+            fisrtname:"deepthi",
+            lastname:"gangiredy",
+            
+        }
+        // onj.fullname()
+
+     let   fullnameuser=function(home,statre){
+                console.log(this.fisrtname+""+this.lastname+"from"+home +statre);
+            }
+            
+            fullnameuser.call(onj,"kadapa","ap")
+        let j={
+            fisrtname:"sandy",
+            lastname:" poddini",
+        }
+        // function barrowing
+        fullnameuser.apply(j,[" ,sfsf"," ap"])
+    </script>
+</body>
+</html>
