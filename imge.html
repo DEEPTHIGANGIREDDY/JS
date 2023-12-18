@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #main{
+            display: flex;
+            width: 100%;
+            /* height: 100%; */
+            flex-direction: row;
+            justify-content: center;
+        }
+        .one{
+            width: 40%;
+        }
+        .two{
+            width: 40%;
+            background-color: aliceblue;
+        }
+        p{
+            position:relative ;
+            top: 50px;
+        }
+        @media screen and (max-width: 768px) {
+            #main {
+                flex-direction: column;
+            }
+            .one, .two {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+        <center>
+            <h1 style="line-height: 100px;background-color: black;color: white;">test</h1>
+            <div style="display: flex;flex-direction: column;">
+                <div id="main">
+                    <div class="one"><img src="./img.jpeg" alt="" width="100%"></div>
+                    <div class="two">
+                        <h1 style="height: 100px;line-height: 100px;">Harvert Vase</h1>
+                        <p style="height: 150px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At atque quaerat nam animi, porro sint in ab consequuntur? Natus ullam ipsam sequi impedit nesciunt ab corporis doloremque aliquam facere magnam.</p>
+                        <div style="display: flex;flex-direction: row;justify-content: center;">
+                            <span><h1 style="display: inline;">78$</h1>
+                            </span><span><button style="border: 1px solid black;border: none;background-color: aqua;height: 50px;border-radius: 30px;width: 100px;">Buy Now</button></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+</body>
+</html>

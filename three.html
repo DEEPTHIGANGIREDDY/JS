@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            display: grid;
+            grid-template-columns: 25% 25% 25%;
+            grid-template-rows: 20% 20% 20%;
+            gap: 10px;
+            justify-content: center;
+        }
+        #main >div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div style="grid-column: 1/2;grid-row: 3/18;background-color: pink;">img1</div>
+        <div style="grid-column: 2/3;grid-row: 1/4;background-color: yellow;">img2</div>
+        <div style="grid-column: 2/3;grid-row: 10/30;background-color: green;">img3</div>
+        <div style="grid-column: 3/4;grid-row: 3/18;background-color: antiquewhite;">img4</div>
+    </div>
+</body>
+</html>

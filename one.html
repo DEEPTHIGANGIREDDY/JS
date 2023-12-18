@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main {
+            display: grid;
+            grid-template-columns: 30% 35% 30%;
+            grid-template-rows: 50% 50% 50%;
+            gap: 10px;
+            text-align: center;
+        }
+        #main > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div style="grid-column: 1/4;background-color: aqua;">box1</div>
+        <div style="grid-column: 1/2; background-color: bisque;">box2</div>
+        <div style="grid-column: 2/3;grid-row: 2/4;background-color: chartreuse;">box3</div>
+        <div style="grid-column: 3/4;background-color: darkgoldenrod;">box4</div>
+        <div style="grid-column: 1/2;grid-row: 3/5;background-color: fuchsia;">box5</div>
+        <div style="grid-column: 3/4;background-color: darkkhaki;">box6</div>
+        <div style="grid-column: 2/4;background-color: darkolivegreen;">box7</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        #main{
+            display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 20% 20% 20%;
+        gap: 20px;
+        }
+        body{
+            background-color: pink;
+        }
+        .article{
+            display: grid;
+        grid-template-columns: 29% 29% 29%;
+        gap: 30px;
+        justify-content: space-evenly;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <center>
+        <div id="main">
+            <div style="grid-column: 1/4;grid-row: 1/2;background-color: aqua;"><h1>Header</h1></div>
+            <div style="grid-column: 1/2;grid-row: 2/10;background-color: aquamarine;"><h1 style="margin-top: 35%;" >aside</h1></div>
+            <div class="article" style="grid-column: 2/4; grid-row: 2/10;background-color: palevioletred;">
+                <div style="grid-column: 1/4;;align-items: h1;"><h1 style="margin-top: 110px;">arcticle</h1></div>
+                
+                <div style="grid-column: 1/2;height: 100%;background-color: silver;margin-top: -15px;"><h1>imgae</h1></div>
+                <div style="grid-column: 2/3;height: 100%;background-color: silver;margin-top: -15px;"><h1>imgae</h1></div>
+                <div style="grid-column: 3/4;height: 100%;background-color: silver;margin-top: -15px;"><h1>imgae</h1></div>
+                
+            </div>
+            <div style="grid-column: 1/4;grid-row: 10/14;background-color: aqua;"><h1>Footer</h1></div>
+            </div>
+    </center>
+    
+</body>
+</html>
