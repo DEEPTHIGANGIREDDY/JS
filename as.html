@@ -12,17 +12,18 @@
             lastname:"gangiredy",
         }
         // onj.fullname()
-
      let fullnameuser=function(home,statre){
                 console.log(this.fisrtname+""+this.lastname+"from"+home +statre);
             }
-            fullnameuser.call(onj,"kadapa","ap")
+            // fullnameuser.call(onj,"kadapa","ap")
         let j={
             fisrtname:"sandy",
             lastname:" poddini",
         }
         // function barrowing
-        fullnameuser.apply(j,[" ,sfsf"," ap"])
+        // fullnameuser.apply(j,[" ,sfsf"," ap"])
+        let hello=fullnameuser.bind(j,"hyd","ts")
+        console.log(hello());
     </script>
 </body>
 </html>
