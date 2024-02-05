@@ -4,83 +4,90 @@
 <head>
     <title>User Registration</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
-  font-family: Arial, sans-serif;
-  background-image: url("./cart.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0;
-  margin-left: -30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-form{
-    /* background-color: #fff; */
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-  width: 300px;
-  height: 450px;
-  display: flex;
-  flex-direction: column;
-  background-color: whitesmoke;
-}
-input{
-    width: 200px;
-    margin-left: 50px;
-    height: 29px;
-}
-button{
-    background-color: rgb(0, 174, 255);
-    color: black;
-    border-radius: 5px;
-    max-width: 200px;
-    height: 29px;
-    margin-left: 50px;
-}
-#username,#password,#confirmPassword{
-    border: 0px;
-    border-bottom: 1px solid gray;
-}
-#sumbit , #btn{
-border: none;
-}
-a{
-    color: black;
-}
+            font-family: Arial, sans-serif;
+            background-image: url("./cart.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            margin-left: -30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
+        form {
+            /* background-color: #fff; */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            background-color: whitesmoke;
+        }
+
+        input {
+            width: 200px;
+            margin-left: 50px;
+            height: 29px;
+        }
+
+        button {
+            background-color: rgb(0, 174, 255);
+            color: black;
+            border-radius: 5px;
+            max-width: 200px;
+            height: 29px;
+            margin-left: 50px;
+        }
+
+        #username,
+        #password,
+        #confirmPassword {
+            border: 0px;
+            border-bottom: 1px solid gray;
+        }
+
+        #sumbit,
+        #btn {
+            border: none;
+        }
+
+        a {
+            color: black;
+        }
     </style>
 </head>
 
 <body>
     <div>
         <form id="form">
-            <legend><h2>User Registration</h2></legend>
-            
+            <legend>
+                <h2>User Registration</h2>
+            </legend>
+
             <input type="text" name="username" id="username" required placeholder="Enter your username"><br><br>
             <input type="password" name="password" id="password" required placeholder="Password"><br><br>
             <input type="password" name="confirmPassword" id="confirmPassword" required
                 placeholder="Confirm Password"><br><br>
-            <input type="submit" id="sumbit" value="Sign Up" style="background-color: rgb(230, 226, 221);font-weight: bold;border-radius: 5px;"><br>
+            <input type="submit" id="sumbit" value="Sign Up"
+                style="background-color: rgb(230, 226, 221);font-weight: bold;border-radius: 5px;"><br>
             <button id="btn"><b>Login</b></button>
             <h4>Login with</h4>
             <span style=" font-size: 1.6em; margin-left: 0%;margin-top: 20px; color: #9e8c8c;" class="social1"> <a
-                href=""><i
-                    class="fab fa-facebook-f"></i></a>&nbsp;&nbsp;&nbsp;
-            <a href=""><i
-                    class="fab fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;
-            <a href=""><i
-                    class="fab fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href=""><i
-                    class="fab fa-linkedin-in"></i></a></span>
+                    href=""><i class="fab fa-facebook-f"></i></a>&nbsp;&nbsp;&nbsp;
+                <a href=""><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;
+                <a href=""><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href=""><i class="fab fa-linkedin-in"></i></a></span>
         </form>
-        
+
     </div>
 
     <script>
@@ -113,18 +120,15 @@ a{
 
             let cartgetting = localStorage.getItem("s");
             let users = cartgetting != null ? JSON.parse(cartgetting) : [];
-            // users.push(user);
-            let duplicate=users.find((val)=>val.username===username);
+            let duplicate = users.find((val) => val.username === username);
             if (duplicate) {
                 alert("user already exits")
             }
-            else{
-            users.push(user);
-            localStorage.setItem("s", JSON.stringify(users));
-            // window.location.assign("./login.html")
-            alert("User registered successfully!");
-            
-            form.reset();
+            else {
+                users.push(user);
+                localStorage.setItem("s", JSON.stringify(users));
+                alert("User registered successfully!");
+                form.reset();
             }
         });
     </script>
